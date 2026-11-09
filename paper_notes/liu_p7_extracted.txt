@@ -1,0 +1,1478 @@
+=== PDF PAGE 1 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 1
+Efficient Satellite-Ground Interconnection Design
+for Low-orbit Mega-Constellation Topology
+Wenhao Liu, Jiazhi Wu, Quanwei Lin, Handong Luo, Qi Zhang, Kun Qiu, Senior Member, IEEE,
+Zhe Chen, Member, IEEE and Yue Gao, Fellow, IEEE
+Abstract—The low-orbit mega-constellation network (LMCN)
+is an important part of the space-air-ground integrated network
+system. An effective satellite-ground interconnection design can
+result in a stable constellation topology for LMCNs. A na ¨ıve
+solution is accessing the satellite with the longest remaining
+service time (LRST), which is widely used in previous de-
+signs. The Coordinated Satellite-Ground Interconnecting (CSGI),
+the state-of-the-art algorithm, coordinates the establishment of
+ground-satellite links (GSLs). Compared with existing solutions,
+it reduces latency by 19% and jitter by 70% on average. However,
+CSGI only supports the scenario where terminals access only one
+satellite, and cannot fully utilize the multi-access capabilities of
+terminals. Additionally, CSGI’s high computational complexity
+poses deployment challenges. To overcome these problems, we
+propose the Classification-based Longest Remaining Service Time
+(C-LRST) algorithm. C-LRST supports the actual scenario with
+multi-access capabilities. It adds optional paths during rout-
+ing with low computational complexity, improving end-to-end
+communications quality. We conduct our 1000s simulation from
+Brazil to Lithuania on the open-source platform Hypatia. Exper-
+iment results show that compared with CSGI, C-LRST reduces
+the latency and increases the throughput by approximately 60%
+and 40%, respectively. In addition, C-LRST’s GSL switchings
+number is 14, whereas CSGI is 23. C-LRST has better link
+stability than CSGI.
+Index Terms —Satellite Networks, Satellite-Ground Intercon-
+nection, Low-Orbit Mega-Constellation, Starlink
+I. I NTRODUCTION
+W
+ITH the continuous expansion of the network scale,
+low-orbit mega-constellation network (LMCN), has
+become an important part of the future space-air-ground
+integrated network due to its wide coverage and all-weather
+characteristics [1], [2], [3], [4]. LMCN is a satellite network
+consisting of a series of low-orbit satellites, orbiting at an
+altitude between 200 and 2,000 km, which can guarantee
+better signal strength and lower propagation delay [5], [6],
+[7]. The emergence of Starlink [8], Iridium [9], and other
+constellations provides examples for the future construction
+of the space-air-ground integrated network. LMCN provides
+large-scale Internet access services around the world and has
+gradually become an important means to achieve globalization,
+This work was supported by the National Natural Science Foundation of
+China under Grant 62341105. (Corresponding author: Kun Qiu.) Wenhao Liu,
+Jiazhi Wu, Quanwei Lin, Handong Luo, Qi Zhang, Kun Qiu, Zhe Chen
+and Yue Gao are with the School of Computer Science, Fudan University,
+Shanghai 200438, China, and also with the Institute of Space Internet, Fudan
+University, Shanghai 200438, China (e-mail: liuwh23@m.fudan.edu.cn;
+jzwu21@m.fudan.edu.cn; qwlin22@m.fudan.edu.cn; hd-
+luo23@m.fudan.edu.cn; qizhang23@m.fudan.edu.cn; qkun@fudan.edu.cn;
+zhechen@fudan.edu.cn; gao.yue@fudan.edu.cn).
+commercialization, and broadband of communications [10],
+[11], [12].
+As of mid-2021, there are 12,000 satellites of Starlink are
+already approved by the Federal Communications Commission
+(FCC), and the total number of Starlink satellites expected to
+be launched will reach 42,000 [13]. As the number of satellites
+increases and the constellation scale expands, the field faces
+many challenges, including network topology dynamics [14],
+radio channel coordination [15], routing algorithm design [16],
+and ground system design [17]. In addition to the above-
+mentioned research on the constellation itself, there are also
+some explorations of applications relying on LMCN. For
+example, some researchers [18], [19] study the optimization
+method for the training efficiency of machine learning models
+on satellites, thereby exploring the feasibility of using satellite
+networks for efficient data analysis [20], [21]. These studies
+focus on the application potential of satellite network systems,
+such as the analysis of observation images and data [22], [23],
+[24], [25], [26], [20], [27], [28].
+For satellite-ground topology design, link switching and
+topology updates are frequent owing to the highly dynamic
+nature of LMCNs. Taking a satellite at an altitude of 550 km
+as an example, when the communication angle threshold is
+25°, the average switching interval is only 2 ∼3 minutes [1].
+Frequent link switching leads to packet loss and degrada-
+tion of network performance [29]. An end-to-end throughput
+measurement for Starlink shows that the throughput standard
+deviations for Starlink and the terrestrial network are 50.71%
+and 34.44% [30], respectively. This instability is likely caused
+by ground-satellite link (GSL) switchings due to satellite
+movements.
+Algorithms like LRST aim to increase the average service
+time of satellites and reduce the frequency of GSL switch-
+ings, thereby achieving a more stable network topology and
+enhanced performance. Especially, the Coordinated Satellite-
+Ground Interconnecting (CSGI) algorithm performs optimiza-
+tion from a global perspective, minimizing the maximum
+transmission latency while maintaining stable routing and
+high network reachability. Compared with traditional methods,
+CSGI reduces the latency by 19% and the jitter by 70% on
+average [31].
+Despite the advancements of CSGI algorithms, certain is-
+sues remain to be addressed. First, CSGI only supports the
+scenario that terminals can only access a visible satellite,
+while it cannot fully utilize the multi-access capabilities of
+the terminals. However, in actual scenarios, ground stations
+like those used by Starlink have eight antennas [32], which
+arXiv:2410.24039v1  [cs.NI]  31 Oct 2024
+
+=== PDF PAGE 2 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 2
+means that multiple satellites can be connected to a ground
+station at the same time. Second, deploying CSGI in real-
+world scenarios with hundreds of ground stations presents
+challenges. Although this algorithm simplifies the handover
+process, the computational complexity is exponential when
+initializing the satellite connections to ground stations, which
+is O(2n).
+In order to overcome the problems of existing algorithms,
+such as CSGI, we propose the Classification-based Longest
+Remaining Service Time (C-LRST) algorithm in this paper. C-
+LRST supports the actual scenario of multi-access capabilities
+of the terminals, and on this basis, adds optional paths during
+routing with lower computational complexity. It divides visible
+satellites into two sets according to their flight directions,
+and the two access satellites come from two different sets
+when switching. Based on this classification strategy, the
+terminal can flexibly select access satellites in different flight
+directions when routing. Also, the core of C-LRST has a
+lower computational complexity, only O(n), and is easier to
+deploy to scenarios with hundreds of ground stations than
+CSGI, whose computational complexity is O(2n). In our
+experiments, compared with current algorithms, C-LRST’s
+network delay reduction is about 60%, the average throughput
+is also increased by about 40%, and the link is more stable.
+Briefly, this paper makes the following contributions:
+• We study the problem of frequent switching of GSL in
+the existing satellite-ground topology design and analyse
+its impacts, such as route loss, frequent rerouting, large
+network latency fluctuations, and unstable throughput.
+• By analyzing the distribution of satellites visible to
+ground terminals, we propose C-LRST, a satellite selec-
+tion algorithm that is suitable for multi-access capabilities
+scenarios. In addition, C-LRST is easier to deploy due to
+its lower computational complexity O(n).
+• To evaluate the algorithm, we conduct experiments based
+on Starlink shell 1 . The experiment results show that
+in our 1000s long-distance communication simulation
+from Brazil to Lithuania, compared with CSGI, C-LRST
+reduces the network latency by about 60%, and increases
+the average throughput by about 40%. In addition, the
+number of ground-satellite link switchings of C-LRST is
+14, whereas CSGI is 23. C-LRST has better link stability
+than CSGI.
+• We explore the adaptability of C-LRST in a larger-scale
+constellation by expanding the scale in the experiment.
+The results show that, compared with the basic scale, C-
+LRST still maintains good performance under the large
+scale, which proves the scalability potential of C-LRST in
+dense networks. In addition, through a detailed analysis
+of the experimental environment and the real world, we
+discuss the feasibility of C-LRST deployment in actual
+scenarios.
+The rest of the paper is organized as follows. Section II
+introduces the background and our motivations. Section III
+presents the overview design, and our algorithm is explained
+in Section IV. Then, Section V describes our simulation exper-
+iments and analyses the results. Finally, Section VI concludes
+the whole work.
+II. B ACKGROUND
+Equatorial plane
+Vernal equinox Ascending node
+RAAN Ω
+Argument of periapsis �Earth
+Inclination i
+True anomaly v
+Apogee
+Perigee
+Celestial axis P
+Satellite
+(a) Kepler’s six orbital parameters.
+The satellite movement can be de-
+scribed by these parameters.
+satellite intra-plane ISLs
+inter-plane ISLs
+ascending
+descending
+(b) Walker Delta constellation. One
+satellite establishes four ISLs with ad-
+jacent satellites.
+Horizon
+�  Elevation angle Earth
+�
+�� 
+��  Minimum �
+(c) Elevation angle of satellite. When a satellite’s
+elevation angle exceeds the minimum limit, it is
+visible relative to the ground station.
+Fig. 1. Satellite and Constellation.
+A. Constellation, Links and Communications
+The satellite movement can be described by Kepler’s six
+orbital parameters, as shown in Fig. 1(a). Internationally,
+the two-line orbital element (TLE) [33] is generally used to
+describe the satellite ephemeris, which can be easily generated
+according to the Kepler parameters.
+In this study, we focus on the Walker Delta constella-
+tion [34], as shown in Fig. 1(b). It can be described by
+four parameters: N/M/F/α. N is the number of orbits
+in the constellation, M is the number of satellites in the
+same orbit, α is the orbit inclination, and F is the phase
+factor used to adjust the phase difference ∆f between two
+satellites in adjacent orbits with the same number in the orbit.
+∆f = 2πF/ (N ∗ M ) and F belongs to the following range:
+{1 − N, 2 − N, . . . ,0, 1 . . . , N− 1}. A constellation usually
+has multiple layers of orbits. This study only considers the
+layer of Starlink with an altitude of 550km, called shell 1.
+The inter-satellite link (ISL) adopts the +Grid structure [35].
+Under this structure, a satellite can establish four ISLs, two
+connecting adjacent satellites in the same orbit, and two
+connecting satellites with the same number in adjacent orbits.
+
+=== PDF PAGE 3 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 3
+ 
+RouterUser Router User
+ISL
+GSL GSL
+ 
+Ground 
+Station
+ 
+ISP
+Hub
+Ethernet
+…
+Dish
+Terrestrial network
+Fig. 2. ISL mode of communication between ground terminals. One ground terminal (such as a user Dish) communicates with the other (such as a ground
+station) through only two GSLs, with multi-hop ISLs in between.
+The ground-satellite link (GSL) describes the communication
+between the ground station and the satellite.
+In current satellite networks, there are three main methods
+of communication between ground terminals (such as ground
+stations and user Dishes).
+• Transparent forwarding mode: There are no ISLs between
+satellites, and the communication between ground termi-
+nals is relayed through multiple GSLs.
+• ISL mode: As shown in Fig. 2, one ground terminal
+communicates with the other through only two GSLs,
+with multi-hop ISLs in between.
+• Hybrid mode: Ground terminals can communicate
+through multiple ISLs and GSLs.
+Transparent forwarding mode is widely used in medium and
+high orbit constellations [36]. For LMCNs, the disadvantage
+of using Transparent forwarding mode is that it is difficult
+to achieve communication across continents and oceans and
+frequent switching of GSLs.
+Starlink plans to deploy large-scale laser ISLs in the fu-
+ture [37], and our satellite-ground interconnection scheme will
+adopt the ISL mode, as shown in Fig. 2. The Hybrid mode has
+the shortest routing path because ground nodes are added to
+the network topology, but similar to the transparent forwarding
+mode, the network performance is greatly affected by GSL
+switching. We will analyse this effect through experiments in
+Section V to illustrate the advantages of ISL mode over Hybrid
+mode.
+B. Access satellite and GSL switchings
+As shown in Fig. 1(c), e denotes the elevation angle of the
+satellite relative to the ground station. When its size exceeds
+the minimum elevation angle em of the ground station set
+by the system, the satellite is visible relative to the ground
+station [38]. When a visible satellite establishes a GSL with
+a ground station, it is called the access satellite of the ground
+station.
+The number of satellites a terminal can access depends on
+its design. Ground stations like those used by Starlink have
+eight antennas [32], which means that multiple satellites can
+be connected to a ground station at the same time.
+The altitude range of low Earth orbit (LEO) satellites is
+500-1500 kilometers, and the moving speed is approximately
+8 km/s [39]. For ground terminals, the satellite is visible for
+around 2-3 minutes [40]. This means that GSL switchings
+are happening all the time, leading to network instability and
+frequent route changes.
+C. Classic solutions and issues
+Na¨ıve satellite-ground interconnection methods can be sum-
+marized into three categories:
+• Longest remaining service time priority when switching
+(LRST): The ground stations connect to the satellite
+with the longest estimated remaining service time until it
+moves out of range.
+• Nearest distance priority when switching (ND): The
+ground stations connect to the nearest satellite until it
+moves out of range.
+• Always nearest distance priority (AND): The ground
+stations always connect to the nearest satellite (i.e., im-
+mediately switch to a nearer satellite when it becomes
+available).
+According to Zhang et al. [31], in LMCN, when the ground
+station can access only one satellite at the same time, the
+performance of LRST in terms of RTT, network throughput,
+etc., is much better than that of ND and AND. Therefore, this
+paper uses the LRST algorithm as one of the baselines for
+comparison.
+In addition, we also use the state-of-the-art algorithm, CSGI,
+for comparison. This algorithm is suitable for situations where
+the ground station can access only one satellite. When the
+ground station selects the access satellite, it not only considers
+the remaining service time but also minimizes the overall
+latency, thereby achieving global network optimization.
+However, although the algorithm has low complexity during
+the handover, the computational complexity is exponential
+when initializing the satellite connected to the ground station,
+which is O(2n). Therefore, in a scenario with hundreds of
+ground stations, it cannot be deployed normally for compari-
+son with the other algorithms. Considering this shortcoming,
+according to the standards of Zhang’s paper, we select 15
+ground stations with long distances from each other as the
+ground station set of CSGI algorithm. In the subsequent end-
+to-end path analysis experiment, the ground station pairs we
+use are selected from these 15 ground stations to ensure the
+effectiveness of the comparison experiment.
+
+=== PDF PAGE 4 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 4
+Satellites
+Classfication
+TLE
+Latitude
+Flight Direction
+Visible Time
+Calculation
+Satellite 
+Elevation 
+Min
+Elevation
+Visible
+Time
+Satellite
+Switching
+Longest 
+Remaining
+Service Time
+North
+South
+choose a flight direction 
+need to switch
+Terminal
+Access 
+satellite
+Fig. 3. Overview of C-LRST. When GSL switches, we can get a target access satellite through C-LRST. First, there are a series of visible satellites over the
+terminal. Through Classification operation, they are classified according to their flight directions. The output of this operation is the north set and the south
+set of satellites. Second, choose a flight direction that needs to be switched, such as the north. Then, calculate the visible time of all satellites in this set.
+Finally, select the satellite with the longest remaining service time as the target access satellite of the terminal.
+III. O VERVIEW DESIGN
+The overview design of C-LRST is shown in Fig. 3. C-
+LRST has three main core components, Satellite Classification
+is used to classify the visible satellites of the terminal accord-
+ing to their flight directions. Visible Time Calculation is used
+to calculate the remaining service time of the visible satellites.
+Finally, the satellite with the longest remaining service time
+is selected as the access satellite through Satellite Switching.
+Next, we will briefly introduce its core components.
+A. Satellite Classification
+The satellites above a terminal can be divided into north
+and south flight directions, respectively along the orbit up and
+down. When selecting the access satellite, the flight direction
+of the satellite will affect the hop number of the ISL [41].
+Based on the TLE data of the satellite, the latitudes of the
+current time slot and the next time slot can be calculated, and
+the flight direction of the satellite can be inferred, and then
+make classification. The access satellites of the terminal’s two
+GSLs come from the sets of two different flight directions of
+its visible satellites.
+B. Visible Time Calculation
+In order to determine the satellite with the longest remaining
+service time in the classified set, the visible time of the
+satellites to the terminal needs to be calculated. Calculate the
+position of the satellite relative to the terminal to obtain its
+actual elevation e, and check whether it is greater than em.
+Since the movement of satellites is regular, the expected time
+for the satellite to leave the visible range of the terminal can
+be obtained based on the above calculation. The difference
+between the expected time and the current time is the visible
+time of the satellite.
+C. Satellite Switching
+When GSL switches, the final satellite selection is made
+based on the determined flight direction set and the satellite
+with the longest service time determined in the set. Since the
+terminal maintains two GSLs, when the satellite connected to
+one of the GSLs is switched, we only need to first determine
+the set of access satellites that is different from the other, and
+then determine the satellite with the longest remaining service
+time, and finally complete the satellite selection.
+IV. A LGORITHM DESIGN
+In order to support multi-access capabilities, we propose
+the Classification-based Longest Remaining Service Time (C-
+LRST) algorithm. In this section, we first present two propo-
+sitions that support our algorithm. Second, we present our
+algorithm in detail. Finally, we introduce the execution flow
+of our algorithm through an example.
+TABLE I
+SYMBOLS OF DEFINITIONS
+Notation Defintion
+N Orbit number
+M In-orbit satellite number
+F Factor
+α Orbit inclination
+O The coverage area
+P Any point in the area
+D Segment length
+CL Chord length
+ST Service time
+T Set of time slot
+ti Time slot i
+S Set of satellites
+si Satellite i
+G Set of ground stations
+gi Ground station i
+I Set of ISLs
+L Set of GSLs
+ldi GSL of gi
+C Set of visible satellites
+e Elevation angle
+em Minimum elevation angle
+d Flight direction of satellites
+A. Symbols and Definitions
+The key symbols used in this paper and their definitions
+are shown in TABLE I. T is a set of time slots in which
+continuous time is evenly divided according to the time slot
+size, T = {t0, t1, . . .}. S is the satellite set, S = {s0, s1, . . .}.
+G is the set of ground stations, G = {g0, g1, . . .}. L is the
+GSL, L = {L0, L1, . . .} and Li = {l0i , l1i }. Li record the
+satellites connected to gi. l0i is the GSL connected to the
+satellites flying north and l1i is the GSL connected to the
+
+=== PDF PAGE 5 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 5
+satellites flying south. C is the set of visible satellites of gi.
+em is the minimum elevation angle. d is the flight direction
+of satellites.d can be north or south.
+B. Theoretical Analysis
+To support our algorithm, we have the following two
+propositions.
+First, we put forward Proposition 1, analyzing the satellite
+switching interval through mathematical derivation. Through
+Proposition 1, we finally obtain the average number of link
+switchings within a certain time range, which is used to
+prove the rationality of the result of our algorithm. Second,
+based on Proposition 1, we further put forward Proposition 2.
+By analysing that satellites in the north and south flight
+directions have the same service time distribution, we explain
+the rationality of our classification operation.
+R
+P
+D
+satellite
+O
+O R
+P
+D
+Fig. 4. Satellite service time calculation demonstration. The circle O
+represents the coverage area of the satellite, R is the radius of the circle,
+P is any point within the circle, and D represents the remaining service time
+along the satellite flight direction.
+Proposition 1: The actual service time ST of the satellite
+is much shorter than the theoretical maximum service time
+STmax of the satellite, and the number of switchings obtained
+by the C-LRST algorithm is reasonable.
+Proof 1: We will analyse the service time and the number
+of switchings of the satellite with a specific beam range.
+The remaining service time of a terminal’s access satellite is
+limited by the service time of a single satellite, which will have
+an impact on the GSL switching interval. We will calculate this
+service time below.
+As shown in Fig. 4, the beam coverage of the satellite on the
+ground can be approximately regarded as a circle O, in which
+the service time T to a terminal is related to the beam range,
+beam moving direction, and speed. Assume that the ground
+terminal appears with equal probability at any position within
+the satellite beam range. Although in actual situations, the
+satellite’s beam will move in a fixed direction, in this analysis,
+considering the symmetry of the circle, we can still assume
+that the beam will move in any direction, so the position of the
+ground terminal in the beam can be expressed as any point P
+on any chord on the circle. The remaining service time ST of
+the satellite to P is approximately proportional to the length
+of segment D on the chord.
+Therefore, our problem can be transformed into calculating
+the length of D.
+Assume the chord length is CL. Since P is uniformly
+distributed on CL with equal probability, the probability
+density function of D is f (D) = 1CL .We can get the length
+of D. Z CL
+0
+f (D)l dl= 1CL · l22 CL0 = CL2 (1)
+The problem is then transformed into calculating the length
+CL of any chord, assuming that the distance from the chord
+to the center of the circle is x. Since the chord is chosen
+arbitrarily, x is uniformly distributed within the range of
+(0, R). The formula for the chord length is:
+CL = 2
+p
+R2 − x2 (2)
+in which x ∈ (0, R). The average chord length is:
+CL = 1R Z R0 2pR2 − x2 dx = π · R2 (3)
+Therefore, the average length of D is:
+D = s2 = π · R4 (4)
+Due to the direct proportional relationship, if the maximum
+service time STmax of the satellite is known, the average
+service time ST of the satellite can be calculated as:
+ST = π · STmax
+8 (5)
+For routes with ISL, the access satellites at both ends
+may switch. Therefore, when the beams are continuously
+connected, for a certain time t, the average number of link
+switchings n is:
+n = 2tST (6)
+From the above, we can conclude that our Proposition 1,
+actual service time is shorter than the theoretical maximum
+service time. For example, the STmax of a satellite is estimated
+to be roughly 250s (satellite at 550km altitude, elevation angle
+25°). After calculation, the average service time ST of a single
+satellite is 98s. Within t = 1000s, the average number of link
+switchings n is about 20, which is similar to our subsequent
+experiment results.
+Through the proof of Proposition 1, we can also obtain a
+following proposition.
+Proposition 2: Satellites in the north and south flight
+directions have the same service time distribution, so the
+classification selection operation is reasonable.
+Proof 2: According to the proof process of Proposition 1,
+satellites have an average service time ST for terminals at any
+location within the beam. Therefore, a ground station with a
+certain position is uniformly random in the beam range of
+the visible satellites above. Therefore, whether the satellite is
+flying southward or northward, the service time of the ground
+station has the same service time distribution.
+Although the service times may vary for specific instances,
+overall, due to the regular construction of the constellation,
+satellites in both flight directions have the same service time
+expectations for ground stations.
+
+=== PDF PAGE 6 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 6
+These two propositions will support our algorithm de-
+scription and subsequent experiment results in Section V,
+proving the correctness of the results and the rationality of
+the classification operation.
+C. Algorithm Description
+1) C-LRST: The idea of the longest remaining service time
+is to constrain the terminal to select the satellite with the
+longest remaining service time during GSL switching, reduc-
+ing the frequency of GSL switching and thereby minimiz-
+ing network performance fluctuations. Although this greedy
+strategy achieves its objective to a certain extent, the cost is
+unjustifiable. We analyse the visible satellites distribution of
+ground stations, as shown in Fig. 5. It is evident that there is
+a significant clustering phenomenon: visible satellites above
+the ground station fly in two directions, forming two sets. The
+visible satellites of ground station 60 are labeled as sets s1
+and s2, and those of ground station 46 are labeled as sets s3
+and s4.
+Without a classification strategy, the satellite with the
+longest remaining service time chosen by ground station 60
+may come from s1 or s2, and station 46 may come from s3
+or s4. This leads to the following problem: if both ground
+stations ultimately select access satellites from s1 and s3, the
+maximum number of ISL hops will not exceed 5. However,
+if the selected access satellites come from s1 and s4, the
+minimum number of ISL hops will not be less than 25.
+The RTT ratio in both cases will be over 5x. It’s not worth
+sacrificing such a large RTT in exchange for longer service
+time.
+C-LRST algorithm consists of three parts: core, initializa-
+tion, and handover. The function of the Core part Algorithm 1
+is to obtain the longest remaining service time satellite cor-
+responding to the flight direction at time t, when the ground
+terminal and satellite flight direction are specified. C 0 and
+C 1 respectively represent the set of visible satellites flying
+northward and southward of the ground terminal gi. Lines 3-
+10 are used to calculate C 0 and C 1. Lines 11-14 determine the
+set of candidate satellites based on the input flight direction.
+Lines 15-19 obtain the satellite with the longest service time
+in the candidate satellite set. The computational complexity of
+C-LRST core part is O(n).
+The function of the initialization part Algorithm 2 is to
+determine the two access satellites for each ground terminal
+at the initial moment. To obtain LG,0, Algorithm 1 needs to
+be called twice for each ground terminal at time 0.
+When a satellite, which is connected to a ground terminal
+through a GSL, flies out of the visible range, the GSL needs to
+be updated. Algorithm 3 is used to check whether any ground
+terminal needs to update GSL in each time slot. If an access
+satellite at time t flies out of the visible range at time t + 1,
+Algorithm 1 is called to obtain a new access satellite with the
+same flight direction.
+2) Proof of correctness: We illustrate the correctness of our
+classification satellite selection algorithm through induction.
+First, for a terminal, consider that there is only one visible
+satellite above it, then it will be chosen as the access satellite.
+Algorithm 1: C-LRST
+Input: gi, S, d, em, t
+Output: c
+1 C 0 = ∅
+2 C 1 = ∅
+3 for sj ∈ S do
+4 calculate ei,j as the elevation angle of sj relative
+to gi at time t
+5 if ei,j ≥ em then
+6 calculate dj as the flight direction of sj at time
+t
+7 if dj is north then
+8 C 0 = C 0 ∪ {sj}
+9 if dj is south then
+10 C 1 = C 1 ∪ {sj}
+11 if d is north then
+12 C = C 0
+13 else
+14 C = C 1
+15 r = 0, c = 0
+16 for sj ∈ C do
+17 calculate ri,j,t as the remaining service time of sj
+relative to gi at time t
+18 if ri,j,t ≥ r then
+19 r = ri,j,t, c = sj
+Algorithm 2: Initialization
+Input: G, S, em
+Output: LG,0
+1 LG,0 = ∅
+2 for gi ∈ G do
+3 l0i,−1 = −1, l1i,−1 = −1
+4 calculate c0 and c1 as the candidate satellites flying
+north or south at time 0 by algorithm 1
+5 l0i,0 = c0, l1i,0 = c1
+6 LG,0 = LG,0 ∪ {l0i,0, l1i,0}
+Second, we consider that there are two visible satellites. If
+the two satellites belong to the same flight direction, the one
+with the longest remaining service time will be selected as
+the access satellite. If the two satellites belong to different
+flight directions, they will both be chosen to establish GSLs.
+Third, we consider that there are multiple visible satellites,
+which is a general case. According to the C-LRST algorithm,
+visible satellites are classified, and satellites with the longest
+remaining service time are selected for connection. According
+to Proposition 2 in Section IV-B, satellites flying in the
+north and south flight directions have the same service time
+distribution. Therefore, it is reasonable to establish GSLs with
+satellites that have the longest remaining service time in both
+north and south flight directions by classifying the visible
+satellites.
+
+=== PDF PAGE 7 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 7
+0 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72
+Orbit number
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18In-orbit number
+18 lat:33.91 lon:-118.32
+46 lat:27.01 lon:-81.76
+60 lat:39.01 lon:-95.14
+72 lat:44.78 lon:-0.53
+94 lat:-30.43 lon:149.68
+108 lat:40.78 lon:29.5
+116 lat:54.88 lon:23.84
+133 lat:-22.7 lon:-42.87
+s2s s31
+s4
+Fig. 5. Visible satellites distribution of some ground stations. Visible satellites above the ground station fly in two directions, forming two sets. For example,
+the visible satellites of ground station 60 are labeled as two sets s1 and s2, and those of ground station 46 are labeled as two sets s3 and s4.
+Classfication
+Longest
+Remaining
+Service Time
+t0
+ tn
+out of range
+southnorth
+G
+satellite
+tn+1
+select a new south
+initial
+A
+B
+A
+B
+A
+C
+Fig. 6. Execution process of C-LRST Algorithm. This figure shows the initialization operation of ground station G and the satellite switching operation at
+time tn+1. Initially, there are some satellites above ground station G, among which the satellites located within the elevation angle range are visible satellites
+of G. At time t0, the visible satellites are classified into north and south sets according to their flight directions. The satellites with the longest service time are
+A and B respectively, which are selected as access satellites. Then, at time tn, A is still within the visible range of G, while B leaves the range. Therefore,
+a new satellite C will be selected from the south set at the next moment tn+1.
+Algorithm 3: Handover
+Input: G, S, em,LG,t
+Output: LG,t+1
+1 LG,t+1 = ∅
+2 for gi ∈ G do
+3 if l0i,t is visible at time t + 1 then
+4 l0i,t+1 = l0i,t
+5 else
+6 calculate l0i,t+1 as the candidate satellite flying
+north at time t + 1 by algorithm 1
+7 if l1i,t is visible at time t + 1 then
+8 l1i,t+1 = l1i,t
+9 else
+10 calculate l1i,t+1 as the candidate satellite flying
+south at time t + 1 by algorithm 1
+11 LG,t+1 = LG,t+1 ∪ {l0i,t+1, l1i,t+1}
+D. Example Analysis
+Next, we will describe the execution process of our algo-
+rithm through an example.
+As shown in Fig. 6, there are a series of satellites above
+ground station G, among which the satellites located within the
+elevation angle range are visible satellites of G. At time t0, the
+initialization operation is performed. The visible satellites are
+classified according to their flight directions, and the satellites
+with the longest service time are selected as the two access
+satellites of the ground station. The satellite flying northward
+selected by ground station G is A, and the satellite flying
+southward is B. Assume that at time tn, A is still within
+the visible range of ground station G, while southward access
+satellite B leaves the range. We need to select a new satellite
+C with the longest service time from the southward set of
+visible satellites at the next moment tn+1 as the new access
+satellite.
+V. E XPERIMENTS
+A. Experiment Setup
+We use the open-source Hypatia simulation platform devel-
+oped by Kassing et al. [42], which provides a LEO satellite
+network simulation framework. This platform allows for the
+pre-computation of network states over time and implements
+packet-level simulations using NS-3.
+In our experiments, we choose Starlink shell 1 for study.
+In addition, we select 165 ground stations registered by
+Starlink around the world as ground nodes [43]. To ensure
+the adaptability of the algorithm to real satellite constellation
+scenarios, we conduct experiments using the actual structure
+of shell 1 derived from TLE data published by Starlink [44].
+TABLE II shows the detailed configurations.
+Our experiments focus on the Longest Remaining Service
+Time algorithm that only maintains one GSL (LRST-1), the
+Longest Remaining Service Time algorithm that maintains
+
+=== PDF PAGE 8 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 8
+two GSLs (LRST-2), the Coordinated Satellite-Ground Inter-
+connecting algorithm mentioned in Zhang’s paper (CSGI),
+and our proposed Classification-based Longest Remaining
+Service Time algorithm (C-LRST). The above algorithms are
+compared and analysed mainly based on the performance
+metrics of Ping, GSL switching interval, throughput, and TCP
+RTT.
+Hypatia can construct a dynamic topology and determine
+the routing connectivity status between nodes within a certain
+simulation time by reading the configuration information of the
+satellites and ground stations. This is implemented by Python.
+Furthermore, Hypatia combines NS3 to build virtual nodes
+with network functions, thereby simulating constellations and
+ground stations. The algorithms mentioned above are different
+satellite-to-ground interconnection schemes that will produce
+different dynamic topologies and routings in the simulation.
+Therefore, these algorithms is implemented by modifying the
+topology and routing construction methods of Hypatia. We
+have made our implementation public online [45].
+TABLE II
+STARLINK SHELL 1 PARAMETER CONFIGURATION
+Parameters Value
+Orbit altitude 550 km
+Orbit number ( N) 72
+In-orbit satellite number ( M) 18
+Factor (F ) 45
+Orbit inclination ( α) 53°
+B. The impact of frequent switching
+As mentioned in Section II-A, we first study the impact
+of frequent GSL switching in this section by comparing the
+performance differences between ISL mode and Hybrid mode.
+Fig. 7(a) shows how the ping value changes with the
+distance between ground station pairs under the shortest path
+algorithm. This result verifies our hypothesis. During the
+selection of the shortest paths, for most ground station pairs,
+the two modes choose similar routes. For a few pairs, the paths
+chosen by the Hybrid mode exhibit lower ping values than the
+paths selected by the ISL mode. From the CDF of the average
+ping value shown in Fig. 7(b), we can also see that the overall
+distribution of ping value in ISL mode is slightly higher than
+that in Hybrid mode. However, as can be seen from the results
+of Fig. 8(a) and Fig. 8(b), shorter paths do not bring higher
+throughput, and the throughput in Hybrid mode is generally
+lower than that in ISL mode.
+As shown in Fig. 9, which describes the rate of a specific
+pair of ground stations. Between the same ground station pair,
+Hybrid mode switches much more frequently than ISL mode.
+Multiple switchings occur within the 65 − 100ms period,
+which significantly reduces the throughput. The decrease in
+throughput is due to packet loss caused by frequent path
+changes. However, in reality, in addition to the impact of path
+0 3000 6000 9000 12000 15000 18000 21000
+Distance between GS pairs(km)
+0
+10
+20
+30
+40
+50
+60
+70
+80Average Ping RTT(ms)
+hybrid
+only_isl
+(a) Average Ping RTT
+0 10 20 30 40 50 60 70 80
+Average Ping RTT(ms)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0CDF
+hybrid
+only_isl (b) CDF of Ping RTT
+Fig. 7. Average Ping RTT over distance between ground station pairs. In
+most cases, Hybrid mode and ISL mode have similar ping values. Only in a
+few pairs, Hybrid mode has shorter paths and smaller ping values.
+0 3000 6000 9000 12000 15000 18000 21000
+Distance between GS pairs(km)
+8.9
+9.0
+9.1
+9.2
+9.3
+9.4
+9.5
+9.6
+9.7Average Rate(Mbit/s)
+hybrid
+only_isl
+(a) Average Rate
+8.9 9.0 9.1 9.2 9.3 9.4 9.5 9.6 9.7
+Average Rate(Mbit/s)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0CDF
+hybrid
+only_isl (b) CDF of Rate
+Fig. 8. Average Rate over distance between ground station pairs. In most
+paths, Hybrid mode exhibits poorer rate performance. This means that
+compared to Hybrid mode, ISL mode can achieve higher throughput.
+0 25 50 75 100 125 150 175 200
+Time(ms)
+0
+5
+10
+15
+20
+25Rate(Mbit/s)
+(a) Hybrid Mode Rate
+0 25 50 75 100 125 150 175 200
+Time(ms)
+0
+5
+10
+15
+20
+25Rate(Mbit/s) (b) ISL Mode Rate
+Fig. 9. Hybrid mode rate and ISL mode rate of a specific pair. This shows
+the reason for the different average rates above. More GSLs in Hybrid mode
+result in more switchings, which affect link stability and throughput.
+changes on throughput and stability, GSL switching itself also
+has a certain overhead [29], but due to platform limitations,
+this aspect is not reflected in our study. Consequently, in
+practical applications, frequent GSL switchings result in worse
+performance.
+C. End-to-end path analysis
+In this section, we first focus on the communication between
+a specific ground station pair to understand the performance of
+the four algorithms in detail and analyse the phenomena and
+causes of various indicators. Next, we study how communica-
+tion between ground station nodes varies with distance to have
+a more comprehensive understanding of these algorithms.
+Based on Hypatia, we establish end-to-end TCP links be-
+tween ground stations and conduct 1000s simulation exper-
+iments. In our experiment, the NS3 time granularity is 1ns,
+the route update interval is 100ms, and the link transmission
+rate is set to 10M bit/s. We use TCP Hybla as the congestion
+
+=== PDF PAGE 9 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 9
+TABLE III
+LIST OF SIMULATION EXPERIMENT PARAMETERS
+Parameters Value
+Simulation time 1000 s
+Simulation time granularity 1 ns
+Route update interval 100 ms
+Transmission rate of ISL and GSL 10 Mbit/s
+TCP congestion control algorithm TCP Hybla
+control algorithm. This algorithm is mainly used to solve the
+problem of low TCP throughput in long link scenarios, so it is
+often used in TCP applications of satellite networks [46]. The
+simulation experiment parameters are shown in TABLE III.
+As shown in Fig. 10(a), the ground stations used in
+the experiment are located in Itabora ´ı (Brazil) and Kaunas
+(Lithuania). The straight-line distance between the two ground
+stations is approximately 10, 000km.
+1) Ping: Fig. 10(b) shows the ping value during the 1000s
+simulation under different algorithms. The ping values of
+LRST-1, LRST-2, and CSGI are all high, all around 500ms,
+and they are unstable. The ping value of C-LRST is relatively
+low, mostly staying around 160ms, with only a few jitters.
+Based on the previously mentioned idea of classifying
+visible satellites, we can explain the ping values of the above
+algorithms: the ping value of LRST-1 is much higher than that
+of the other algorithms. This is because the access satellites
+selected by the two ground stations are located in two far-
+together categories. For the CSGI algorithm, although the path
+length is optimized from a global perspective, it is limited to
+connecting only one satellite and faces the same problems
+as LRST-1. Although LRST-2 maintains two GSLs, the ping
+value has almost no improvement compared with LRST-1.
+This is because the two satellites selected by each ground
+station during this period are in the same category, and the
+two categories are far apart. The C-LRST we proposed further
+classifies visible satellites on the basis of maintaining two
+GSLs, effectively avoiding the above-mentioned problems, and
+therefore has better performance.
+2) GSL switching interval: Fig. 10(c) shows the time in-
+terval between each switching of the ground station’s access
+satellite in a 1000s simulation. As long as the access satellite
+of either of the two ground stations changes, it is considered a
+switching. The switching of access satellite is the main cause
+of ping jitter.
+As can be seen from Fig. 10(c), for LRST-1 and LRST-2,
+14 switchings occur in the entire simulation process, C-LRST
+is 15, while CSGI is the most, up to 23. In addition, LRST-1,
+LRST-2, and C-LRST are at the lower right, which indicates
+that there is a longer time interval between two switchings, and
+the overall switching frequency is relatively low, making full
+use of the GSL that can be used for a longer time. The CSGI
+curve is near the upper left, the switching interval is short, and
+the switching frequency is slightly higher. Fig. 10(c) further
+24
+(a) Ground station pair from Itabora ´ı (Brazil) to
+Kaunas (Lithuania).
+0 200 400 600 800 1000
+Time (s)
+100
+200
+300
+400
+500Ping RTT (ms)
+LRST-1
+LRST-2
+C-LRST
+CSGI
+(b) Ping RTT. Compared to other al-
+gorithms, C-LRST has a lower Ping
+RTT. The fluctuations are due to the
+inevitable GSL switchings.
+0 50 100 150 200
+Switch Interval (ms)
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0CDF
+ LRST-1
+LRST-2
+C-LRST
+CSGI
+(c) Switching interval. The results
+show that C-LRST has relatively
+larger switching intervals and lower
+switching frequency.
+Fig. 10. Ground station pair, Ping RTT, and GSL switching interval.
+explains that in Fig. 10(b), CSGI has more ping jitters.
+For CSGI, due to the limitation of connecting to only one
+satellite, even if it considers the overall situation, it cannot op-
+timize the service duration and reduce the switching frequency
+for all ground stations. For example, in the experiment on the
+node pairs we selected above, the algorithm did not perform
+well. The C-LRST algorithm we proposed contains the idea
+of the longest remaining service time, retaining the advantage
+of lower switching frequency.
+3) Throughput: Fig. 11 shows the throughput changes at the
+sender for different algorithms. The throughputs of the three
+algorithms LRST-1, LRST-2, and CSGI are low and unstable.
+For the C-LRST algorithm, the throughput can be stabilized
+at approximately 10M bit/srelatively quickly, jittering occurs
+only at a few moments, and quickly recovers to 10M bit/s.
+One reason for low throughput is long delay. First, the
+slow start time is delayed due to the longer RTT. Second,
+a longer RTT means a longer congestion control period. For
+example, congestion that occurs at the receiving end takes a
+longer time to be perceived by the sending end, which makes
+congestion be processed more slowly and has a greater impact
+on throughput. In addition, due to the expansion of the scope
+of congestion, TCP Hybla will have fewer opportunities for
+fast retransmission and will instead enter a longer congestion
+avoidance state [46].
+Another reason for low throughput is the high frequencies
+of link switching. As Fig. 11 shows, although CSGI imposes
+constraints on the minimum service time of access satellites, it
+
+=== PDF PAGE 10 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 10
+0 200 400 600 800 1000
+Time (s)
+0
+2
+4
+6
+8
+10Rate (Mbit/s)
+LRST-1
+LRST-2
+C-LRST
+CSGI
+Fig. 11. Rate and Throughput. Over the entire simulation time, C-LRST has significantly stable and higher rate than other algorithms, which means that
+C-LRST has better throughput performance. The low rate of CSGI and other algorithms is due to the inefficient congestion handling caused by long latency,
+and the high GSL switching frequency.
+0 200 400 600 800 1000
+Time (s)
+0
+200
+400
+600
+800
+1000TCP RTT (ms)
+LRST-1
+0 200 400 600 800 1000
+Time (s)
+0
+200
+400
+600
+800
+1000TCP RTT (ms)
+LRST-2
+0 200 400 600 800 1000
+Time (s)
+0
+200
+400
+600
+800
+1000TCP RTT (ms)
+C-LRST
+0 200 400 600 800 1000
+Time (s)
+0
+200
+400
+600
+800
+1000TCP RTT (ms)
+CSGI
+Fig. 12. TCP RTT. Compared to Ping RTT, TCP RTT also includes additional
+time such as packet processing, so it is slightly higher. However, the overall
+variation is consistent, and C-LRST has a lower RTT. The fluctuations are
+due to the characteristics of the TCP Hybla congestion control algorithm and
+have only a negligible effect.
+is still unavoidable that multiple handovers occur in a short pe-
+riod. For example, around 160s and 660s, multiple switchings
+bring about a sharp decrease in throughput. At 405s, because
+the access satellites of two terminals are switched from (792,
+56) to (827, 73), the ISL increases by 14 hops, which also
+causes a sharp decrease in throughput.
+4) TCP RTT: Fig. 12 shows the performance of the TCP
+RTT using TCP Hybla congestion control algorithm. The
+results show that, C-LRST performs better, with an average
+value of approximately 250ms, while the values of CSGI,
+LRST-1, and LRST-2 are more than 500ms. The reason
+for the observed RTT results of TCP is consistent with the
+aforementioned Ping.
+Then, we select 35 pairs of ground stations with different
+distances and performe end-to-end path analysis to provide a
+more comprehensive understanding of the four algorithms and
+make our findings more robust.
+As shown in Fig. 13, the scattered points represent the
+average RTT of pairs with different distances under the cor-
+responding algorithm, and the straight line is the linear fit of
+the scattered points. The overall RTT gradually increases with
+the increasing distance, and some anomalies are due to the
+different switching numbers of different paths. From the linear
+fit, it can be seen that C-LRST has the lowest RTT in general,
+LRST-1 and LRST-2 are higher, and CSGI is the highest.
+0 2500 5000 7500 10000 12500 15000 17500 20000
+Distance (km)
+0
+100
+200
+300
+400
+500
+Ping RTT (ms)
+LRST-1
+LRST-2
+C-LRST
+CSGI
+(a) Ping RTT
+0 2500 5000 7500 10000 12500 15000 17500 20000
+Distance (km)
+100
+200
+300
+400
+500
+600
+TCP RTT (ms)
+LRST-1
+LRST-2
+C-LRST
+CSGI (b) TCP RTT
+Fig. 13. Average RTT over distance between ground station pairs. Overall,
+C-LRST has the lowest average RTT, while CSGI has the highest.
+D. Scalability
+In order to study the scalability of the proposed C-LRST
+algorithm, we conduct experiments under a larger-scale con-
+stellation. Based on the basic scale, we double the number of
+orbits, thereby obtaining a constellation with twice the number
+of satellites.
+We compare the communication performance of station
+pairs with different distances in the basic scale and the large
+scale constellations. As shown in Fig. 14, the scattered points
+represent the average RTT of ground station pairs during
+1000s communication simulation, and the two straight lines
+are the linear fits of the scattered points.
+The values of Ping RTT and TCP RTT of the two scale
+constellations are similar, which is expected. Even if the con-
+stellation scale is expanded, the communication links between
+the two nodes are similar, and thus there will be similar
+performance. However, with an increase in the number of
+satellites, a larger constellation may result in additional GSL
+switchings. Therefore, through linear fitting, it can be seen that
+in long-distance scenarios, the two values of the large scale
+
+=== PDF PAGE 11 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 11
+constellation have a slightly increasing trend, which is also in
+line with expectations.
+Through comparative experiments, it can be seen that our
+C-LRST algorithm still has good adaptability in larger-scale
+constellation, and controls the more GSL switchings problem
+caused by the expansion of the constellation scale as much as
+possible, and has certain scalability.
+0 2500 5000 7500 10000 12500 15000 17500 20000
+Distance (km)
+25
+50
+75
+100
+125
+150
+175
+200
+Ping RTT (ms) Basic Scale
+Large Scale
+(a) Ping RTT
+0 2500 5000 7500 10000 12500 15000 17500 20000
+Distance (km)
+120
+140
+160
+180
+200
+220
+240
+260
+280
+TCP RTT (ms) Basic Scale
+Large Scale (b) TCP RTT
+Fig. 14. Average RTT of C-LRST over distance between ground station pairs
+under two scale constellations. Compared with the basic scale, C-LRST still
+maintains good performance under a larger-scale constellation.
+E. Overhead and deployment
+The computational complexity of the LRST algorithm de-
+pends on the operational complexity of calculating the longest
+service time satellites, so it is O(n), where n is the number
+of visible satellites from the ground terminal. Since the clas-
+sification is based on the flight direction of the satellite, this
+information can be directly obtained from the TLE data, so the
+complexity is O(n). Although the complexity of CSGI is low
+during handover, the computational complexity is exponential
+when initializing the satellite connected to the ground station
+at the initial moment. In actual deployment, CSGI needs to
+grasp the information of all ground stations for coordinated
+scheduling, which is difficult to deploy in a scenario with
+a large number of ground stations. However, the satellite
+selection strategy of our algorithm is for each individual
+ground station, it only needs to know the satellite that can
+provide the longest remaining service time. The hardware
+conditions of each ground station can bear such a computing
+load. In addition, the design of our algorithm is based on an
+investigation of the existing infrastructure. As mentioned in the
+Introduction, the existing ground stations, such as Starlink, can
+provide multi-access capabilities. Therefore, our algorithm has
+good compatibility with existing infrastructure.
+It should be pointed out that in the scenario of a larger
+number of satellites, there are more visible satellites on the
+ground station, and the calculation method of C-LRST will
+still generate certain costs. However, we would like to explain
+that this consideration of cost is limited to our experimental
+environment, and the calculation of visible satellite service
+time is essentially because the ground station needs to know
+the satellites information. However, in actual scenarios, the
+position, status, and other information of the satellites in
+the constellation will be monitored and fed back in real
+time. The ground station will easily know the satellite with
+the longest service time, and it will be easy to predict the
+satellite with the longest service time in the next moment
+owing to the regularity of the satellite movement. Therefore,
+considering the differences between the actual scenario and
+the experimental environment, the overhead and efficiency of
+the actual deployment could be acceptable, even in a scenario
+with a large number of ground stations or satellites.
+Unlike real-world network systems, there are natural bot-
+tlenecks in our experiments and performance evaluations due
+to the limited experimental conditions and simulation capabil-
+ities. However, our research is mainly aimed at contributing
+a design scheme for satellite-ground interconnection and pro-
+viding a reference for future constellation construction. The
+application in a real scenario needs to consider various prac-
+tical factors for corresponding adjustment and improvement.
+VI. C ONCLUSION
+In this paper, we propose the Classification-based Longest
+Remaining Service Time (C-LRST) algorithm. C-LRST sup-
+ports the actual scenario with multi-access capabilities for
+terminals, and based on this, it adds more optional paths during
+routing with low computational complexity. In addition, we
+conduct experiments to evaluate our algorithm on the open-
+source constellation simulation platform Hypatia. We make
+adaptive improvements to the Hypatia platform to support our
+algorithm. Experiment results show that compared with current
+algorithms, the network delay of C-LRST is reduced by about
+60%, the average throughput is increased by about 40%, and
+the link is more stable. Considering the access capabilities
+of current ground terminals, our algorithm is more suitable
+for application scenarios. As a potential future direction, we
+are looking forward to extending our C-LRST to improve
+the performance of various applications such as distributed
+learning systems [47], [48], [49], [50], [51], large language
+models [52], [53], [54], mobile edge computing [55], [56],
+[57], [58], [59], [60], [61], [62] etc in LEO satellite networks.
+REFERENCES
+[1] Y . Lei, G. Jianming et al., “Leo mega-constellation network: Networking
+technologies and state of the art,” Journal on Communications , vol. 43,
+no. 5, pp. 177–189, 2022.
+[2] Z. Lin, Z. Chen, Z. Fang, X. Chen, X. Wang, and Y . Gao, “Fedsn: A
+federated learning framework over heterogeneous leo satellite networks,”
+IEEE Transactions on Mobile Computing , 2024.
+[3] Y . Zhang, Z. Lin, Z. Chen, Z. Fang, W. Zhu, X. Chen, J. Zhao, and
+Y . Gao, “Satfed: A resource-efficient leo satellite-assisted heterogeneous
+federated learning framework,” arXiv preprint arXiv:2409.13503, 2024.
+[4] H. Yuan, Z. Chen, Z. Lin, J. Peng, Z. Fang, Y . Zhong, Z. Song, and
+Y . Gao, “Satsense: Multi-satellite collaborative framework for spectrum
+sensing,” arXiv preprint arXiv:2405.15542 , 2024.
+[5] M. Giordani and M. Zorzi, “Non-terrestrial networks in the 6g era:
+Challenges and opportunities,” IEEE Network, vol. 35, no. 2, pp. 244–
+251, 2021.
+[6] Z. Zhao, Z. Chen, Z. Lin, W. Zhu, K. Qiu, C. You, and Y . Gao,
+“Leo satellite networks assisted geo-distributed data processing,” arXiv
+preprint arXiv:2406.10856, 2024.
+[7] H. Yuan, Z. Chen, Z. Lin, J. Peng, Z. Fang, Y . Zhong, Z. Song, X. Wang,
+and Y . Gao, “Graph learning for multi-satellite based spectrum sensing,”
+in 2023 IEEE 23rd International Conference on Communication Tech-
+nology (ICCT), 2023, pp. 1112–1116.
+[8] J. C. McDowell, “The low earth orbit satellite population and impacts
+of the spacex starlink constellation,” The Astrophysical Journal Letters ,
+vol. 892, no. 2, p. L36, 2020.
+[9] G. Curzi, D. Modenini, and P. Tortora, “Large constellations of small
+satellites: A survey of near future challenges and missions,” Aerospace,
+vol. 7, no. 9, p. 133, 2020.
+
+=== PDF PAGE 12 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 12
+[10] S. Ji, D. Zhou, M. Sheng, and J. Li, “Mega Satellite Constellation
+System Optimization: From a Network Control Structure Perspective,”
+IEEE Transactions on Wireless Communications , vol. 21, no. 2, pp.
+913–927, Feb. 2022, conference Name: IEEE Transactions on Wireless
+Communications.
+[11] Z. Lai, W. Liu, Q. Wu, H. Li, J. Xu, and J. Wu, “SpaceRTC: Unleashing
+the Low-latency Potential of Mega-constellations for Real-Time Com-
+munications,” in IEEE INFOCOM 2022 - IEEE Conference on Computer
+Communications, May 2022, pp. 1339–1348, iSSN: 2641-9874.
+[12] Z. Luo, T. Pan, E. Song, H. Wang, W. Xue, T. Huang, and Y . Liu,
+“A Refined Dijkstra’s Algorithm with Stable Route Generation for
+Topology-Varying Satellite Networks,” in 2021 IEEE 41st International
+Conference on Distributed Computing Systems (ICDCS) , Jul. 2021, pp.
+1146–1147, iSSN: 2575-8411.
+[13] Z. Kassas, M. Neinavaie, J. Khalife, N. Khairallah, S. Kozhaya,
+J. Haidar-Ahmad, and Z. Shadram, “Enter leo on the gnss stage:
+Navigation with starlink satellites,” 2021.
+[14] J. Wang, L. Li, and M. Zhou, “Topological dynamics characterization for
+leo satellite networks,” Computer Networks , vol. 51, no. 1, pp. 43–53,
+2007.
+[15] B. Al Homssi, A. Al-Hourani, K. Wang, P. Conder, S. Kandeepan,
+J. Choi, B. Allen, and B. Moores, “Next Generation Mega Satellite
+Networks for Access Equality: Opportunities, Challenges, and Perfor-
+mance,” IEEE Communications Magazine , vol. 60, no. 4, pp. 18–24,
+Apr. 2022, conference Name: IEEE Communications Magazine.
+[16] E. Ekici, I. Akyildiz, and M. Bender, “A distributed routing algorithm
+for datagram traffic in LEO satellite networks,” IEEE/ACM Transactions
+on Networking, vol. 9, no. 2, pp. 137–147, Apr. 2001, conference Name:
+IEEE/ACM Transactions on Networking.
+[17] A. Guidotti, A. Vanelli-Coralli, T. Foggi, G. Colavolpe, M. Caus, J. Bas,
+S. Cioni, and A. Modenini, “Lte-based satellite communications in leo
+mega-constellations,” International Journal of Satellite Communications
+and Networking, vol. 37, no. 4, pp. 316–330, 2019.
+[18] H. Guo, Q. Yang, H. Wang, Y . Hua, T. Song, R. Ma, and H. Guan,
+“Spacedml: Enabling distributed machine learning in space information
+networks,” IEEE Network, vol. 35, no. 4, pp. 82–87, 2021.
+[19] C. Yang, J. Yuan, Y . Wu, Q. Sun, A. Zhou, S. Wang, and M. Xu,
+“Communication-efficient satellite-ground federated learning through
+progressive weight quantization,” IEEE Transactions on Mobile Com-
+puting, pp. 1–14, 2024.
+[20] Y . Tang, Z. Chen, A. Li, T. Zheng, Z. Lin, J. Xu, P. Lv, Z. Sun, and
+Y . Gao, “Merit: Multimodal wearable vital sign waveform monitoring,”
+arXiv preprint arXiv:2410.00392 , 2024.
+[21] J. Sun, C. Wu, S. Mumtaz, J. Tao, M. Cao, M. Wang, and V . Fras-
+colla, “An efficient privacy-aware split learning framework for satellite
+communications,” IEEE Journal on Selected Areas in Communications ,
+2024.
+[22] Z. Chen, T. Zheng, and J. Luo, “Octopus: A practical and versatile
+wideband mimo sensing platform,” in Proceedings of the 27th Annual
+International Conference on Mobile Computing and Networking , 2021,
+pp. 601–614.
+[23] Z. Lin, G. Zhu, Y . Deng, X. Chen, Y . Gao, K. Huang, and Y . Fang,
+“Efficient parallel split learning over resource-constrained wireless edge
+networks,” IEEE Transactions on Mobile Computing , 2024.
+[24] Z. Lin, G. Qu, Q. Chen, X. Chen, Z. Chen, and K. Huang, “Pushing large
+language models to the 6g edge: Vision, challenges, and opportunities,”
+arXiv preprint arXiv:2309.16739 , 2023.
+[25] Z. Chen, T. Zheng, C. Cai, and J. Luo, “Movi-fi: Motion-robust vital
+signs waveform recovery via deep interpreted rf sensing,” inProceedings
+of the 27th annual international conference on mobile computing and
+networking, 2021, pp. 392–405.
+[26] Z. Lin, L. Wang, J. Ding, B. Tan, and S. Jin, “Channel power gain
+estimation for terahertz vehicle-to-infrastructure networks,” IEEE Com-
+munications Letters, vol. 27, no. 1, pp. 155–159, 2022.
+[27] J. Peng, Z. Chen, Z. Lin, H. Yuan, Z. Fang, L. Bao, Z. Song, Y . Li,
+J. Ren, and Y . Gao, “Sums: Sniffing unknown multiband signals under
+low sampling rates,” arXiv preprint arXiv:2405.15705 , 2024.
+[28] X. Yang, J. Chen, K. He, H. Bai, C. Wu, and R. Du, “Efficient privacy-
+preserving inference outsourcing for convolutional neural networks,”
+IEEE Transactions on Information Forensics and Security , vol. 18, pp.
+4815–4829, 2023.
+[29] X. Cao and X. Zhang, “Satcp: Link-layer informed tcp adaptation for
+highly dynamic leo satellite networks,” in IEEE INFOCOM 2023 - IEEE
+Conference on Computer Communications , 2023, pp. 1–10.
+[30] S. Ma, Y . C. Chou, H. Zhao, L. Chen, X. Ma, and J. Liu, “Network
+characteristics of leo satellite constellations: A starlink-based measure-
+ment from end users,” in IEEE INFOCOM 2023 - IEEE Conference on
+Computer Communications, 2023, pp. 1–10.
+[31] Y . Zhang, Q. Wu, Z. Lai, and H. Li, “Enabling Low-latency-capable
+Satellite-Ground Topology for Emerging LEO Satellite Networks,” in
+IEEE INFOCOM 2022 - IEEE Conference on Computer Communica-
+tions, May 2022, pp. 1329–1338, iSSN: 2641-9874.
+[32] “Attachment Narrative SES-AMD-20200605-00606.” [Online].
+Available: https://www.fcc.report/IBFS/SES-AMD-20200605-00606/
+2412055
+[33] “Space-Track.org.” [Online]. Available: https://www.space-track.org/
+documentation/tle
+[34] C.-J. Wang, “Structural properties of a low Earth orbit satellite constella-
+tion - the Walker delta network,” in Proceedings of MILCOM ’93 - IEEE
+Military Communications Conference , vol. 3, Oct. 1993, pp. 968–972
+vol.3.
+[35] D. Bhattacherjee and A. Singla, “Network topology design at 27,000
+km/hour,” in Proceedings of the 15th International Conference on
+Emerging Networking Experiments And Technologies , 2019, pp. 341–
+354.
+[36] X. Xu, C. Wang, and Z. Jin, “An analysis method for isl of multilayer
+constellation,” Journal of Systems Engineering and Electronics , vol. 33,
+no. 4, pp. 961–968, 2022.
+[37] A. U. Chaudhry and H. Yanikomeroglu, “Laser intersatellite links in
+a starlink constellation: A classification and analysis,” IEEE Vehicular
+Technology Magazine, vol. 16, no. 2, pp. 48–56, 2021.
+[38] S. Cakaj, B. Kamo, A. Lala, and A. Rakipi, “Elevation impact on signal
+to spectral noise density ratio for Low Earth Orbiting satellite ground
+station at S-band,” in 2014 Science and Information Conference , Aug.
+2014, pp. 641–645.
+[39] H. Uzunalio ˘glu, I. F. Akyildiz, Y . Yesha, and W. Yen, “Footprint
+handover rerouting protocol for low Earth orbit satellite networks,”
+Wireless Networks , vol. 5, no. 5, pp. 327–337, Sep. 1999. [Online].
+Available: https://doi.org/10.1023/A:1019127801155
+[40] Z. Lai, W. Liu, Q. Wu, H. Li, J. Xu, and J. Wu, “Spacertc: Unleashing
+the low-latency potential of mega-constellations for real-time commu-
+nications,” in IEEE INFOCOM 2022 - IEEE Conference on Computer
+Communications, 2022, pp. 1339–1348.
+[41] Q. Chen, G. Giambene, L. Yang, C. Fan, and X. Chen, “Analysis of
+inter-satellite link paths for leo mega-constellation networks,” IEEE
+Transactions on Vehicular Technology , vol. 70, no. 3, pp. 2743–2755,
+2021.
+[42] S. Kassing, D. Bhattacherjee, A. B. ´Aguas, J. E. Saethre, and
+A. Singla, “Exploring the ”Internet from space” with Hypatia,”
+in Proceedings of the ACM Internet Measurement Conference ,
+ser. IMC ’20. New York, NY , USA: Association for Computing
+Machinery, Oct. 2020, pp. 214–229. [Online]. Available: https:
+//dl.acm.org/doi/10.1145/3419394.3423635
+[43] starlink.sx. [Online]. Available: https://starlink.sx/
+[44] S. Liu, F. Xu et al., “Starlink actual constellation configuration research
+and simulation analysis,” Space and Internet , 10 2022. [Online].
+Available: https://mp.weixin.qq.com/s/nk49ZKemwFCiBQri5VzetA
+[45] Lmcn-sgi. [Online]. Available: https://github.com/jingjiuxiaoshishu/
+LMCN-SGI
+[46] M. Casoni, C. A. Grazia, M. Klapez, and N. Patriciello, “Implementation
+and validation of TCP options and congestion control algorithms
+for ns-3,” in Proceedings of the 2015 Workshop on ns-3 , ser.
+WNS3 ’15. New York, NY , USA: Association for Computing
+Machinery, May 2015, pp. 112–119. [Online]. Available: https:
+//dl.acm.org/doi/10.1145/2756509.2756518
+[47] Z. Lin, G. Qu, X. Chen, and K. Huang, “Split learning in 6g edge
+networks,” IEEE Wireless Communications, 2024.
+[48] J. Hu, Z. Chen, T. Zheng, R. Schober, and J. Luo, “Holofed:
+Environment-adaptive positioning via multi-band reconfigurable holo-
+graphic surfaces and federated learning,” IEEE Journal on Selected
+Areas in Communications , 2023.
+[49] T. Zheng, A. Li, Z. Chen, H. Wang, and J. Luo, “Autofed: Heterogeneity-
+aware federated multimodal learning for robust autonomous driving,” in
+Proceedings of the 29th Annual International Conference on Mobile
+Computing and Networking , 2023, pp. 1–15.
+[50] M. Hu, J. Zhang, X. Wang, S. Liu, and Z. Lin, “Accelerating federated
+learning with model segmentation for edge networks,” IEEE Transac-
+tions on Green Communications and Networking , 2024.
+[51] Z. Lin, G. Qu, W. Wei, X. Chen, and K. K. Leung, “Adaptsfl: Adaptive
+split federated learning in resource-constrained edge networks,” arXiv
+preprint arXiv:2403.13101, 2024.
+[52] Z. Lin, X. Hu, Y . Zhang, Z. Chen, Z. Fang, X. Chen, A. Li,
+P. Vepakomma, and Y . Gao, “Splitlora: A split parameter-efficient
+
+=== PDF PAGE 13 ===
+IEEE TRANSACTIONS ON MOBILE COMPUTING 13
+fine-tuning framework for large language models,” arXiv preprint
+arXiv:2407.00952, 2024.
+[53] Z. Fang, Z. Lin, Z. Chen, X. Chen, Y . Gao, and Y . Fang, “Automated
+federated pipeline for parameter-efficient fine-tuning of large language
+models,” arXiv preprint arXiv:2404.06448 , 2024.
+[54] Y . Qiu, H. Chen, X. Dong, Z. Lin, I. Y . Liao, M. Tistarelli, and Z. Jin,
+“Ifvit: Interpretable fixed-length representation for fingerprint matching
+via vision transformer,” arXiv preprint arXiv:2404.08237 , 2024.
+[55] Y . Gu, J. Chen, C. Wu, K. He, Z. Zhao, and R. Du, “Loccams:
+An efficient and robust approach for detecting and localizing hidden
+wireless cameras via commodity devices,” Proceedings of the ACM on
+Interactive, Mobile, Wearable and Ubiquitous Technologies, vol. 7, no. 4,
+pp. 1–24, 2024.
+[56] Z. Lin, L. Wang, J. Ding, Y . Xu, and B. Tan, “Tracking and transmission
+design in terahertz v2i networks,” IEEE Transactions on Wireless
+Communications, vol. 22, no. 6, pp. 3586–3598, 2022.
+[57] T. Zheng, Z. Chen, S. Zhang, C. Cai, and J. Luo, “More-fi: Motion-
+robust and fine-grained respiration monitoring via deep-learning uwb
+radar,” in Proceedings of the 19th ACM conference on embedded
+networked sensor systems , 2021, pp. 111–124.
+[58] Z. Lin, L. Wang, J. Ding, Y . Xu, and B. Tan, “V2i-aided tracking de-
+sign,” in ICC 2022-IEEE International Conference on Communications .
+IEEE, 2022, pp. 291–296.
+[59] Z. Chen, C. Cai, T. Zheng, J. Luo, J. Xiong, and X. Wang, “Rf-based
+human activity recognition using signal adapted convolutional neural
+network,” IEEE Transactions on Mobile Computing , vol. 22, no. 1, pp.
+487–499, 2021.
+[60] Z. Fang, Z. Lin, S. Hu, H. Cao, Y . Deng, X. Chen, and Y . Fang, “Ic3m:
+In-car multimodal multi-object monitoring for abnormal status of both
+driver and passengers,” arXiv preprint arXiv:2410.02592 , 2024.
+[61] C. Wu, H. Cao, G. Xu, C. Zhou, J. Sun, R. Yan, Y . Liu, and H. Jiang,
+“It’s all in the touch: Authenticating users with host gestures on multi-
+touch screen devices,” IEEE Transactions on Mobile Computing , 2024.
+[62] C. Wu, J. Chen, Q. Fang, K. He, Z. Zhao, H. Ren, G. Xu, Y . Liu, and
+Y . Xiang, “Rethinking membership inference attacks against transfer
+learning,” IEEE Transactions on Information Forensics and Security ,
+2024.

@@ -1,0 +1,37 @@
+{
+  "walker": {
+    "epoch": "2026-11-05T00:00:00+00:00",
+    "total": 120,
+    "planes": 12,
+    "phasing": 1,
+    "inclination_deg": 53.0,
+    "altitude_km": 550.0,
+    "raan_offset_deg": 0.0,
+    "phase_offset_deg": 0.0
+  },
+  "sites": [
+    {
+      "site_id": "Beijing",
+      "latitude_deg": 39.9,
+      "longitude_deg": 116.4,
+      "altitude_km": 0.0,
+      "min_elevation_deg": 10.0
+    },
+    {
+      "site_id": "Shanghai",
+      "latitude_deg": 31.23,
+      "longitude_deg": 121.47,
+      "altitude_km": 0.0,
+      "min_elevation_deg": 10.0
+    }
+  ],
+  "masks_deg": [
+    10,
+    20,
+    30
+  ],
+  "step_seconds": 10,
+  "duration_seconds": 86400,
+  "time_interval": "[epoch, epoch + duration)",
+  "model": "two-body; fixed mean equator of epoch approximated as equator of date; UTC~UT1; no J2/polar motion"
+}

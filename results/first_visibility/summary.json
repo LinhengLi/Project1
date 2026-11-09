@@ -1,0 +1,103 @@
+[
+  {
+    "site": "Beijing",
+    "mask_deg": 10,
+    "min": 2,
+    "mean": 3.3980324074074075,
+    "max": 6,
+    "zero_fraction": 0.0,
+    "at_least_two_fraction": 1.0,
+    "histogram": {
+      "2": 1420,
+      "3": 3287,
+      "4": 3039,
+      "5": 862,
+      "6": 32
+    },
+    "complete_windows": 748,
+    "mean_complete_window_s": 389.9598930481283
+  },
+  {
+    "site": "Beijing",
+    "mask_deg": 20,
+    "min": 0,
+    "mean": 1.3614583333333334,
+    "max": 3,
+    "zero_fraction": 0.2431712962962963,
+    "at_least_two_fraction": 0.5901620370370371,
+    "histogram": {
+      "0": 2101,
+      "1": 1440,
+      "2": 4974,
+      "3": 125
+    },
+    "complete_windows": 449,
+    "mean_complete_window_s": 260.66815144766144
+  },
+  {
+    "site": "Beijing",
+    "mask_deg": 30,
+    "min": 0,
+    "mean": 0.656712962962963,
+    "max": 2,
+    "zero_fraction": 0.5221064814814815,
+    "at_least_two_fraction": 0.17881944444444445,
+    "histogram": {
+      "0": 4511,
+      "1": 2584,
+      "2": 1545
+    },
+    "complete_windows": 303,
+    "mean_complete_window_s": 186.5016501650165
+  },
+  {
+    "site": "Shanghai",
+    "mask_deg": 10,
+    "min": 0,
+    "mean": 2.269675925925926,
+    "max": 4,
+    "zero_fraction": 0.04988425925925926,
+    "at_least_two_fraction": 0.9273148148148148,
+    "histogram": {
+      "0": 431,
+      "1": 197,
+      "2": 5870,
+      "3": 895,
+      "4": 1247
+    },
+    "complete_windows": 502,
+    "mean_complete_window_s": 388.7450199203187
+  },
+  {
+    "site": "Shanghai",
+    "mask_deg": 20,
+    "min": 0,
+    "mean": 1.0113425925925925,
+    "max": 2,
+    "zero_fraction": 0.41689814814814813,
+    "at_least_two_fraction": 0.42824074074074076,
+    "histogram": {
+      "0": 3602,
+      "1": 1338,
+      "2": 3700
+    },
+    "complete_windows": 329,
+    "mean_complete_window_s": 264.468085106383
+  },
+  {
+    "site": "Shanghai",
+    "mask_deg": 30,
+    "min": 0,
+    "mean": 0.4984953703703704,
+    "max": 2,
+    "zero_fraction": 0.6836805555555555,
+    "at_least_two_fraction": 0.18217592592592594,
+    "histogram": {
+      "0": 5907,
+      "1": 1159,
+      "2": 1574
+    },
+    "complete_windows": 229,
+    "mean_complete_window_s": 187.86026200873363
+  }
+]

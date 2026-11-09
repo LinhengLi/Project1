@@ -1,0 +1,96 @@
+{
+  "start_utc": "2026-11-05T00:00:00+00:00",
+  "duration_hours": 72,
+  "step_seconds": 60,
+  "interval": "left closed, right open",
+  "satellites": 1600,
+  "sites": [
+    {
+      "station_id": "GW02",
+      "name": "Benkelman, NE",
+      "lat_deg": 40.0492,
+      "lon_deg": -101.5329,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW05",
+      "name": "Dill City, OK",
+      "lat_deg": 35.28,
+      "lon_deg": -99.12,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW06",
+      "name": "Dumas, TX",
+      "lat_deg": 35.8628,
+      "lon_deg": -101.9732,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW11",
+      "name": "Inman, KS",
+      "lat_deg": 38.2319,
+      "lon_deg": -97.7725,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW12",
+      "name": "Lawrence, KS",
+      "lat_deg": 38.9717,
+      "lon_deg": -95.2353,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW15",
+      "name": "Nemaha, NE",
+      "lat_deg": 40.3408,
+      "lon_deg": -95.6708,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW21",
+      "name": "Savanna, OK",
+      "lat_deg": 34.78930555555555,
+      "lon_deg": -95.8765,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    },
+    {
+      "station_id": "GW22",
+      "name": "Springer, OK",
+      "lat_deg": 34.2853,
+      "lon_deg": -97.1317,
+      "type": "gateway",
+      "source_status": "operational",
+      "source_last_updated": "2026-06-10"
+    }
+  ],
+  "masks_deg": [
+    10,
+    20,
+    25,
+    30
+  ],
+  "altitude_assumption_m": 0,
+  "orbit_sha256": "c404aa76a71a1b3cb85ce5e9c64c0f99b937c7c7620d6fea8195d57dbfc842cb",
+  "sites_sha256": "66eb1c5b21cb19d5d19463505beac3e660c29e136c567045d28b5419fd033582",
+  "epoch_min": "2026-11-02T23:12:11.345472+00:00",
+  "epoch_max": "2026-11-04T23:04:07.373280+00:00",
+  "max_age_days_at_last_sample": 5.032507575555555,
+  "geometry": "Skyfield SGP4/WGS84 topocentric altaz; no refraction; builtin timescale; no external polar-motion table",
+  "skyfield_version": "1.55",
+  "numpy_version": "2.5.4"
+}

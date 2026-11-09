@@ -1,0 +1,34 @@
+{
+  "snapshot_utc": "2026-11-05T00:00:00+00:00",
+  "satellites": 1600,
+  "source_site_count_catalog_20260610": 361,
+  "candidate_sites": 25,
+  "core_sites": 17,
+  "selected_sites": 8,
+  "screen_model": "Two-body Kepler approximation using GP mean elements; Earth rotation by approximate GMST; spherical Earth radius 6378.137 km; NOT SGP4 and NOT suitable as final quantitative paper result",
+  "elevation_min_deg": 25,
+  "sample_minutes": 60,
+  "step_seconds": 60,
+  "selected_mean_visible": {
+    "Benkelman, NE": 7.87,
+    "Dill City, OK": 6.54,
+    "Dumas, TX": 6.66,
+    "Inman, KS": 7.54,
+    "Lawrence, KS": 7.82,
+    "Nemaha, NE": 8.36,
+    "Savanna, OK": 6.92,
+    "Springer, OK": 6.74
+  },
+  "selected_pair_mean_common": 4.46,
+  "selected_pair_distance_range_km": [
+    127.9,
+    768.8
+  ],
+  "data_caveats": [
+    "Third-party station coordinates, some may be approximate or incorrect.",
+    "Community operational status cannot confirm 2026 November site active.",
+    "Skyfield/SGP4 should replace two-body model for final physics experiment.",
+    "A 1600-satellite subset may not represent complete Starlink orbital topology; station choice sensitive to subsampling.",
+    "No Q/V capability or FCC authorization is implied for any individual site."
+  ]
+}

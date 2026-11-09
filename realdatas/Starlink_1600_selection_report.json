@@ -1,0 +1,36 @@
+{
+  "snapshot": "user-provided Starlink CelesTrak GP JSON, obtained 2026-11-05",
+  "input_records": 11208,
+  "source_sha256": "f447b5867dd5fa1dbca87f26e007f594b7cdb9f30576be6a77be713b91fc5bcf",
+  "filter": {
+    "name_prefix": "STARLINK",
+    "inclination_deg": [
+      52,
+      54
+    ],
+    "mean_altitude_est_km": [
+      460,
+      466
+    ],
+    "max_age_days": "not rechecked; retain source epochs"
+  },
+  "eligible": 3354,
+  "selected": 1600,
+  "mean_altitude_est_km": {
+    "median": 462.70706693110924,
+    "min": 460.7199758101351,
+    "max": 465.77520090264807
+  },
+  "inclination_deg": {
+    "median": 53.1587,
+    "min": 53.1497,
+    "max": 53.1674
+  },
+  "epoch_range_utc": [
+    "2026-11-02T23:12:11.345472",
+    "2026-11-04T23:04:07.373280"
+  ],
+  "n_norad_ge_100000": 55,
+  "selection_method": "RAAN 5-degree proportional stratification; phase-ranked evenly spaced sampling within each bin. RAAN bins are sampling strata, NOT physical orbital planes.",
+  "reference": "A subset of Starlink orbital records, not confirmation of satellite operational or Q/V-band payload status. Satellite orbit heights estimated from GP mean motion with two-body Kepler formula. Do not treat this as real TLE; original GP format preserved."
+}

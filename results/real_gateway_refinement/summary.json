@@ -1,0 +1,206 @@
+{
+  "station_refinement": [
+    {
+      "station_id": "GW02",
+      "coarse_low_samples": 8,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    },
+    {
+      "station_id": "GW05",
+      "coarse_low_samples": 32,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    },
+    {
+      "station_id": "GW06",
+      "coarse_low_samples": 36,
+      "min_over_all_evaluated_samples": 0,
+      "zero_evaluated_samples": 5,
+      "min_added_samples": 0
+    },
+    {
+      "station_id": "GW11",
+      "coarse_low_samples": 15,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    },
+    {
+      "station_id": "GW12",
+      "coarse_low_samples": 10,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    },
+    {
+      "station_id": "GW15",
+      "coarse_low_samples": 5,
+      "min_over_all_evaluated_samples": 0,
+      "zero_evaluated_samples": 2,
+      "min_added_samples": 0
+    },
+    {
+      "station_id": "GW21",
+      "coarse_low_samples": 30,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    },
+    {
+      "station_id": "GW22",
+      "coarse_low_samples": 29,
+      "min_over_all_evaluated_samples": 1,
+      "zero_evaluated_samples": 0,
+      "min_added_samples": 1
+    }
+  ],
+  "access_matching": [
+    {
+      "max_gs_per_satellite": 1,
+      "all_8_gs_assignable_fraction_60s": 0.9969907407407408,
+      "maximum_hall_deficit": 3
+    },
+    {
+      "max_gs_per_satellite": 2,
+      "all_8_gs_assignable_fraction_60s": 1.0,
+      "maximum_hall_deficit": 0
+    },
+    {
+      "max_gs_per_satellite": 4,
+      "all_8_gs_assignable_fraction_60s": 1.0,
+      "maximum_hall_deficit": 0
+    }
+  ],
+  "capacity_screen": [
+    {
+      "extra_loss_db": 3.0,
+      "gs_demand_gbps": 0.5,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.0,
+        "GW06": 0.0,
+        "GW11": 0.0,
+        "GW12": 0.0,
+        "GW15": 0.0,
+        "GW21": 0.0,
+        "GW22": 0.0
+      }
+    },
+    {
+      "extra_loss_db": 3.0,
+      "gs_demand_gbps": 1,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.0,
+        "GW06": 0.0,
+        "GW11": 0.0,
+        "GW12": 0.0,
+        "GW15": 0.0,
+        "GW21": 0.0,
+        "GW22": 0.0
+      }
+    },
+    {
+      "extra_loss_db": 3.0,
+      "gs_demand_gbps": 2,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.001851851851851852,
+        "GW06": 0.000925925925925926,
+        "GW11": 0.000925925925925926,
+        "GW12": 0.000462962962962963,
+        "GW15": 0.0,
+        "GW21": 0.001388888888888889,
+        "GW22": 0.0011574074074074073
+      }
+    },
+    {
+      "extra_loss_db": 10.0,
+      "gs_demand_gbps": 0.5,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.0,
+        "GW06": 0.0,
+        "GW11": 0.0,
+        "GW12": 0.0,
+        "GW15": 0.0,
+        "GW21": 0.0,
+        "GW22": 0.0
+      }
+    },
+    {
+      "extra_loss_db": 10.0,
+      "gs_demand_gbps": 1,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.0,
+        "GW06": 0.0,
+        "GW11": 0.0,
+        "GW12": 0.0,
+        "GW15": 0.0,
+        "GW21": 0.0,
+        "GW22": 0.0
+      }
+    },
+    {
+      "extra_loss_db": 10.0,
+      "gs_demand_gbps": 2,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.001851851851851852,
+        "GW06": 0.000925925925925926,
+        "GW11": 0.000925925925925926,
+        "GW12": 0.000462962962962963,
+        "GW15": 0.0,
+        "GW21": 0.001388888888888889,
+        "GW22": 0.0011574074074074073
+      }
+    },
+    {
+      "extra_loss_db": 20.0,
+      "gs_demand_gbps": 0.5,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.0,
+        "GW06": 0.0,
+        "GW11": 0.0,
+        "GW12": 0.0,
+        "GW15": 0.0,
+        "GW21": 0.0,
+        "GW22": 0.0
+      }
+    },
+    {
+      "extra_loss_db": 20.0,
+      "gs_demand_gbps": 1,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0,
+        "GW05": 0.001851851851851852,
+        "GW06": 0.000925925925925926,
+        "GW11": 0.000925925925925926,
+        "GW12": 0.000462962962962963,
+        "GW15": 0.0,
+        "GW21": 0.001388888888888889,
+        "GW22": 0.0011574074074074073
+      }
+    },
+    {
+      "extra_loss_db": 20.0,
+      "gs_demand_gbps": 2,
+      "per_station_optimistic_insufficiency_fraction_60s": {
+        "GW02": 0.0032407407407407406,
+        "GW05": 0.00787037037037037,
+        "GW06": 0.009722222222222222,
+        "GW11": 0.004629629629629629,
+        "GW12": 0.003472222222222222,
+        "GW15": 0.0020833333333333333,
+        "GW21": 0.007407407407407408,
+        "GW22": 0.00949074074074074
+      }
+    }
+  ],
+  "capacity_screen_note": "Sum of all candidate capacities is an optimistic bound, not a feasible resource allocation; assumes every candidate GS link can operate simultaneously."
+}
