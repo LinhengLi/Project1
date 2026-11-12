@@ -1,0 +1,38 @@
+{
+  "source": "results\\real_gateway_refinement\\candidate_links.csv.gz",
+  "sha256": "fd530948dc199051b208f7d02fa5fe8dde744ad433a1272946e1d5f2d47628fe",
+  "windows": {
+    "decline_recovery": {
+      "start": "2026-11-06T09:48:30+00:00",
+      "end_exclusive": "2026-11-06T09:50:30+00:00"
+    },
+    "stable": {
+      "start": "2026-11-06T23:50:40+00:00",
+      "end_exclusive": "2026-11-06T23:52:40+00:00"
+    }
+  },
+  "bottleneck_gateway": "GW15",
+  "selection": "120s contiguous; event contains <=2 with >=30s before/after; rank minimum count, longest low duration, earliest time; disjoint control min>2, minimum edge-set churn then count variation",
+  "step_seconds": 5,
+  "association_periods": [
+    5,
+    30
+  ],
+  "load_per_class_gbps": [
+    0.6,
+    0.9
+  ],
+  "minimum_gbps": [
+    0.5,
+    0.3
+  ],
+  "weights": [
+    4,
+    1
+  ],
+  "satellite_capacity_gbps": 1.5,
+  "capacity_column": "capacity_loss10_gbps",
+  "protection": false,
+  "evaluation": "Per-GS rolling mean high rate >=0.5; pooled complete windows at 5s stride. Longest instantaneous high under-rate across GS. Volume is delivered Gbit. Switch counts changes of association after initial selection, including disconnect/reconnect.",
+  "model": "Piecewise constant 5s service; no queue/carryover; expired link gives zero until recovery or scheduled reselection; initial association at window start. Raw means no synthetic tightening/protection, not zero extra loss. Throughput policy retains existing throughput-first/QoS-second allocator; baselines use QoS-first allocator."
+}

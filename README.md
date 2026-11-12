@@ -73,3 +73,41 @@ Walker 约定：轨道面 RAAN 为 `offset + 360*p/P`，面内初始纬度幅角
 扫描2026-11-05起72小时，60秒采样，并分别汇总前24小时和全部72小时。Skyfield调用SGP4并计算WGS84地面站的无折射地平坐标，使用内置时间尺度，不下载外部极移表。站高暂设0米。输出 `results/real_gateway_scan/` 内的配置与输入哈希、计数CSV、逐站/逐站对/集群统计JSON及报告。重复运行会更新该目录。
 
 25°为主门限，10°/20°/30°用于敏感性比较。72小时是固定快照的外推检查，必须结合GP历元年龄解释；60秒采样不能证明连续覆盖。当前脚本不提取精细窗口、不计算用户共同覆盖，也不将多站共享卫星直接解释为容量竞争。
+
+## 连续窗口 QoS 对照
+
+```powershell
+.venv\Scripts\python scripts/experiment_temporal.py
+```
+
+需要已有 `results/real_gateway_refinement/candidate_links.csv.gz` 和 optimization 依赖。脚本先按链路数据选择两段不重叠的连续 120 秒窗口（低候选下降恢复与相对稳定对照），不对稀疏数据插值。每 5 秒重新分配业务速率，比较 5/30 秒关联重选、四种策略与每类 0.6/0.9 Gbit/s 需求，保障固定为 0.5/0.3 Gbit/s。使用原有 loss10 链路容量，不施加额外收紧或频谱保护。沿用假设的每星 1.5 Gbit/s 共享容量。
+
+输出 `results/temporal_qos/`：`config.json` 固定窗口、源哈希和口径，`summary.csv` / `report.md` 为 30/60 秒完整滑动窗口结果表，`traces.csv` 为逐站时序，`under_rate_runs.csv` 为连续欠速及链路失效诊断，`timeline.png` / `.svg` 展示瓶颈站候选数、两类速率、保障线及切换时刻。达标率是每站窗口平均高优先级服务速率达标的比例，不是逐时刻达标率；无排队或积压模型，不能解释为时延或端到端 QoS。联合策略是当前状态的逐快照优化，不使用未来信息，也没有切换惩罚；多解导致的关联切换属于这一版本策略的实际输出。
+
+## 30 秒业务保障前瞻选星
+
+```powershell
+.venv\Scripts\python scripts/experiment_lookahead.py
+```
+
+复用 `results/temporal_qos/config.json` 的窗口并验证候选源文件哈希，不重新选窗。`src/qv_sim/holding.py` 一次求解六个 5 秒步的关联与速率，按“逐站高优交付缺口、普通交付缺口、总交付”进行词典序优化，30 秒目标固定为 15/9 Gbit。对照组包括现有瞬时吞吐/加权 QoS，以及使用相同未来信息的周期吞吐/周期 QoS。未来信息来自保存数据，是理想信息实验，不是预测精度验证。
+
+模型定义见 `results/HOLDING_QOS_MODEL.md`；结果见 `results/holding_qos/report.md`，同目录保留 `summary.csv`、逐站 `periods.csv`、逐步 `traces.csv` 与固定关联/自由重选下界 `diagnostics.csv`。本轮不包含物理频谱保护约束；当前→未来 QoS 同时改变信息和目标，不能解释为纯信息收益。周期内速率可能集中分配，对齐达标不代表瞬时服务平滑。
+
+## 馈电上行发射限值配对实验
+
+```powershell
+.venv\Scripts\python scripts/experiment_spectrum.py
+```
+
+复用保持周期实验的冻结窗口和候选链路。限值开关两组均重新计算 50.0 GHz、250 MHz 容量，再比较前瞻吞吐优先和前瞻 QoS 优先。五档合成泄漏抑制度覆盖端口限值生效前后。条款、单位与物理假设见 [频谱保护资料](research_sources/spectrum_protection.md)，QoS 资料见 [网络侧 QoS 资料](research_sources/network_qos.md)。[实验报告](results/spectrum_protection/report.md) 同目录保存配置、逐边容量、业务结果和配对差值。实验对应单地球站发射端口限值场景。
+
+### 按 ITU 参考大气和发射谱重算
+
+```powershell
+.venv\Scripts\python scripts/experiment_spectrum.py --refined
+```
+
+该模式使用 P.676-13 逐谱线计算气体衰减，采用 P.835-7 参考大气和 P.453-14 折射率。可用 `--residual-loss-db` 单独设置其他损耗余量，默认 0 dB。除原抑制度扫描外，还积分 SM.1541-7 FSS 掩模以评估通用包络情景。若有设备谱，传入 `--port-spectrum path/to/spectrum.csv`，CSV 提供按频率升序的 `frequency_hz` 和 `psd_w_per_hz`，覆盖带内与保护带的积分范围。实验取带内与保护带的功率比，将谱形归一到同一标称发射功率。
+
+输出见 [重算报告](results/spectrum_refined/report.md) 和同目录的逐边容量与业务结果。气体衰减使用参考大气，掩模使用平坦带内谱和单信道指配假设。参数依据见 [ITU 与 3GPP 文献摘记](research_sources/itu_3gpp_model_refinement.md)。

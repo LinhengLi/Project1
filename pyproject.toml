@@ -12,6 +12,7 @@ dependencies = ["sgp4>=2.23,<3"]
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
 analysis = ["skyfield>=1.55,<2", "numpy>=2,<3"]
+optimization = ["numpy>=2,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
