@@ -1,0 +1,20 @@
+{
+  "version": "feeder_v1_2_antenna_research_profile",
+  "model": "S.1528-0 recommends 1.2",
+  "beam_axis_ratio": 1,
+  "tx_peak_dbi": 35.0,
+  "tx_half_width_deg": 1.4990500074657407,
+  "tx_hpbw_deg": 2.9981000149314814,
+  "tx_sidelobe_db": -20,
+  "reference_frequency_hz": 18200000000.0,
+  "assumed_aperture_efficiency": 0.6,
+  "inferred_d_over_lambda": 23.108646128450946,
+  "inferred_aperture_m": 0.38064823208244464,
+  "parameter_status": "research assumptions, not confirmed paper values or real equipment data",
+  "selection_reason": "retain -20 dB intermediate sidelobe baseline; derive width from 35 dBi and assumed efficiency 0.6 rather than tune LF on one snapshot",
+  "width_derivation": "q=sqrt(10^(Gm/10)/(eta*pi^2)); half_width=sqrt(1200)/q",
+  "source_report_sha256": "cadc8e21b32a0cca489205b02abb74338b411ce9d3b4610322fbda22201c0eb8",
+  "association_sha256": "05834f1ad3a10bb6078dde0557d906f68e2591068a002d6c7e6ed3e23784e24d",
+  "sample_scope": "first frame only, 66 links; nominal frequency; fixed peak across width scan",
+  "width_scan_note": "width-only sweep changes implied aperture efficiency; it is a mathematical sensitivity sweep, not all points are feasible circular apertures"
+}

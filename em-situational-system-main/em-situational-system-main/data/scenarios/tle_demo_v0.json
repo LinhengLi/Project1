@@ -1,0 +1,65 @@
+{
+  "scenario_id": "tle_demo_v0",
+  "name": "真实 TLE 卫星演示场景",
+  "epoch": "2026-06-16T12:00:00Z",
+  "time_step_sec": 10,
+  "simulation_duration_sec": 3600,
+  "constellation": {
+    "type": "tle",
+    "limit": 3,
+    "tle_text": "ISS (ZARYA)\n1 25544U 98067A   24154.51782528  .00016717  00000+0  30467-3 0  9997\n2 25544  51.6407 217.0164 0005119 118.8734 297.5770 15.50043191455022\nNOAA 15\n1 25338U 98030A   24154.47650085  .00000099  00000+0  82310-4 0  9996\n2 25338  98.5155 196.5140 0011218 197.0898 162.9871 14.26800192361274\nFENGYUN 3C\n1 39260U 13052A   24154.50817306  .00000151  00000+0  88180-4 0  9996\n2 39260  98.7480 223.7180 0012263 109.3898 250.8566 14.19550862554722"
+  },
+  "ground_stations": [
+    {
+      "id": "gs_beijing",
+      "name": "北京站",
+      "latitude": 39.9042,
+      "longitude": 116.4074,
+      "altitude_m": 50,
+      "antenna_gain_dbi": 35,
+      "visible_elevation_deg": 10
+    },
+    {
+      "id": "gs_shanghai",
+      "name": "上海站",
+      "latitude": 31.2304,
+      "longitude": 121.4737,
+      "altitude_m": 10,
+      "antenna_gain_dbi": 33,
+      "visible_elevation_deg": 10
+    },
+    {
+      "id": "gs_xian",
+      "name": "西安站",
+      "latitude": 34.3416,
+      "longitude": 108.9398,
+      "altitude_m": 400,
+      "antenna_gain_dbi": 34,
+      "visible_elevation_deg": 10
+    }
+  ],
+  "default_links": {
+    "isl_center_freq_hz": 26000000000,
+    "isl_bandwidth_hz": 500000000,
+    "isl_tx_power_dbm": 20,
+    "sgl_center_freq_hz": 14000000000,
+    "sgl_bandwidth_hz": 200000000,
+    "sgl_tx_power_dbm": 30
+  },
+  "jammers": [
+    {
+      "id": "jam_ground_fixed",
+      "name": "地面固定同频干扰",
+      "source_type": "ground_fixed",
+      "jamming_style": "co_channel",
+      "latitude": 39.5,
+      "longitude": 116.0,
+      "altitude_m": 0,
+      "tx_power_dbm": 45,
+      "center_freq_hz": 14000000000,
+      "bandwidth_hz": 50000000,
+      "antenna_gain_dbi": 12
+    }
+  ],
+  "sparse_observation_rate": 0.25
+}

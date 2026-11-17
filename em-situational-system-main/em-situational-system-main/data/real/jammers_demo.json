@@ -1,0 +1,15 @@
+﻿[
+  {
+    "id": "real_jam_ground_beijing",
+    "name": "真实导入地面干扰源样例",
+    "source_type": "ground_fixed",
+    "jamming_style": "co_channel",
+    "latitude": 39.7,
+    "longitude": 116.2,
+    "altitude_m": 0,
+    "tx_power_dbm": 42,
+    "center_freq_hz": 14000000000,
+    "bandwidth_hz": 50000000,
+    "antenna_gain_dbi": 10
+  }
+]

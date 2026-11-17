@@ -1,0 +1,118 @@
+{
+  "rows": 131760,
+  "frames": 61,
+  "receivers": 12,
+  "windows": 30,
+  "diameters": 3,
+  "elapsed_including_validation_and_io_s": 19.83737850000034,
+  "peaks": [
+    {
+      "mode": "antenna_index",
+      "diameter_m": 1.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -167.15072403409516
+    },
+    {
+      "mode": "antenna_index",
+      "diameter_m": 1.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -153.17132394737476
+    },
+    {
+      "mode": "antenna_index",
+      "diameter_m": 2.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -176.87132394737475
+    },
+    {
+      "mode": "antenna_index",
+      "diameter_m": 2.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -162.89192386065437
+    },
+    {
+      "mode": "antenna_index",
+      "diameter_m": 5.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -184.8301241208155
+    },
+    {
+      "mode": "antenna_index",
+      "diameter_m": 5.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 44,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -170.85072403409512
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 1.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -161.58372860904504
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 1.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -147.60432852232466
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 2.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -171.23191943188414
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 2.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -157.25251934516376
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 5.0,
+      "reference_bandwidth_hz": 40000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_40000",
+      "combined_dbw_m2": -179.1907196053249
+    },
+    {
+      "mode": "all_cochannel",
+      "diameter_m": 5.0,
+      "reference_bandwidth_hz": 1000000.0,
+      "frame": 60,
+      "receiver": "protected:40882:GSO-REF-OW-FCC-001",
+      "window_id": "carrier_center_0_1000000",
+      "combined_dbw_m2": -165.2113195186045
+    }
+  ]
+}

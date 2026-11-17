@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "date": "2026-11-17",
+  "server": "loopback-only Python HTTP server; HTTP 200 verified",
+  "checks": [
+    "pilot frame 0 loads aggregate results and compressed saved input",
+    "pilot jump to frame 2 shows UTC 2026-11-13T12:00:20+00:00",
+    "5m, 1MHz, OneWeb contribution selection updates EPFD and Article22 -150 reference label",
+    "OneWeb map filter shows 59 active links in pilot frame 2",
+    "pilot playback advances to final frame and stops",
+    "full dataset loads 720 frames and weighted LF 1.732%",
+    "full jump to frame 719 loads UTC 2026-11-13T13:59:50+00:00 and 1300 active links",
+    "desktop screenshot inspected for controls, metrics, spatial view and EPFD table",
+    "JavaScript syntax validated with node --check"
+  ],
+  "limits": "No mobile viewport or cross-browser coverage claimed. Spatial map is a longitude/latitude schematic, not a 3D globe."
+}

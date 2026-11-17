@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "JammerSource",
+  "type": "object",
+  "required": ["id", "source_type", "jamming_style"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "source_type": {
+      "enum": ["ground_fixed", "ground_mobile", "airborne", "shipborne", "space_noncoop", "natural"]
+    },
+    "jamming_style": {
+      "enum": [
+        "co_channel", "adjacent_channel", "barrage", "narrowband_spot",
+        "sweep", "pulse", "deceptive", "noise", "burst_collision"
+      ]
+    },
+    "latitude": { "type": "number" },
+    "longitude": { "type": "number" },
+    "altitude_m": { "type": "number" },
+    "tx_power_dbm": { "type": "number" },
+    "center_freq_hz": { "type": "number" },
+    "bandwidth_hz": { "type": "number" },
+    "antenna_gain_dbi": { "type": "number" },
+    "active_start": { "type": "string", "format": "date-time" },
+    "active_end": { "type": "string", "format": "date-time" },
+    "trajectory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time": { "type": "string" },
+          "latitude": { "type": "number" },
+          "longitude": { "type": "number" },
+          "altitude_m": { "type": "number" }
+        }
+      }
+    }
+  }
+}

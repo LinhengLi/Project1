@@ -1,0 +1,3 @@
+# Preserve exact research inputs and frozen-result hashes on every platform.
+# Text and binary files are archived byte-for-byte without newline conversion.
+* -text

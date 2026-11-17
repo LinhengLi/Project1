@@ -1,0 +1,27 @@
+{
+  "javascript_syntax": "passed",
+  "local_links": [
+    {
+      "file": "可视化页面\\课题故事与期刊调研_20261117\\index.html",
+      "local_links": 5,
+      "missing": []
+    },
+    {
+      "file": "周报素材\\20261118_V1_5首帧分频扫描\\课题故事与期刊调研.html",
+      "local_links": 5,
+      "missing": []
+    }
+  ],
+  "browser_checks": [
+    "story rendered",
+    "journal conditional filter shows 2",
+    "budget Home: 1 / 0.91s / 19 failed",
+    "budget End: 201 / 181.17s",
+    "speech and copy control present",
+    "concept illustration controls update",
+    "narrow viewport: no document horizontal overflow"
+  ],
+  "external_runtime_assets": 0,
+  "print_dialog": "not invoked",
+  "scientific_baselines_modified": false
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Satellite",
+  "type": "object",
+  "required": ["id", "name", "tle_line1", "tle_line2"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "tle_line1": { "type": "string" },
+    "tle_line2": { "type": "string" },
+    "orbit_plane": { "type": "integer" }
+  }
+}

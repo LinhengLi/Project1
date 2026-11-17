@@ -1,0 +1,30 @@
+{
+  "version": "feeder_physics_v1_3_10min",
+  "frames": 61,
+  "active_min": 59,
+  "active_max": 72,
+  "association_sha256": "05834f1ad3a10bb6078dde0557d906f68e2591068a002d6c7e6ed3e23784e24d",
+  "profile_sha256": "5a5f6c04464b87046c866bf028970b93e33a0bdb541e604d57ac9d8e844c7b96",
+  "elapsed_seconds": 32.37895910000225,
+  "frequency_policy": "8 centers 17.85..18.55 GHz; column uses source carrier; ideal zero interchannel leakage; all-cochannel diagnostic uses channel0=17.85GHz",
+  "tx_policy": "35dBi and selected angular reference pattern held constant over band; not fixed-aperture frequency scaling; RX physical diameter fixed, q and FSPL frequency dependent",
+  "sensitivity_policy": "eta .4/.6/.8 induces reference widths at fixed peak; four sidelobe levels; same-operator normalized research parameters; not measured equipment",
+  "modes": {
+    "all_cochannel": {
+      "baseline_lf_min": 0.78125,
+      "baseline_lf_max": 0.9393939393939394,
+      "baseline_sample_weighted_lf": 0.8493253373313343,
+      "sensitivity_lf_min": 0.7049180327868853,
+      "sensitivity_lf_max": 0.9722222222222222,
+      "frequency_changed_lf_frames": 18
+    },
+    "antenna_index": {
+      "baseline_lf_min": 0.014705882352941176,
+      "baseline_lf_max": 0.10606060606060606,
+      "baseline_sample_weighted_lf": 0.04522738630684658,
+      "sensitivity_lf_min": 0.0,
+      "sensitivity_lf_max": 0.11594202898550725,
+      "frequency_changed_lf_frames": 4
+    }
+  }
+}

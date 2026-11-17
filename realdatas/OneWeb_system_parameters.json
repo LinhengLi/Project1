@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "config_date": "2026-11-14",
+  "system_id": "ONEWEB_GEN1",
+  "system_name": "OneWeb First Generation",
+  "operator": "Eutelsat OneWeb",
+  "orbit_type": "NGSO_LEO",
+  "simulation_role": [
+    "desired_ngso_feeder_downlink",
+    "ngso_interferer",
+    "gso_interferer"
+  ],
+  "include_system_in_simulation": true,
+  "study": {
+    "study_purpose": "异构NGSO-GSO下行馈电链路干扰管理；以NGSO馈电链路LF Rate为主要性能指标",
+    "evaluation_metrics": [
+      "ngso_feeder_lf_rate",
+      "execution_time_ms",
+      "frequency_switching_rate",
+      "gso_protection_compliance"
+    ],
+    "study_downlink_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_band_choice_status": "研究场景选择；并不意味着每颗卫星在每个时隙实际使用全部频段",
+    "traffic_model_included": false,
+    "user_link_qos_model_included": false
+  },
+  "inventory": {
+    "original_nominal_constellation_count": 648,
+    "original_core_12x49_count": 588,
+    "modified_US_market_access_maximum": 716,
+    "modified_authorization_note": "FCC DA 23-362: 12 x 49 @87.9° + 8 x 16 @55° = 716；这是授权上限，非在轨数。",
+    "confirmed_active_satellite_count_on_config_date": null,
+    "orbit_catalog_complete": false,
+    "orbit_catalog_downloaded_into_this_file": false,
+    "sample_satellite_count": 6
+  },
+  "authorized_orbital_shells": [
+    {
+      "shell_id": "OW-87.9",
+      "planned_satellites": 588,
+      "altitude_km": 1200,
+      "inclination_deg": 87.9,
+      "orbital_planes": 12,
+      "satellites_per_plane": 49
+    },
+    {
+      "shell_id": "OW-55.0",
+      "planned_satellites": 128,
+      "altitude_km": 1200,
+      "inclination_deg": 55.0,
+      "orbital_planes": 8,
+      "satellites_per_plane": 16,
+      "note": "FCC修改许可的一部分；纳入运营仿真前必须核实实际部署"
+    }
+  ],
+  "satellite_orbit_source": {
+    "provider": "CelesTrak NORAD GP/OMM",
+    "format": "CCSDS OMM JSON",
+    "download_url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=ONEWEB&FORMAT=JSON",
+    "query_method": "采用GROUP=ONEWEB后检查EPOCH和当前轨道；不能直接把授权的55°轨道壳当成已部署在轨",
+    "sgp4_orbit_epoch_use": "从每个卫星OMM的EPOCH字段读取",
+    "current_omm_records_embedded": false,
+    "refresh_before_simulation": true
+  },
+  "sample_satellites": [
+    {
+      "name": "ONEWEB-0012",
+      "norad_cat_id": 44057,
+      "international_designator": "2019-010A",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.92,
+      "altitude_km_snapshot_approx": 1198,
+      "include_in_simulation": false
+    },
+    {
+      "name": "ONEWEB-0010",
+      "norad_cat_id": 44058,
+      "international_designator": "2019-010B",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.92,
+      "altitude_km_snapshot_approx": 1198,
+      "include_in_simulation": false
+    },
+    {
+      "name": "ONEWEB-0008",
+      "norad_cat_id": 44059,
+      "international_designator": "2019-010C",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.92,
+      "altitude_km_snapshot_approx": 1198,
+      "include_in_simulation": false
+    },
+    {
+      "name": "ONEWEB-0007",
+      "norad_cat_id": 44060,
+      "international_designator": "2019-010D",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.91,
+      "altitude_km_snapshot_approx": 1202,
+      "include_in_simulation": false
+    },
+    {
+      "name": "ONEWEB-0006",
+      "norad_cat_id": 44061,
+      "international_designator": "2019-010E",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.91,
+      "altitude_km_snapshot_approx": 1202,
+      "include_in_simulation": false
+    },
+    {
+      "name": "ONEWEB-0011",
+      "norad_cat_id": 44062,
+      "international_designator": "2019-010F",
+      "generation": "Gen1",
+      "inclination_deg_snapshot": 87.91,
+      "altitude_km_snapshot_approx": 1202,
+      "include_in_simulation": false
+    }
+  ],
+  "frequency_plan": {
+    "direction": "space_to_Earth",
+    "link_type": "feeder_downlink",
+    "publicly_reported_feeder_bands_ghz": [
+      [
+        17.8,
+        18.6
+      ],
+      [
+        18.8,
+        19.3
+      ]
+    ],
+    "study_selected_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_carrier_frequency_ghz": 18.2,
+    "study_carrier_frequency_status": "仿真假设：与Starlink Gen1统一的研究频点",
+    "study_total_bandwidth_mhz": 800.0,
+    "study_total_bandwidth_status": "共同带宽的建模假设，非OneWeb实际使用的单个载波带宽",
+    "subchannel_count": null,
+    "subchannel_bandwidth_mhz": null,
+    "subchannel_policy": "与Starlink统一资源池需要先声明跨运营商集中协调/共享许可假设",
+    "authorization_not_real_time_use": true
+  },
+  "satellite_transmitter": {
+    "actual_tx_power_dbw": null,
+    "actual_peak_antenna_gain_dbi": null,
+    "simulation_initial_tx_power_dbw": 12.0,
+    "simulation_initial_peak_gain_dbi": 35.0,
+    "initial_values_status": "暂采用统一论文Table I参数做可控基准实验，非OneWeb真实参数，敏感性分析必须覆盖差异",
+    "antenna_pattern_approximation": "ITU-R S.1528，参考形状而非OneWeb实际波束图"
+  },
+  "gateway_receiver": {
+    "actual_station_count": null,
+    "actual_site_list": [],
+    "actual_antennas_per_station": null,
+    "study_station_locations_source": "待给出OneWeb独立地面站或自定义站点，不能直接复用Starlink运营网关事实",
+    "simulation_initial_gateway_peak_gain_dbi": 45.76,
+    "simulation_initial_receiver_noise_temp_k": 398,
+    "simulation_initial_elevation_threshold_deg": 40,
+    "initial_values_status": "跨系统对照实验使用的统一假设；并非OneWeb公开实测值",
+    "antenna_pattern_approximation": "ITU-R S.1428-1"
+  },
+  "interference_model": {
+    "desired_signal_model": "P_tx * G_satellite(theta_tx) * G_gateway(theta_rx) / (4*pi*d/lambda)^2",
+    "aggregate_interference_model": "sum(I_interferer_to_victim_receiver for active_cochannel_interferers)",
+    "noise_model": "N = k_B * T_noise * subchannel_bandwidth_hz",
+    "link_failure_rule": "aggregate_I_over_N_dB > I_N_threshold_dB",
+    "target_metric": "LF_rate = failed_active_NGSO_feeder_links / all_active_NGSO_feeder_links"
+  },
+  "protection_and_evaluation": {
+    "ngso_feeder_link_lf_threshold_db": -12.2,
+    "threshold_provenance": "论文用于LF判定的参考门限，跨星座情景适用性待按相应ITU-R/协调规则核实",
+    "coexistence_constraint": "ITU Radio Regulations Article 22 EPFD-down（适用17.8–18.6 GHz），按ITU-R S.1503进行适用的时间统计验证",
+    "EPFD_limit_value_dBW_per_m2_per_reference_band": null,
+    "EPFD_limit_value_status": "尚未从Article 22表按GSO地球站参考天线/时间百分比/带宽选定；禁止填入随意数值",
+    "source": "https://www.itu.int/epfdsupport/questions/"
+  },
+  "sources": [
+    {
+      "type": "regulatory",
+      "url": "https://docs.fcc.gov/public/attachments/DA-23-362A1_Rcd.pdf",
+      "detail": "最多716颗许可/轨道面结构"
+    },
+    {
+      "type": "frequency_review",
+      "url": "https://www.nsma.org/wp-content/uploads/6.-Satellite-Mega-Constellations.pdf",
+      "detail": "OneWeb feeder downlink频段"
+    },
+    {
+      "type": "catalog",
+      "url": "https://celestrak.org/norad/elements/table.php?FORMAT=2le&GROUP=oneweb",
+      "detail": "样本NORAD ID与轨道快照"
+    },
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2505.12429",
+      "detail": "模型迁移所用参考参数"
+    }
+  ],
+  "readiness": "PARAMETER_TEMPLATE_ONLY; requires full fresh OMM, site geometry, and validated OneWeb RF values/assumptions"
+}

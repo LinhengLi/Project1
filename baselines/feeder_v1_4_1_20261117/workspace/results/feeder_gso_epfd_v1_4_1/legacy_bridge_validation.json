@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "antenna_index",
+    "first_frame_full_carrier_bridge": "PASS",
+    "rtol": 1e-10,
+    "atol": 0
+  },
+  {
+    "mode": "all_cochannel",
+    "first_frame_full_carrier_bridge": "PASS",
+    "rtol": 1e-10,
+    "atol": 0
+  }
+]

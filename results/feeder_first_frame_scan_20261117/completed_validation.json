@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "unique_valid_assignments": 201,
+  "channel_shape": [
+    201,
+    1250
+  ],
+  "ngso_failure_counts_reconstructed": true,
+  "all_gso_system_sums_valid": true,
+  "baseline_all_epfd_peaks_match_frozen": true,
+  "scalar_witness_margins_db": [
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326,
+    18.565628333335326
+  ],
+  "all_candidates_infeasible": true
+}

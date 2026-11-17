@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "config_date": "2026-11-14",
+  "system_id": "GSO_PROTECTED_EXAMPLE",
+  "system_name": "GSO FSS protected systems (SES-17 seed)",
+  "operator": "Multiple GSO FSS operators; seed satellite operated by SES",
+  "orbit_type": "GSO_GEO_REFERENCE",
+  "simulation_role": [
+    "protected_gso_earth_station",
+    "gso_downlink_interferer_if_spectrum_and_beam_overlap"
+  ],
+  "include_system_in_simulation": true,
+  "study": {
+    "study_purpose": "异构NGSO-GSO下行馈电链路干扰管理；以NGSO馈电链路LF Rate为主要性能指标",
+    "evaluation_metrics": [
+      "ngso_feeder_lf_rate",
+      "execution_time_ms",
+      "frequency_switching_rate",
+      "gso_protection_compliance"
+    ],
+    "study_downlink_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_band_choice_status": "研究场景选择；并不意味着每颗卫星在每个时隙实际使用全部频段",
+    "traffic_model_included": false,
+    "user_link_qos_model_included": false
+  },
+  "inventory": {
+    "global_gso_satellite_count": null,
+    "nominal_reference_geostationary_satellites_selected": 1,
+    "actual_gso_fss_frequency_matched_satellite_count": null,
+    "selection_note": "GSO是轨道类别，不是统一星座；只按研究区域、频率及受保护地球站选择有效系统",
+    "orbit_catalog_complete": false,
+    "orbit_catalog_downloaded_into_this_file": false,
+    "sample_satellite_count": 1
+  },
+  "satellite_orbit_source": {
+    "provider": "CelesTrak GP/OMM + SES ephemeris",
+    "format": "CCSDS OMM JSON",
+    "download_url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=GEO&FORMAT=JSON",
+    "alternative_operator_ephemeris_url": "https://www.ses.com/network-and-technology/technical-data-and-tools/satellite-orbital-data",
+    "query_method": "从活跃GEO目录按运营商/轨位/频段筛选，不能将全部GEO当作Ka频段同频对象",
+    "sgp4_orbit_epoch_use": "从OMM EPOCH字段读取；可对固定轨位模型作简化",
+    "current_omm_records_embedded": false,
+    "refresh_before_simulation": true
+  },
+  "sample_satellites": [
+    {
+      "name": "SES-17",
+      "norad_cat_id": 49332,
+      "international_designator": "2021-095A",
+      "operator": "SES",
+      "orbit_regime": "GEO",
+      "nominal_geostationary_longitude_deg": -67.1,
+      "altitude_km_reference_approx": 35786.0,
+      "inclination_deg_snapshot_approx": 0.04,
+      "downlink_fss_bands_ghz_from_fcc": [
+        [
+          17.3,
+          19.4
+        ],
+        [
+          19.6,
+          20.2
+        ]
+      ],
+      "overlaps_study_band_17_8_to_18_6": true,
+      "actual_beam_usage_and_geography_known": false,
+      "protected_earth_station_site": null,
+      "include_in_simulation": false,
+      "include_condition": "须设定具体受保护GSO地面站位置和受保护波束/频点"
+    }
+  ],
+  "frequency_plan": {
+    "direction": "space_to_Earth",
+    "link_type": "GSO_FSS_downlink",
+    "verified_example_fss_downlink_bands_ghz": [
+      [
+        17.3,
+        19.4
+      ],
+      [
+        19.6,
+        20.2
+      ]
+    ],
+    "study_selected_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_carrier_frequency_ghz": 18.2,
+    "study_carrier_frequency_status": "仿真中心频点，不代表SES-17实际波束中心频率",
+    "actual_transponder_carrier_assignments_ghz": null,
+    "spectrum_overlap_with_ngso": true
+  },
+  "gso_satellite_transmitter": {
+    "actual_tx_power_dbw": null,
+    "actual_peak_antenna_gain_dbi": null,
+    "simulation_initial_tx_power_dbw": null,
+    "simulation_initial_peak_gain_dbi": null,
+    "antenna_pattern_reference": null,
+    "reason": "不可以直接套用NGSO卫星S.1528或论文12dBW/35dBi；须针对选定GSO卫星/波束建模"
+  },
+  "protected_gso_earth_station": {
+    "site_id": null,
+    "latitude_deg": null,
+    "longitude_deg": null,
+    "altitude_m": null,
+    "antenna_diameter_m": null,
+    "antenna_peak_gain_dbi": null,
+    "antenna_pattern_reference": "ITU-R S.1428-1 or Article22-specific reference pattern depending on EPFD scenario",
+    "noise_temperature_k": null,
+    "actual_vs_itu_reference": "未指定；需要明确使用实际FSS站还是ITU Article22参考站"
+  },
+  "interference_model": {
+    "interference_directions": [
+      "NGSO_to_protected_GSO_earth_station",
+      "GSO_satellite_to_NGSO_gateway_if_cochannel"
+    ],
+    "ngso_to_gso_metric": "EPFD_down statistical protection, not simply the NGSO feeder LF(I/N) rule",
+    "gso_to_ngso_metric": "cochannel aggregate_I_over_N of NGSO feeder links, if GSO beam illuminates the gateway",
+    "not_in_ngso_lf_denominator": true,
+    "gso_link_loss_or_victim_specific_metric": null
+  },
+  "protection_and_evaluation": {
+    "ngso_feeder_link_lf_threshold_db": -12.2,
+    "threshold_provenance": "论文用于LF判定的参考门限，跨星座情景适用性待按相应ITU-R/协调规则核实",
+    "coexistence_constraint": "ITU Radio Regulations Article 22 EPFD-down（适用17.8–18.6 GHz），按ITU-R S.1503进行适用的时间统计验证",
+    "EPFD_limit_value_dBW_per_m2_per_reference_band": null,
+    "EPFD_limit_value_status": "尚未从Article 22表按GSO地球站参考天线/时间百分比/带宽选定；禁止填入随意数值",
+    "source": "https://www.itu.int/epfdsupport/questions/",
+    "protected_receiver": "GSO FSS earth station",
+    "Article22_17_8_18_6_GHz_applicability_confirmed": true,
+    "ITU_R_S1503_methods": "需要按保护时间百分比、参考天线、带宽、系统逐个验证",
+    "constraint_in_optimization": "初步可设计保守代理约束；法规合规结论需完整EPFD统计验证"
+  },
+  "sources": [
+    {
+      "type": "regulatory",
+      "url": "https://docs.fcc.gov/public/attachments/DA-20-519A1.pdf",
+      "detail": "SES-17在67.1°W，17.3–19.4/19.6–20.2 GHz空间到地球FSS"
+    },
+    {
+      "type": "catalog",
+      "url": "https://celestrak.org/Norad/elements/table-geo.php?FORMAT=csv",
+      "detail": "SES-17 NORAD 49332，67.1°W"
+    },
+    {
+      "type": "operator",
+      "url": "https://www.ses.com/network-and-technology/technical-data-and-tools/satellite-orbital-data",
+      "detail": "SES官方GEO轨道历表"
+    },
+    {
+      "type": "itu",
+      "url": "https://www.itu.int/epfdsupport/questions/",
+      "detail": "17.8–18.6 GHz EPFD适用性及S.1503参考"
+    }
+  ],
+  "readiness": "PROTECTED_SYSTEM_TEMPLATE_ONLY; GSO earth-station geometry and Article22 EPFD limits/statistics are not yet specified"
+}

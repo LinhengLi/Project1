@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "unique_assignments": 201,
+  "all_station_channels_without_repetition": true,
+  "baseline_failed_and_in_matches_frozen": true,
+  "gso_shape": [
+    201,
+    3,
+    12,
+    30,
+    3
+  ],
+  "maxima_finite": true
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GroundStation",
+  "type": "object",
+  "required": ["id", "name", "latitude", "longitude", "altitude_m"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "latitude": { "type": "number" },
+    "longitude": { "type": "number" },
+    "altitude_m": { "type": "number", "default": 0 },
+    "antenna_gain_dbi": { "type": "number", "default": 30 },
+    "visible_elevation_deg": { "type": "number", "default": 10 }
+  }
+}

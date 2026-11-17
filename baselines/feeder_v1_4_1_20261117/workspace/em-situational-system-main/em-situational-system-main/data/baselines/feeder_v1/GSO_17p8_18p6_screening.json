@@ -1,0 +1,3688 @@
+{
+  "review_date": "2026-11-15",
+  "study_band_ghz": [
+    17.8,
+    18.6
+  ],
+  "catalog_count": 568,
+  "candidate_count": 12,
+  "scope": "Initial evidence-backed subset, not an exhaustive global frequency screening. Unselected does not mean out of band.",
+  "records": [
+    {
+      "norad_cat_id": 19548,
+      "name": "TDRS 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 20253,
+      "name": "FLTSATCOM 8 (USA 46)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 21639,
+      "name": "TDRS 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 22314,
+      "name": "TDRS 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 22787,
+      "name": "UFO 2 (USA 95)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 23467,
+      "name": "UFO 4 (USA 108)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 23613,
+      "name": "TDRS 7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 23712,
+      "name": "USA 115 (MILSTAR-1 2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 23839,
+      "name": "INMARSAT 3-F1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 24307,
+      "name": "INMARSAT 3-F2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 24674,
+      "name": "INMARSAT 3-F3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 25019,
+      "name": "USA 134",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 25153,
+      "name": "INMARSAT 3-F5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 25924,
+      "name": "ABS-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 25967,
+      "name": "UFO 10 (USA 146)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26107,
+      "name": "ASIASTAR",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26356,
+      "name": "USA 149 (DSP 20)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26388,
+      "name": "TDRS 8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26554,
+      "name": "NSS-11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26575,
+      "name": "USA 153",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26580,
+      "name": "AMC-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26715,
+      "name": "USA 157 (MILSTAR-2 2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 26900,
+      "name": "INTELSAT 902 (IS-902)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27168,
+      "name": "USA 164 (MILSTAR-2 3)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27380,
+      "name": "INTELSAT 904 (IS-904)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27426,
+      "name": "DIRECTV 5 (TEMPO 1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27438,
+      "name": "INTELSAT 905 (IS-905)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27445,
+      "name": "GALAXY 3C (G-3C)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27513,
+      "name": "INTELSAT 906 (IS-906)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27632,
+      "name": "NIMIQ 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27691,
+      "name": "USA 167",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27711,
+      "name": "USA 169 (MILSTAR-2 4)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27718,
+      "name": "ASIASAT 4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27811,
+      "name": "HELLAS-SAT 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27825,
+      "name": "THURAYA-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27831,
+      "name": "OPTUS C1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27875,
+      "name": "USA 170",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 27954,
+      "name": "GALAXY 13 (HORIZONS-1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28089,
+      "name": "YAMAL 202",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28117,
+      "name": "UFO 11 (USA 174)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28158,
+      "name": "USA 176 (DSP 22)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28184,
+      "name": "ABS-4 (MOBISAT-1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28358,
+      "name": "INTELSAT 10-02",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28378,
+      "name": "ANIK F2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28446,
+      "name": "AMC-15",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28526,
+      "name": "NSS-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28628,
+      "name": "INMARSAT 4-F1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28659,
+      "name": "DIRECTV 8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28702,
+      "name": "GALAXY 28 (G-28)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28786,
+      "name": "THAICOM 4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28868,
+      "name": "ANIK F1R",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28885,
+      "name": "SYRACUSE 3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28899,
+      "name": "INMARSAT 4-F2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28912,
+      "name": "METEOSAT-9 (MSG-2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28924,
+      "name": "EUTELSAT 174A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28935,
+      "name": "ECHOSTAR 10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 28945,
+      "name": "SPAINSAT",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29045,
+      "name": "JCSAT-5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29055,
+      "name": "ASTRA 1KR",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29236,
+      "name": "GALAXY 16 (G-16)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29270,
+      "name": "EUTELSAT 33F",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29272,
+      "name": "JCSAT-3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29349,
+      "name": "KOREASAT 5 (MUGUNGWHA 5)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29494,
+      "name": "DIRECTV 9S",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29495,
+      "name": "OPTUS D1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 29526,
+      "name": "BADR-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 30794,
+      "name": "SKYNET 5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 31102,
+      "name": "ANIK F3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 31306,
+      "name": "ASTRA 1L",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 31307,
+      "name": "GALAXY 17 (G-17)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32253,
+      "name": "INTELSAT 11 (IS-11)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32258,
+      "name": "WGS F1 (USA 195)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32294,
+      "name": "SKYNET 5B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32299,
+      "name": "ASTRA 4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32388,
+      "name": "HORIZONS-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32404,
+      "name": "THURAYA-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32487,
+      "name": "THOR 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32708,
+      "name": "AMC-14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32729,
+      "name": "DIRECTV 11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32763,
+      "name": "ICO G1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32767,
+      "name": "VINASAT-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32768,
+      "name": "STAR ONE C2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32794,
+      "name": "AMOS-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 32951,
+      "name": "GALAXY 18 (G-18)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33051,
+      "name": "ZHONGXING-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33055,
+      "name": "SKYNET 5C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33056,
+      "name": "TURKSAT 3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33207,
+      "name": "ECHOSTAR 11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33274,
+      "name": "SUPERBIRD-C2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33278,
+      "name": "INMARSAT 4-F3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33373,
+      "name": "NIMIQ 4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33376,
+      "name": "GALAXY 19 (G-19)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33436,
+      "name": "ASTRA 1M",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33459,
+      "name": "EUTELSAT HOTBIRD 13C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33595,
+      "name": "EXPRESS-AM44",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 33749,
+      "name": "NSS-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 34111,
+      "name": "TELSTAR 11N",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 34713,
+      "name": "WGS F2 (USA 204)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 34941,
+      "name": "SES-7 (PROTOSTAR 2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35362,
+      "name": "MEASAT-3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35491,
+      "name": "EWS-G3 (GOES 14)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35493,
+      "name": "FM-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35496,
+      "name": "TERRESTAR-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35696,
+      "name": "ASIASAT 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35755,
+      "name": "JCSAT-12 (JCSAT-RA)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35756,
+      "name": "OPTUS D3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35873,
+      "name": "NIMIQ 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35942,
+      "name": "AMAZONAS 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 35943,
+      "name": "COMSATBW-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36032,
+      "name": "NSS-12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36033,
+      "name": "THOR 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36097,
+      "name": "INTELSAT 14 (IS-14)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36101,
+      "name": "EUTELSAT 36B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36106,
+      "name": "INTELSAT 15 (IS-15)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36108,
+      "name": "WGS F3 (USA 211)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36131,
+      "name": "DIRECTV 12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36287,
+      "name": "BEIDOU-2 G1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36395,
+      "name": "SDO",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36397,
+      "name": "INTELSAT 16 (IS-16)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36411,
+      "name": "EWS-G2 (GOES 15)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36499,
+      "name": "ECHOSTAR 14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36516,
+      "name": "SES-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36581,
+      "name": "ASTRA 3B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36582,
+      "name": "COMSATBW-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36590,
+      "name": "BEIDOU-2 G3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36592,
+      "name": "BADR-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36745,
+      "name": "ARABSAT-5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36792,
+      "name": "ECHOSTAR 15",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36828,
+      "name": "BEIDOU-2 IGSO-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36830,
+      "name": "NILESAT 201",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36831,
+      "name": "RASCOM-QAF 1R",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 36868,
+      "name": "AEHF-1 (USA 214)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37185,
+      "name": "XM-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37207,
+      "name": "BSAT-3B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37210,
+      "name": "BEIDOU-2 G4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37218,
+      "name": "SKYTERRA 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37237,
+      "name": "HYLAS 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37238,
+      "name": "INTELSAT 17 (IS-17)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37256,
+      "name": "BEIDOU-2 IGSO-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37258,
+      "name": "EUTELSAT KA-SAT 9A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37264,
+      "name": "HISPASAT 30W-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37265,
+      "name": "KOREASAT 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37384,
+      "name": "BEIDOU-2 IGSO-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37392,
+      "name": "INTELSAT 28 (IS-28)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37393,
+      "name": "YAHSAT 1A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37481,
+      "name": "SBIRS GEO-1 (USA 230)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37605,
+      "name": "GSAT-8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37606,
+      "name": "ST-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37677,
+      "name": "ZHONGXING-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37748,
+      "name": "SES-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37749,
+      "name": "KAZSAT-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37763,
+      "name": "BEIDOU-2 IGSO-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37775,
+      "name": "ASTRA 1N",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37776,
+      "name": "BSAT-3C (JCSAT-110R)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37809,
+      "name": "SES-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37810,
+      "name": "ARABSAT-5C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37816,
+      "name": "EUTELSAT 7 WEST A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37826,
+      "name": "QUETZSAT 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37834,
+      "name": "INTELSAT 18 (IS-18)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37836,
+      "name": "EUTELSAT 16A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37843,
+      "name": "VIASAT-1",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "ViaSat-1",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          19.3
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 37933,
+      "name": "ASIASAT 7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37948,
+      "name": "BEIDOU-2 IGSO-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 37951,
+      "name": "LUCH-5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38014,
+      "name": "NIGCOMSAT 1R",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38070,
+      "name": "WGS F4 (USA 233)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38087,
+      "name": "SES-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38091,
+      "name": "BEIDOU-2 G5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38093,
+      "name": "MUOS-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38098,
+      "name": "INTELSAT 22 (IS-22)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38107,
+      "name": "APSTAR-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38245,
+      "name": "YAHSAT 1B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38254,
+      "name": "AEHF-2 (USA 235)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38331,
+      "name": "JCSAT-13",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38332,
+      "name": "VINASAT-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38342,
+      "name": "NIMIQ 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38352,
+      "name": "ZHONGXING-2A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38356,
+      "name": "INTELSAT 19 (IS-19)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38551,
+      "name": "ECHOSTAR 17",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "EchoStar XVII",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 38552,
+      "name": "METEOSAT-10 (MSG-3)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38652,
+      "name": "SES-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38740,
+      "name": "INTELSAT 20 (IS-20)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38741,
+      "name": "HYLAS 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38749,
+      "name": "INTELSAT 21 (IS-21)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38778,
+      "name": "ASTRA 2F",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38779,
+      "name": "GSAT-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38867,
+      "name": "INTELSAT 23 (IS-23)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38953,
+      "name": "BEIDOU-2 G6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38977,
+      "name": "LUCH-5B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38978,
+      "name": "YAMAL 300K",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38991,
+      "name": "STAR ONE C3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 38992,
+      "name": "EUTELSAT 21B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39008,
+      "name": "ECHOSTAR 16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39017,
+      "name": "ZHONGXING-12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39020,
+      "name": "EUTELSAT 70B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39022,
+      "name": "YAMAL 402",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39034,
+      "name": "SKYNET 5D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39035,
+      "name": "MEXSAT 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39070,
+      "name": "TDRS 11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39078,
+      "name": "AMAZONAS 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39079,
+      "name": "AZERSPACE 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39120,
+      "name": "SBIRS GEO-2 (USA 241)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39122,
+      "name": "EUTELSAT 117 WEST A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39127,
+      "name": "ANIK G1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39157,
+      "name": "ZHONGXING-11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39163,
+      "name": "EUTELSAT 7B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39168,
+      "name": "WGS F5 (USA 243)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39172,
+      "name": "SES-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39199,
+      "name": "IRNSS-1A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39206,
+      "name": "MUOS-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39215,
+      "name": "ALPHASAT",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39216,
+      "name": "INSAT-3D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39222,
+      "name": "WGS F6 (USA 244)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39233,
+      "name": "ES'HAIL 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39234,
+      "name": "GSAT-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39237,
+      "name": "AMOS-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39256,
+      "name": "AEHF-3 (USA 246)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39285,
+      "name": "ASTRA 2E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39360,
+      "name": "FM-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39375,
+      "name": "RADUGA-1M 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39460,
+      "name": "SES-8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39476,
+      "name": "INMARSAT 5-F1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39481,
+      "name": "TKSAT-1 (TUPAC KATARI)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39487,
+      "name": "EXPRESS-AM5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39498,
+      "name": "GSAT-14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39500,
+      "name": "THAICOM 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39504,
+      "name": "TDRS 12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39508,
+      "name": "ABS-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39509,
+      "name": "ATHENA-FIDUS",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39522,
+      "name": "TURKSAT 4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39612,
+      "name": "EXPRESS-AT1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39613,
+      "name": "EXPRESS-AT2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39616,
+      "name": "AMAZONAS 4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39617,
+      "name": "ASTRA 5B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39635,
+      "name": "IRNSS-1B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39727,
+      "name": "LUCH-5V",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39728,
+      "name": "KAZSAT-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 39773,
+      "name": "EUTELSAT 3B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40107,
+      "name": "ASIASAT 8 (AMOS-7)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40141,
+      "name": "ASIASAT 6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40146,
+      "name": "OPTUS 10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40147,
+      "name": "MEASAT-3B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40267,
+      "name": "HIMAWARI-8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40269,
+      "name": "IRNSS-1C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40271,
+      "name": "INTELSAT 30 (IS-30)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40272,
+      "name": "ARSAT 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40277,
+      "name": "EUTELSAT 53A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40332,
+      "name": "GSAT-16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40333,
+      "name": "DIRECTV 14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40345,
+      "name": "YAMAL 401",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40364,
+      "name": "ASTRA 2G",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40367,
+      "name": "FENGYUN 2G",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40374,
+      "name": "MUOS-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40384,
+      "name": "INMARSAT 5-F2",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "Inmarsat-5 F2",
+      "source_downlink_intervals_ghz": [
+        [
+          17.7,
+          20.2
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          17.8,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 40424,
+      "name": "ABS-3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40425,
+      "name": "EUTELSAT 115 WEST B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40505,
+      "name": "EXPRESS-AM7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40549,
+      "name": "BEIDOU-3S IGSO-1S",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40613,
+      "name": "THOR 7",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "THOR 7",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          20.2
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 40617,
+      "name": "TURKMENALEM52E/MONACOSAT",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40663,
+      "name": "DIRECTV 15",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40664,
+      "name": "SKY MEXICO-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40732,
+      "name": "METEOSAT-11 (MSG-4)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40733,
+      "name": "STAR ONE C4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40746,
+      "name": "WGS F7 (USA 263)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40874,
+      "name": "INTELSAT 34 (IS-34)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40875,
+      "name": "EUTELSAT 8 WEST B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40880,
+      "name": "GSAT-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40882,
+      "name": "INMARSAT 5-F3",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "Inmarsat-5 F3",
+      "source_downlink_intervals_ghz": [
+        [
+          17.7,
+          20.2
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          17.8,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 40887,
+      "name": "MUOS-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40892,
+      "name": "TJS-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40895,
+      "name": "EXPRESS-AM8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40938,
+      "name": "BEIDOU-3S IGSO-2S",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40940,
+      "name": "SKY MUSTER 1 (NBN1A)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40941,
+      "name": "ARSAT 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40946,
+      "name": "MORELOS 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40982,
+      "name": "APSTAR-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 40984,
+      "name": "TURKSAT 4B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41021,
+      "name": "ZHONGXING-2C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41028,
+      "name": "GSAT-15",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41029,
+      "name": "BADR-7 (ARABSAT-6B)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41034,
+      "name": "LAOSAT 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41036,
+      "name": "TELSTAR 12V",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41105,
+      "name": "ELEKTRO-L 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41121,
+      "name": "COSMOS 2513",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41191,
+      "name": "EXPRESS-AMU1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41194,
+      "name": "GAOFEN-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41238,
+      "name": "BELINTERSAT-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41241,
+      "name": "IRNSS-1E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41310,
+      "name": "EUTELSAT 9B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41380,
+      "name": "SES-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41382,
+      "name": "EUTELSAT 65 WEST A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41384,
+      "name": "IRNSS-1F",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41434,
+      "name": "BEIDOU-2 IGSO-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41469,
+      "name": "IRNSS-1G",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41471,
+      "name": "JCSAT-2B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41552,
+      "name": "THAICOM 8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41581,
+      "name": "INTELSAT 31 (IS-31)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41586,
+      "name": "BEIDOU-2 G7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41588,
+      "name": "ABS-2A (MONGOLSAT-1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41589,
+      "name": "EUTELSAT 117 WEST B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41591,
+      "name": "BRISAT",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41592,
+      "name": "ECHOSTAR 18",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41622,
+      "name": "MUOS-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41725,
+      "name": "TIANTONG-1 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41729,
+      "name": "JCSAT-16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41744,
+      "name": "USA 270",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41745,
+      "name": "USA 271",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41747,
+      "name": "INTELSAT 36 (IS-36)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41752,
+      "name": "INSAT-3DR",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41793,
+      "name": "GSAT-18",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41794,
+      "name": "SKY MUSTER 2 (NBN1B)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41836,
+      "name": "HIMAWARI-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41838,
+      "name": "SHIJIAN-17 (SJ-17)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41866,
+      "name": "GOES 16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41869,
+      "name": "TIANLIAN 1-04",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41879,
+      "name": "WGS F8 (USA 272)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41882,
+      "name": "FENGYUN 4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41893,
+      "name": "ECHOSTAR 19",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "Jupiter-2",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          19.3
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 41903,
+      "name": "JCSAT-110A (JCSAT-15)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41904,
+      "name": "STAR ONE D1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41911,
+      "name": "TJS-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41937,
+      "name": "SBIRS GEO-4 (USA 273)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41942,
+      "name": "HISPASAT 36W-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41944,
+      "name": "TELKOM 3S",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 41945,
+      "name": "INTELSAT 32E (IS-32E)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42070,
+      "name": "ECHOSTAR 23",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42075,
+      "name": "WGS F9 (USA 275)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42432,
+      "name": "SES-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42662,
+      "name": "CHINASAT 16 (SJ-13)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42691,
+      "name": "KOREASAT 7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42692,
+      "name": "SGDC",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42695,
+      "name": "GSAT-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42698,
+      "name": "INMARSAT 5-F4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42709,
+      "name": "SES-15",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "SES-15",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 42738,
+      "name": "QZS-2 (MICHIBIKI-2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42740,
+      "name": "VIASAT-2",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "ViaSat-2",
+      "source_downlink_intervals_ghz": [
+        [
+          17.7,
+          18.3
+        ],
+        [
+          18.3,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          17.8,
+          18.3
+        ],
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 42741,
+      "name": "EUTELSAT 172B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42747,
+      "name": "GSAT-19",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42749,
+      "name": "ECHOSTAR 21",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42801,
+      "name": "BULGARIASAT-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42814,
+      "name": "HELLAS-SAT 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42815,
+      "name": "GSAT-17",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42818,
+      "name": "INTELSAT 35E (IS-35E)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42907,
+      "name": "COSMOS 2520",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42915,
+      "name": "TDRS 13",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42917,
+      "name": "QZS-3 (MICHIBIKI-3)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42934,
+      "name": "AMAZONAS 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42942,
+      "name": "ASIASAT 9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42950,
+      "name": "INTELSAT 37E (IS-37E)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42951,
+      "name": "BSAT-4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42965,
+      "name": "QZS-4 (MICHIBIKI-4)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42967,
+      "name": "SES-11 (ECHOSTAR 105)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 42984,
+      "name": "KOREASAT 5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43039,
+      "name": "ALCOMSAT 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43162,
+      "name": "SBIRS GEO-3 (USA 282)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43174,
+      "name": "AL YAH 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43175,
+      "name": "SES-14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43226,
+      "name": "GOES 17",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43228,
+      "name": "HISPASAT 30W-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43271,
+      "name": "SUPERBIRD-B3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43272,
+      "name": "HYLAS 4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43286,
+      "name": "IRNSS-1I",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43339,
+      "name": "USA 283",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43432,
+      "name": "COSMOS 2526",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43450,
+      "name": "APSTAR-6C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43463,
+      "name": "BANGABANDHUSAT-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43488,
+      "name": "SES-12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43491,
+      "name": "FENGYUN 2H",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43539,
+      "name": "BEIDOU-2 IGSO-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43562,
+      "name": "TELSTAR 19V",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "TELSTAR 19V",
+      "source_downlink_intervals_ghz": [
+        [
+          17.8,
+          18.3
+        ],
+        [
+          18.3,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          17.8,
+          18.3
+        ],
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 43587,
+      "name": "TELKOM 4 (MERAH PUTIH)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43611,
+      "name": "TELSTAR 18V",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43632,
+      "name": "AZERSPACE 2 (IS-38)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43633,
+      "name": "HORIZONS-3E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43651,
+      "name": "AEHF-4 (USA 288)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43683,
+      "name": "BEIDOU-3 G1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43698,
+      "name": "GSAT-29",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43700,
+      "name": "ES'HAIL 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43823,
+      "name": "GEO-KOMPSAT-2A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43824,
+      "name": "GSAT-11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43864,
+      "name": "GSAT-7A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43867,
+      "name": "COSMOS 2533",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43874,
+      "name": "TJS-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 43920,
+      "name": "ZHONGXING-2D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44034,
+      "name": "HELLAS-SAT 4 & SGS-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44035,
+      "name": "GSAT-31",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44048,
+      "name": "NUSANTARA SATU",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44067,
+      "name": "ZHONGXING-6C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44071,
+      "name": "WGS 10 (USA 291)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44076,
+      "name": "TIANLIAN 2-01",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44186,
+      "name": "ARABSAT-6A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44204,
+      "name": "BEIDOU-3 IGSO-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44231,
+      "name": "BEIDOU-2 G8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44307,
+      "name": "YAMAL 601",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44333,
+      "name": "AT&T T-16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44334,
+      "name": "EUTELSAT 7C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44337,
+      "name": "BEIDOU-3 IGSO-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44457,
+      "name": "COSMOS 2539",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44475,
+      "name": "EDRS-C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44476,
+      "name": "INTELSAT 39 (IS-39)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44479,
+      "name": "AMOS-17",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44481,
+      "name": "AEHF-5 (USA 292)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44624,
+      "name": "EUTELSAT 5 WEST B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44625,
+      "name": "MEV-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44637,
+      "name": "TJS-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44709,
+      "name": "BEIDOU-3 IGSO-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44800,
+      "name": "TIBA-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44801,
+      "name": "INMARSAT GX5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44868,
+      "name": "JCSAT-18 (KACIFIC 1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44903,
+      "name": "ELEKTRO-L 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44910,
+      "name": "SHIJIAN-20 (SJ-20)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 44978,
+      "name": "TJS-5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45026,
+      "name": "GSAT-30",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45027,
+      "name": "EUTELSAT KONNECT",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45245,
+      "name": "JCSAT-17",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45246,
+      "name": "GEO-KOMPSAT-2B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45344,
+      "name": "BEIDOU-3 G2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45465,
+      "name": "AEHF-6 (USA 298)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45807,
+      "name": "BEIDOU-3 G3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45863,
+      "name": "APSTAR-6D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45920,
+      "name": "KOREASAT 116",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45985,
+      "name": "EXPRESS 103",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 45986,
+      "name": "EXPRESS 80",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 46112,
+      "name": "BSAT-4B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 46113,
+      "name": "MEV-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 46114,
+      "name": "GALAXY 30 (G-30)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 46610,
+      "name": "GAOFEN-13 01",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 46916,
+      "name": "TIANTONG-1 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47202,
+      "name": "LUCAS (JDRS-1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47240,
+      "name": "SXM-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47256,
+      "name": "CMS-01",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47306,
+      "name": "TURKSAT 5A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47321,
+      "name": "TIANTONG-1 3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 47613,
+      "name": "TJS-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 48618,
+      "name": "SBIRS GEO-5 (USA 315)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 48808,
+      "name": "FENGYUN 4B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 48838,
+      "name": "SXM-8",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49011,
+      "name": "TIANLIAN 1-05",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49055,
+      "name": "STAR ONE D2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49056,
+      "name": "EUTELSAT QUANTUM",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49062,
+      "name": "ZHONGXING-2E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49115,
+      "name": "TJS-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49125,
+      "name": "CHINASAT 9B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49330,
+      "name": "SHIJIAN-21 (SJ-21)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49332,
+      "name": "SES-17",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "SES-17",
+      "source_downlink_intervals_ghz": [
+        [
+          17.3,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          17.8,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 49333,
+      "name": "SYRACUSE 4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49336,
+      "name": "QZS-1R (MICHIBIKI-1R)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49505,
+      "name": "ZHONGXING-1D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 49817,
+      "name": "STPSAT-6",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50001,
+      "name": "EXPRESS AMU-7",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50002,
+      "name": "EXPRESS AMU-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50005,
+      "name": "TIANLIAN 2-02",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50212,
+      "name": "TURKSAT 5B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50319,
+      "name": "INMARSAT 6-F1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50321,
+      "name": "SHIYAN-12 01 (SY-12 01)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50322,
+      "name": "SHIYAN-12 02 (SY-12 02)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 50574,
+      "name": "TJS-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 51280,
+      "name": "USA 324",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 51281,
+      "name": "USA 325",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 51850,
+      "name": "GOES 18",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52255,
+      "name": "ZHONGXING-6D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52817,
+      "name": "NILESAT 301",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52903,
+      "name": "CMS-02 (GSAT-24)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52904,
+      "name": "MEASAT 3D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52933,
+      "name": "SES-22",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 52940,
+      "name": "WFOV (USA 332)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53100,
+      "name": "TIANLIAN 2-03",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53355,
+      "name": "SBIRS GEO-6 (USA 336)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53765,
+      "name": "EUTELSAT KONNECT VHTS",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53813,
+      "name": "ZHONGXING-1E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53960,
+      "name": "SES-20",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 53961,
+      "name": "SES-21",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54026,
+      "name": "GALAXY 33 (G-33)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54027,
+      "name": "GALAXY 34 (G-34)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54033,
+      "name": "ANGOSAT 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54048,
+      "name": "EUTELSAT HOTBIRD 13F",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54219,
+      "name": "LDPE-2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54225,
+      "name": "EUTELSAT HOTBIRD 13G",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54230,
+      "name": "ZHONGXING-19",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54243,
+      "name": "GALAXY 31 (G-31)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54244,
+      "name": "GALAXY 32 (G-32)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54259,
+      "name": "EUTELSAT 10B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54741,
+      "name": "GALAXY 35 (G-35)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54742,
+      "name": "GALAXY 36 (G-36)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 54743,
+      "name": "METEOSAT-12 (MTG-I1)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55131,
+      "name": "SHIJIAN-23 (SJ-23)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55239,
+      "name": "APSTAR-6E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55263,
+      "name": "USA 342",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55506,
+      "name": "ELEKTRO-L 4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55508,
+      "name": "AMAZONAS NEXUS",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55686,
+      "name": "ZHONGXING-26",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55841,
+      "name": "LUCH-5X (OLYMP-K 2)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55912,
+      "name": "GAOFEN-13 02",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55970,
+      "name": "SES-18",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 55971,
+      "name": "SES-19",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56174,
+      "name": "INTELSAT 40E (IS-40E)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56370,
+      "name": "VIASAT-3 F1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56371,
+      "name": "ARCTURUS",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "Arcturus",
+      "source_downlink_intervals_ghz": [
+        [
+          18.4,
+          18.8
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.4,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 56372,
+      "name": "GS-1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56564,
+      "name": "BEIDOU-3 G4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56757,
+      "name": "ARABSAT-7B (BADR-8)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 56759,
+      "name": "NVS-01 (IRNSS-1J)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 57045,
+      "name": "NUSANTARA TIGA (SATRIA)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 57213,
+      "name": "H2SAT (HEINRICH HERTZ)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 57214,
+      "name": "SYRACUSE 4B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 57479,
+      "name": "JUPITER 3 (ECHOSTAR 24)",
+      "status": "frequency_overlap_candidate",
+      "enabled_for_interference_calculation": false,
+      "source_commercial_name": "JUPITER 3",
+      "source_downlink_intervals_ghz": [
+        [
+          18.3,
+          19.3
+        ]
+      ],
+      "overlap_intervals_ghz": [
+        [
+          18.3,
+          18.6
+        ]
+      ],
+      "source_url": "https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/licences-and-certificates/list-foreign-satellites-approved-provide-fixed-satellite-services-fss-canada",
+      "source_scope": "Canadian FSS approval table; not global authorization or proof of current transmission",
+      "pending": [
+        "operational status",
+        "beam coverage",
+        "protected earth station",
+        "actual channel allocation and antenna parameters"
+      ]
+    },
+    {
+      "norad_cat_id": 57493,
+      "name": "GALAXY 37 (G-37)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 57624,
+      "name": "LUDI TANCE-4 01A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58204,
+      "name": "TJS-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58253,
+      "name": "ZHONGXING-6E",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58582,
+      "name": "YAOGAN-41",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58698,
+      "name": "OVZON-3",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58990,
+      "name": "INSAT-3DS",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 58995,
+      "name": "MERAH PUTIH 2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 59020,
+      "name": "TJS-11",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 59069,
+      "name": "HULIANWAN GAOGUI-01 (HG-01)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 59346,
+      "name": "EUTELSAT 36D",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 59915,
+      "name": "PAKSAT-MM1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60086,
+      "name": "ASTRA 1P (SES-24)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60133,
+      "name": "GOES 19",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60179,
+      "name": "ZHONGXING-3A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60233,
+      "name": "TURKSAT 6A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60327,
+      "name": "HULIANWAN GAOGUI-02 (HG-02)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 60606,
+      "name": "ZHONGXING-4A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 61503,
+      "name": "HULIANWAN GAOGUI-03 (HG-03)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 61733,
+      "name": "DSN-3 (KIRAMEKI-3)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 61910,
+      "name": "KOREASAT 6A",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62006,
+      "name": "OPTUS-X (ADS-01)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62028,
+      "name": "GSAT-N2 (GSAT-20)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62259,
+      "name": "SXM-9",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62374,
+      "name": "TJS-12",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62455,
+      "name": "NUVIEW ALPHA",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62456,
+      "name": "AGILA",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62457,
+      "name": "NUVIEW BRAVO",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62483,
+      "name": "THURAYA-4",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62485,
+      "name": "SHIJIAN-25 (SJ-25)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62804,
+      "name": "TJS-14",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62852,
+      "name": "SPAINSAT NG I",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 62876,
+      "name": "QZS-6 (MICHIBIKI-6)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63075,
+      "name": "ZHONGXING-10R",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63157,
+      "name": "TJS-15",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63361,
+      "name": "TIANLIAN 2-04",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63397,
+      "name": "TJS-16",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63524,
+      "name": "TJS-17",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63662,
+      "name": "TIANLIAN 2-05",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 63924,
+      "name": "TJS-19",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64062,
+      "name": "CHINASAT 3B",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64290,
+      "name": "SXM-10",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64467,
+      "name": "COSMOS 2589",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64470,
+      "name": "CHINASAT 9C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64723,
+      "name": "MTG-S1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 64784,
+      "name": "DROR 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 65486,
+      "name": "SHIYAN-29",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 65588,
+      "name": "NUSANTARA LIMA (NUSANTARA 5)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 66142,
+      "name": "TJS-20",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 66311,
+      "name": "CMS-03 (GSAT-7R)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 66454,
+      "name": "VIASAT-3 F2",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 66549,
+      "name": "SHIJIAN-28 (SJ-28)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 66990,
+      "name": "TJS-22",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67226,
+      "name": "TJS-23",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67246,
+      "name": "FENGYUN 4C",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67302,
+      "name": "SHIJIAN-29A (SJ-29A)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67403,
+      "name": "SHIJIAN-29B (SJ-29B)",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67756,
+      "name": "ELEKTRO-L 5",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 67757,
+      "name": "JAM-E JAM 1",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 68126,
+      "name": "ECHOSTAR 25",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    },
+    {
+      "norad_cat_id": 69235,
+      "name": "TJS-24",
+      "status": "not_yet_verified",
+      "enabled_for_interference_calculation": false
+    }
+  ]
+}

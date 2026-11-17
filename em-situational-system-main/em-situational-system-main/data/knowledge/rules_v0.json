@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "standards": [
+    {
+      "id": "itu_fm_broadcast",
+      "source": "ITU-R SM.2093",
+      "rule": "87-108 MHz 为调频广播频段",
+      "freq_min_hz": 87000000,
+      "freq_max_hz": 108000000
+    },
+    {
+      "id": "leo_sgl_band",
+      "source": "project_default",
+      "rule": "低轨星地链路默认使用 Ku/Ka 频段",
+      "freq_min_hz": 12000000000,
+      "freq_max_hz": 30000000000
+    }
+  ],
+  "physics": [
+    {
+      "id": "fspl_monotonic",
+      "rule": "路径损耗随距离单调递增",
+      "formula": "FSPL = 20*log10(d) + 20*log10(f) - 147.55"
+    },
+    {
+      "id": "sinr_thresholds",
+      "rule": "SINR<0dB 链路不可用; SINR<5dB 重度; SINR<10dB 中度; SINR<15dB 轻度"
+    }
+  ],
+  "experience": [
+    {
+      "id": "handover_window",
+      "rule": "低轨卫星可视窗口约 10-15 分钟，建议提前 30 秒至 10 分钟预测"
+    }
+  ]
+}

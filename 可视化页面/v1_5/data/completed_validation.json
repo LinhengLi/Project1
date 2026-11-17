@@ -1,0 +1,421 @@
+{
+  "status": "passed",
+  "frames": 720,
+  "window_rows": 777600,
+  "station_channel_policy": "all frames without replacement",
+  "max_absolute_epoch_offset_days": 4.101773403119296,
+  "propagation_error_samples": 0,
+  "min_gso_elevation_deg": 15.277579980592359,
+  "operator_samples": {
+    "starlink": 880635,
+    "oneweb": 38467
+  },
+  "operator_failed_samples": {
+    "starlink": 14342,
+    "oneweb": 1575
+  },
+  "category_total_power_w": [
+    0.0,
+    3.577777512798074e-08,
+    3.891823030968885e-09
+  ],
+  "category_names": [
+    "intra_gateway",
+    "same_operator_inter_gateway",
+    "cross_operator"
+  ],
+  "epfd_peaks": {
+    "1m_40000Hz_starlink": {
+      "dbw_m2": -112.02969542602402,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_40000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 7709
+    },
+    "1m_40000Hz_oneweb": {
+      "dbw_m2": -163.1333820124341,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_40000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1
+    },
+    "1m_40000Hz_combined": {
+      "dbw_m2": -112.0296954257534,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_40000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 7710
+    },
+    "2m_40000Hz_starlink": {
+      "dbw_m2": -113.10391435637018,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_40000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 4417
+    },
+    "2m_40000Hz_oneweb": {
+      "dbw_m2": -169.85398192571375,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_40000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 0
+    },
+    "2m_40000Hz_combined": {
+      "dbw_m2": -113.10391435633323,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_40000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 4417
+    },
+    "5m_40000Hz_starlink": {
+      "dbw_m2": -119.96485509683578,
+      "frame": 302,
+      "receiver": "GSO-REF-57479",
+      "window": {
+        "id": "carrier_center_4_40000",
+        "kind": "carrier_center",
+        "center_hz": 18250000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1653
+    },
+    "5m_40000Hz_oneweb": {
+      "dbw_m2": -177.8127820991545,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_40000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 0
+    },
+    "5m_40000Hz_combined": {
+      "dbw_m2": -119.96485509683578,
+      "frame": 302,
+      "receiver": "GSO-REF-57479",
+      "window": {
+        "id": "carrier_center_4_40000",
+        "kind": "carrier_center",
+        "center_hz": 18250000000.0,
+        "bandwidth_hz": 40000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1653
+    },
+    "1m_1000000Hz_starlink": {
+      "dbw_m2": -98.05029533930364,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 7700
+    },
+    "1m_1000000Hz_oneweb": {
+      "dbw_m2": -149.15398192571374,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1
+    },
+    "1m_1000000Hz_combined": {
+      "dbw_m2": -98.05029533903303,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 7701
+    },
+    "2m_1000000Hz_starlink": {
+      "dbw_m2": -99.12451426964981,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 4404
+    },
+    "2m_1000000Hz_oneweb": {
+      "dbw_m2": -155.87458183899335,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 0
+    },
+    "2m_1000000Hz_combined": {
+      "dbw_m2": -99.12451426961286,
+      "frame": 395,
+      "receiver": "GSO-REF-43562",
+      "window": {
+        "id": "carrier_center_5_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18350000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 4404
+    },
+    "5m_1000000Hz_starlink": {
+      "dbw_m2": -105.9854550101154,
+      "frame": 302,
+      "receiver": "GSO-REF-57479",
+      "window": {
+        "id": "carrier_center_4_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18250000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1650
+    },
+    "5m_1000000Hz_oneweb": {
+      "dbw_m2": -163.83338201243413,
+      "frame": 642,
+      "receiver": "GSO-REF-42709",
+      "window": {
+        "id": "carrier_center_7_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18550000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 0
+    },
+    "5m_1000000Hz_combined": {
+      "dbw_m2": -105.9854550101154,
+      "frame": 302,
+      "receiver": "GSO-REF-57479",
+      "window": {
+        "id": "carrier_center_4_1000000",
+        "kind": "carrier_center",
+        "center_hz": 18250000000.0,
+        "bandwidth_hz": 1000000.0
+      },
+      "exceeding_receiver_snapshot_samples": 1650
+    }
+  },
+  "source_hashes": {
+    "scripts\\run_feeder_openloop_v1_5.py": "1596ebbb612ad13ce2709b7b57475dc9481631733e3a6a3da9c50605c1b0bff5",
+    "scripts\\replay_feeder_openloop_v1_5.py": "fc7b0476386257b24d292cf9e96fe52d2ac3e4111bcaad6fb86d89e6e7127462",
+    "scripts\\summarize_feeder_openloop_v1_5.py": "16a43d5d7f6d6db71a5fb39ee5946d6d9b8ec7a41b4ee2d04b6afdc68eb317db",
+    "scripts\\serve_feeder_openloop_v1_5.py": "dd23c50f0f243509954e3b4a317a9d5654cf84647691d29874574d03117991d1",
+    "tests\\test_feeder_openloop_v1_5.py": "46d704a4c6e7ecaa3ca7774d39e3c3df162bf52a45257b5a39bd74ecbf9b3258",
+    "experiments\\feeder_openloop_v1_5\\index.html": "e2256ba8cb44fba17253a7ffe83cfb5a03824b647271f8c9542f9ae0e44102f9",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_interference.py": "373de54769ebd7f031b4ac8358a76ec1400ca9f0a0dbd8c8bc904ba53ef86088",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_association.py": "cb0c1d78bcbeb2961e1610e5a7c17ccb2b19903fcf1d5b8b264b5f1a6a3b562f",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_gso_epfd.py": "fcef59f3c51a31dc1c15207a8534c12d2e973385bc7c593047790aa324271fa0",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_fast_interference.py": "f12e611ef2e1bb5094aa644c01924593f94dee3bb15ccc465c720149df26439d",
+    "scripts\\check_feeder_openloop_peak_v1_5.py": "d1139df2172aa9b692534790b5ac3dd10f379ebe417273961ebe5b32f9f21eb6"
+  },
+  "replay_checks": [
+    {
+      "status": "passed",
+      "frame": 0,
+      "active_links": 1250,
+      "failed": 19,
+      "recompute_wall_s": 0.982394499998918,
+      "scope": "same saved input, no propagation/selection/random generation; includes aggregate and validation input preparation as documented"
+    },
+    {
+      "status": "passed",
+      "frame": 360,
+      "active_links": 1259,
+      "failed": 23,
+      "recompute_wall_s": 1.0493639999986044,
+      "scope": "same saved input, no propagation/selection/random generation; includes aggregate and validation input preparation as documented"
+    },
+    {
+      "status": "passed",
+      "frame": 719,
+      "active_links": 1300,
+      "failed": 26,
+      "recompute_wall_s": 1.0494225000002189,
+      "scope": "same saved input, no propagation/selection/random generation; includes aggregate and validation input preparation as documented"
+    }
+  ],
+  "peak_scalar_check": {
+    "status": "passed",
+    "frame": 395,
+    "receiver": "GSO-REF-43562",
+    "window": {
+      "id": "carrier_center_5_40000",
+      "kind": "carrier_center",
+      "center_hz": 18350000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    "scalar_epfd_dbw_m2": -112.02969542575339,
+    "expected_dbw_m2": -112.0296954257534,
+    "contributing_sources": 11,
+    "dominant_source_fraction": 0.999999995060077,
+    "top_sources": [
+      {
+        "link_id": "feeder:starlink:starlink-35111:SL-C-071",
+        "operator": "starlink",
+        "gateway_id": "SL-C-071",
+        "channel": 5,
+        "tx_offaxis_deg": 0.0,
+        "rx_offaxis_deg": 0.1955241468941749,
+        "range_km": 488.1697541861648,
+        "tx_gain_dbi": 35.071293612060664,
+        "normalized_rx_gain_db": -0.35807297068534183,
+        "epfd_w_m2": 6.266578080568133e-12
+      },
+      {
+        "link_id": "feeder:starlink:starlink-35452:SL-C-207",
+        "operator": "starlink",
+        "gateway_id": "SL-C-207",
+        "channel": 5,
+        "tx_offaxis_deg": 58.382748986201165,
+        "rx_offaxis_deg": 82.22983197497874,
+        "range_km": 1091.1472433667045,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -47.43630731320361,
+        "epfd_w_m2": 7.64632364417835e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-3558:SL-C-185",
+        "operator": "starlink",
+        "gateway_id": "SL-C-185",
+        "channel": 5,
+        "tx_offaxis_deg": 80.77137212331682,
+        "rx_offaxis_deg": 56.10437323698406,
+        "range_km": 765.7052997940306,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -52.43630731320361,
+        "epfd_w_m2": 4.910165040510483e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-35061:SL-C-002",
+        "operator": "starlink",
+        "gateway_id": "SL-C-002",
+        "channel": 5,
+        "tx_offaxis_deg": 44.10539914305442,
+        "rx_offaxis_deg": 87.10450075533349,
+        "range_km": 1375.8263332305883,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -47.43630731320361,
+        "epfd_w_m2": 4.809413973409934e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-34586:SL-C-034",
+        "operator": "starlink",
+        "gateway_id": "SL-C-034",
+        "channel": 5,
+        "tx_offaxis_deg": 101.09689713968778,
+        "rx_offaxis_deg": 95.26928174542121,
+        "range_km": 2407.486821927241,
+        "tx_gain_dbi": 3.767823403015166,
+        "normalized_rx_gain_db": -47.43630731320361,
+        "epfd_w_m2": 3.740019780643786e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-35190:SL-C-198",
+        "operator": "starlink",
+        "gateway_id": "SL-C-198",
+        "channel": 5,
+        "tx_offaxis_deg": 60.170139881555336,
+        "rx_offaxis_deg": 88.33973985363876,
+        "range_km": 1582.8669949126033,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -47.43630731320361,
+        "epfd_w_m2": 3.633545048768293e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-3046:SL-C-018",
+        "operator": "starlink",
+        "gateway_id": "SL-C-018",
+        "channel": 5,
+        "tx_offaxis_deg": 78.24657601695553,
+        "rx_offaxis_deg": 69.41766751356501,
+        "range_km": 1206.4741395644562,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -52.43630731320361,
+        "epfd_w_m2": 1.9778045026075473e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-34979:SL-C-216",
+        "operator": "starlink",
+        "gateway_id": "SL-C-216",
+        "channel": 5,
+        "tx_offaxis_deg": 42.3858411768825,
+        "rx_offaxis_deg": 74.79851119723068,
+        "range_km": 1385.6860892500442,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -52.43630731320361,
+        "epfd_w_m2": 1.4993039379541066e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-30140:SL-C-179",
+        "operator": "starlink",
+        "gateway_id": "SL-C-179",
+        "channel": 5,
+        "tx_offaxis_deg": 86.3756854396332,
+        "rx_offaxis_deg": 93.0498788577746,
+        "range_km": 2522.17907538047,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -47.43630731320361,
+        "epfd_w_m2": 1.4310920175143926e-21
+      },
+      {
+        "link_id": "feeder:starlink:starlink-31955:SL-C-165",
+        "operator": "starlink",
+        "gateway_id": "SL-C-165",
+        "channel": 5,
+        "tx_offaxis_deg": 81.85490550310837,
+        "rx_offaxis_deg": 66.39487158101966,
+        "range_km": 1770.6108857115134,
+        "tx_gain_dbi": 0.0,
+        "normalized_rx_gain_db": -52.43630731320361,
+        "epfd_w_m2": 9.182757935177674e-22
+      }
+    ]
+  }
+}

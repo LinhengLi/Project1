@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "config_date": "2026-11-14",
+  "system_id": "STARLINK_GEN1",
+  "system_name": "Starlink Generation 1",
+  "operator": "SpaceX",
+  "orbit_type": "NGSO_LEO",
+  "simulation_role": [
+    "desired_ngso_feeder_downlink",
+    "ngso_interferer",
+    "gso_interferer"
+  ],
+  "include_system_in_simulation": true,
+  "study": {
+    "study_purpose": "异构NGSO-GSO下行馈电链路干扰管理；以NGSO馈电链路LF Rate为主要性能指标",
+    "evaluation_metrics": [
+      "ngso_feeder_lf_rate",
+      "execution_time_ms",
+      "frequency_switching_rate",
+      "gso_protection_compliance"
+    ],
+    "study_downlink_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_band_choice_status": "研究场景选择；并不意味着每颗卫星在每个时隙实际使用全部频段",
+    "traffic_model_included": false,
+    "user_link_qos_model_included": false
+  },
+  "inventory": {
+    "authorized_satellite_count_nominal": 4408,
+    "authorized_count_note": "FCC 21-48，修改后Gen1五轨道壳的名义规模，不是2026-11的实际在轨数。",
+    "confirmed_active_gen1_satellite_count_on_config_date": null,
+    "count_method": "以公开GP目录+发射批次/代际标识+运营状态联合筛选；不可把GROUP=STARLINK全部当Gen1",
+    "orbit_catalog_complete": false,
+    "orbit_catalog_downloaded_into_this_file": false,
+    "sample_satellite_count": 5
+  },
+  "authorized_orbital_shells": [
+    {
+      "shell_id": "G1-53.0",
+      "planned_satellites": 1584,
+      "altitude_km": 550,
+      "inclination_deg": 53.0,
+      "orbital_planes": 72
+    },
+    {
+      "shell_id": "G1-53.2",
+      "planned_satellites": 1584,
+      "altitude_km": 540,
+      "inclination_deg": 53.2,
+      "orbital_planes": 72
+    },
+    {
+      "shell_id": "G1-70.0",
+      "planned_satellites": 720,
+      "altitude_km": 570,
+      "inclination_deg": 70.0,
+      "orbital_planes": 36
+    },
+    {
+      "shell_id": "G1-97.6A",
+      "planned_satellites": 348,
+      "altitude_km": 560,
+      "inclination_deg": 97.6,
+      "orbital_planes": 6
+    },
+    {
+      "shell_id": "G1-97.6B",
+      "planned_satellites": 172,
+      "altitude_km": 560,
+      "inclination_deg": 97.6,
+      "orbital_planes": 4
+    }
+  ],
+  "satellite_orbit_source": {
+    "provider": "CelesTrak NORAD GP/OMM",
+    "format": "CCSDS OMM JSON",
+    "download_url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=STARLINK&FORMAT=JSON",
+    "query_method": "GROUP=STARLINK yields Gen1+Gen2; filter via launch and version metadata, then match orbital shell; orbital shell alone is not a definitive generation classifier",
+    "sgp4_orbit_epoch_use": "从每个卫星OMM的EPOCH字段读取",
+    "current_omm_records_embedded": false,
+    "refresh_before_simulation": true
+  },
+  "sample_satellites": [
+    {
+      "name": "STARLINK-1008",
+      "norad_cat_id": 44714,
+      "international_designator": "2019-074B",
+      "generation": "Gen1 candidate (early launch, confirm using launch manifest)",
+      "inclination_deg_snapshot": 53.14,
+      "altitude_km_snapshot_approx": 359,
+      "include_in_simulation": false
+    },
+    {
+      "name": "STARLINK-1012",
+      "norad_cat_id": 44718,
+      "international_designator": "2019-074F",
+      "generation": "Gen1 candidate (early launch, confirm using launch manifest)",
+      "inclination_deg_snapshot": 53.15,
+      "altitude_km_snapshot_approx": 358,
+      "include_in_simulation": false
+    },
+    {
+      "name": "STARLINK-1017",
+      "norad_cat_id": 44723,
+      "international_designator": "2019-074L",
+      "generation": "Gen1 candidate (early launch, confirm using launch manifest)",
+      "inclination_deg_snapshot": 53.04,
+      "altitude_km_snapshot_approx": 433,
+      "include_in_simulation": false
+    },
+    {
+      "name": "STARLINK-1477",
+      "norad_cat_id": 45754,
+      "international_designator": "2020-038AA",
+      "generation": "Gen1 candidate (early launch, confirm using launch manifest)",
+      "inclination_deg_snapshot": 53.02,
+      "altitude_km_snapshot_approx": 485,
+      "include_in_simulation": false
+    },
+    {
+      "name": "STARLINK-1522",
+      "norad_cat_id": 46027,
+      "international_designator": "2020-055A",
+      "generation": "Gen1 candidate (early launch, confirm using launch manifest)",
+      "inclination_deg_snapshot": 53.06,
+      "altitude_km_snapshot_approx": 507,
+      "include_in_simulation": false
+    }
+  ],
+  "frequency_plan": {
+    "direction": "space_to_Earth",
+    "link_type": "feeder_downlink",
+    "publicly_reported_feeder_bands_ghz": [
+      [
+        17.8,
+        18.6
+      ],
+      [
+        18.8,
+        19.3
+      ]
+    ],
+    "study_selected_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "study_carrier_frequency_ghz": 18.2,
+    "study_carrier_frequency_status": "仿真假设：共享17.8–18.6 GHz频段的中心",
+    "study_total_bandwidth_mhz": 800.0,
+    "study_total_bandwidth_status": "仿真假设：把17.8–18.6 GHz视为单个800 MHz的研究带宽，实际许可/波束占用可能更窄",
+    "subchannel_count": null,
+    "subchannel_bandwidth_mhz": null,
+    "subchannel_policy": "C待与多天线网关站每站工作天线数N_at统一设定，例如研究论文采用C=N_at；不得把带宽与论文20 GHz/500MHz混用",
+    "authorization_not_real_time_use": true
+  },
+  "satellite_transmitter": {
+    "actual_tx_power_dbw": null,
+    "actual_peak_antenna_gain_dbi": null,
+    "simulation_initial_tx_power_dbw": 12.0,
+    "simulation_initial_peak_gain_dbi": 35.0,
+    "initial_values_status": "参考Liu等论文Table I，不表示SpaceX实际在轨硬件值",
+    "antenna_pattern_approximation": "ITU-R S.1528（论文使用2001版；2026年建议书有修订，建模应固定版本）"
+  },
+  "gateway_receiver": {
+    "actual_station_count": null,
+    "actual_site_list": [],
+    "actual_antennas_per_station": null,
+    "study_station_locations_source": "自定义实验地面站；不应冒称运营商真实站址",
+    "simulation_initial_gateway_peak_gain_dbi": 45.76,
+    "simulation_initial_receiver_noise_temp_k": 398,
+    "simulation_initial_elevation_threshold_deg": 40,
+    "initial_values_status": "论文Table I参考值，非官方站点规格",
+    "antenna_pattern_approximation": "ITU-R S.1428-1"
+  },
+  "interference_model": {
+    "desired_signal_model": "P_tx * G_satellite(theta_tx) * G_gateway(theta_rx) / (4*pi*d/lambda)^2",
+    "aggregate_interference_model": "sum(I_interferer_to_victim_receiver for active_cochannel_interferers)",
+    "noise_model": "N = k_B * T_noise * subchannel_bandwidth_hz",
+    "link_failure_rule": "aggregate_I_over_N_dB > I_N_threshold_dB",
+    "target_metric": "LF_rate = failed_active_NGSO_feeder_links / all_active_NGSO_feeder_links"
+  },
+  "protection_and_evaluation": {
+    "ngso_feeder_link_lf_threshold_db": -12.2,
+    "threshold_provenance": "论文用于LF判定的参考门限，跨星座情景适用性待按相应ITU-R/协调规则核实",
+    "coexistence_constraint": "ITU Radio Regulations Article 22 EPFD-down（适用17.8–18.6 GHz），按ITU-R S.1503进行适用的时间统计验证",
+    "EPFD_limit_value_dBW_per_m2_per_reference_band": null,
+    "EPFD_limit_value_status": "尚未从Article 22表按GSO地球站参考天线/时间百分比/带宽选定；禁止填入随意数值",
+    "source": "https://www.itu.int/epfdsupport/questions/"
+  },
+  "reference_paper_simulation_table": {
+    "title": "Time-Continuous Frequency Allocation for Feeder Links of Mega Constellations with Multi-Antenna Gateway Stations",
+    "arxiv": "https://arxiv.org/abs/2505.12429",
+    "table": "Table I, simulation settings, NOT operator measured specifications",
+    "satellite_count_total_Starlink_Gen1_Gen2": 34396,
+    "gateway_count": 115,
+    "orbital_altitude_range_km": [
+      340,
+      614
+    ],
+    "satellite_peak_antenna_gain_dbi": 35.0,
+    "satellite_tx_power_dbw": 12.0,
+    "gateway_peak_antenna_gain_dbi": 45.76,
+    "gateway_noise_temperature_k": 398.0,
+    "carrier_frequency_ghz": 20.0,
+    "downlink_bandwidth_mhz": 500.0,
+    "gateway_min_elevation_deg": 40.0,
+    "reference_I_over_N_threshold_db": -12.2,
+    "warning": "表中20 GHz、12 dBW、35 dBi等为该论文的统一仿真设定；20 GHz并非Starlink Gen1/OneWeb互有的馈电共频段的中心频率，不可直接照搬。"
+  },
+  "sources": [
+    {
+      "type": "regulatory",
+      "url": "https://docs.fcc.gov/public/attachments/FCC-22-91A1.pdf",
+      "detail": "Starlink Gen1/Gen2授权背景"
+    },
+    {
+      "type": "frequency_review",
+      "url": "https://www.nsma.org/wp-content/uploads/6.-Satellite-Mega-Constellations.pdf",
+      "detail": "SpaceX Gen1与OneWeb馈电下行频段"
+    },
+    {
+      "type": "catalog",
+      "url": "https://celestrak.org/Norad/elements/table.php?FORMAT=json&GROUP=starlink",
+      "detail": "示例NORAD ID与轨道快照"
+    },
+    {
+      "type": "paper",
+      "url": "https://arxiv.org/abs/2505.12429",
+      "detail": "物理模型及统一仿真参数"
+    }
+  ],
+  "readiness": "PARAMETER_TEMPLATE_ONLY; requires fresh per-satellite OMM and definitive Gen1 selection before running SGP4"
+}

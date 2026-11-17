@@ -1,0 +1,288 @@
+{
+  "version": "feeder_v1.1_paper_aligned_2026-11-15",
+  "research_scope": "真实轨道驱动 Starlink + OneWeb NGSO 下行馈电共信道干扰管理，附加 GSO 接收地球站 EPFD↓ 风险监测；暂不引入用户 QoS/需求模型",
+  "reference_paper": {
+    "title": "Time-Continuous Frequency Allocation for Feeder Links of Mega Constellations with Multi-Antenna Gateway Stations",
+    "arxiv": "2505.12429",
+    "table": "Table I",
+    "reference_model_note": "论文使用构造的Starlink Gen1+Gen2 34396星、115 MAGS；本配置不声称复现其地理/轨道数据"
+  },
+  "data_status_not_verified_by_config": {
+    "starlink_gen1_gen2_catalog_records_reported": 10611,
+    "oneweb_catalog_records_reported": 651,
+    "gso_geo_catalog_records_reported": 568,
+    "gso_selected_candidate_count": 12,
+    "ngso_gateways": {
+      "starlink": 6,
+      "oneweb": 6
+    },
+    "gso_reference_receive_sites": 12,
+    "caution": "候选数非活动链路数；OneWeb冻结基线6站均有FCC坐标来源（已补Clewiston和Santa Paula），全量扩展为6个FCC+7个区域仿真位置；许可不等于当前运营。GSO频段/波束仍需逐站核实。"
+  },
+  "orbital_engine": {
+    "model": "SGP4",
+    "input": "GP/OMM or TLE",
+    "ground_reference": "WGS84",
+    "frames": [
+      "TEME",
+      "ITRF/ECEF"
+    ],
+    "epoch_source": "per-satellite GP EPOCH",
+    "reject_sgp4_errors": true,
+    "stale_epoch_warning_days": 7,
+    "stale_epoch_warning_is_study_choice": true
+  },
+  "simulation": {
+    "start_utc": "2026-11-13T12:00:00Z",
+    "duration_seconds": 7200,
+    "step_seconds": 10,
+    "slot_count": 720,
+    "random_seed": 20261115
+  },
+  "beam_and_noise_common": {
+    "direction": "space_to_earth",
+    "min_elevation_deg": 40.0,
+    "max_feeder_links_per_gateway": 8,
+    "one_active_feeder_per_satellite": true,
+    "selection_policy": "iterative_highest_elevation_round_robin_by_gateway; no reuse of selected satellite",
+    "tx_power_dbw_per_active_carrier": 12.0,
+    "tx_power_w_per_active_carrier": 15.848931924611133,
+    "tx_antenna_pattern": "ITU-R S.1528-0 (2001); paper-locked",
+    "tx_antenna_gain_peak_dbi": 35.0,
+    "rx_antenna_pattern": "ITU-R S.1428-1 (2001); paper-locked",
+    "rx_antenna_gain_peak_dbi": 45.76,
+    "rx_noise_temperature_kelvin": 398.0,
+    "boltzmann_constant_j_per_k": 1.380649e-23,
+    "path_loss": "free_space_loss_only in paper-matched core (no precipitation/atmospheric loss)",
+    "polarization_and_aclr": "assumed full cochannel coupling and ideal zero adjacent channel leakage in paper-matched core",
+    "uniform_parameters_between_operators": "yes; a normalized research assumption, not verified actual Starlink/OneWeb equipment data",
+    "peak_eirp_dbw": 47.0,
+    "gateway_order_policy": "gateway ID ascending, fixed order every round; satellite ID ascending breaks equal-elevation ties; same operator only"
+  },
+  "frequency_profiles": {
+    "frozen_main_800mhz": {
+      "role": "user_frozen_primary_experiment",
+      "band_ghz": [
+        17.8,
+        18.6
+      ],
+      "nominal_center_frequency_ghz": 18.2,
+      "total_bandwidth_mhz": 800.0,
+      "num_global_subchannels": 8,
+      "subchannel_bandwidth_mhz": 100.0,
+      "subchannel_index_range": [
+        0,
+        7
+      ],
+      "global_shared_pool_across_operators": true,
+      "thermal_noise_dbw": -122.60033645248079,
+      "notes": "保留当前UI；不是论文500MHz参数；不暗示每个实际网关已经获授权使用全部子信道"
+    },
+    "paper_bandwidth_adapted_500mhz": {
+      "role": "bandwidth_control_inside_17p8_to_18p6",
+      "band_ghz": [
+        17.95,
+        18.45
+      ],
+      "nominal_center_frequency_ghz": 18.2,
+      "total_bandwidth_mhz": 500.0,
+      "num_global_subchannels": 8,
+      "subchannel_bandwidth_mhz": 62.5,
+      "global_shared_pool_across_operators": true,
+      "thermal_noise_dbw": -124.64153627904004,
+      "notes": "沿用论文总带宽500MHz和C=Nat但保持研究频率18.2GHz，因此不是严格照搬20GHz"
+    },
+    "paper_physics_reference_20ghz": {
+      "role": "strict_paper_physical_parameter_control_only; not an asserted common licensed frequency band",
+      "nominal_center_frequency_ghz": 20.0,
+      "total_bandwidth_mhz": 500.0,
+      "num_global_subchannels": 8,
+      "subchannel_bandwidth_mhz": 62.5,
+      "global_shared_pool_across_operators": true,
+      "thermal_noise_dbw": -124.64153627904004,
+      "notes": "论文Table I的20GHz+500MHz；星座和网关依然不同，不能声称复现整篇论文实验"
+    }
+  },
+  "interference_core": {
+    "signal_path": "each active satellite transmitter points at its own serving gateway; each gateway receive antenna points at its serving satellite",
+    "cross_path_formula": "I[j->i]=Ptx_j * Gtx_j(offaxis from its own served gateway toward victim gateway i) * Grx_i(offaxis from served satellite i toward interfering satellite j) * (lambda/(4*pi*d_j_to_gateway_i))^2",
+    "aggregate_power": "sum linear Watts over cochannel satellite j != i above victim gateway horizon",
+    "I_over_N": "aggregate_power_w / (k_B*Tn*B_subchannel_hz)",
+    "lf_threshold_in_db": -12.2,
+    "lf_definition": "aggregate I/N strictly greater than -12.2 dB; denominator all active NGSO feeders",
+    "I_over_N_threshold_is_paper_assumption_not_gso_epfd": true,
+    "graph_weak_interference_threshold_in_db": -13.0,
+    "graph_edge_method": "per-victim adaptive threshold as paper Eq.(6)-(7); directed interference strengths retained; undirected edge if either victim suffers strong interference",
+    "interference_categories": [
+      "intra_gateway_intra_operator",
+      "inter_gateway_intra_operator",
+      "inter_gateway_cross_operator"
+    ],
+    "no_cross_channel_interference_in_initial_model": true,
+    "power_spectral_density_model": "flat power per active full subchannel; scale Ptx by Br/B_subchannel when calculating EPFD in reference bandwidth"
+  },
+  "gso_protection_separate_from_ngso_lf": {
+    "metric": "epfd_down",
+    "regulatory_source": "ITU RR 2024 Article 22 Table 22-1B (Rev.WRC-23)",
+    "research_band_ghz": [
+      17.8,
+      18.6
+    ],
+    "reference_bandwidths_khz": [
+      40,
+      1000
+    ],
+    "recommended_first_stage_reference_antenna_diameter_m": 1.0,
+    "diameter_sensitivity_m": [
+      1.0,
+      2.0,
+      5.0
+    ],
+    "gso_receiver_boresight": "from fixed reference receive station toward paired GSO satellite, not fixed horizontal antenna direction",
+    "epfd_formula": "sum over simultaneously transmitting NGSO satellites in matching reference bandwidth: (P_j_ref_W*G_tx_j / (4*pi*d_jGSO_earth_station^2)) * (G_GSO_rx(offaxis)/G_GSO_rx_peak)",
+    "validation_40khz_percent_time_not_exceeded_pairs": {
+      "1m": [
+        [
+          0,
+          -175.4
+        ],
+        [
+          90,
+          -175.4
+        ],
+        [
+          99,
+          -172.5
+        ],
+        [
+          99.714,
+          -167
+        ],
+        [
+          99.971,
+          -164
+        ],
+        [
+          100,
+          -164
+        ]
+      ],
+      "2m": [
+        [
+          0,
+          -178.4
+        ],
+        [
+          99.4,
+          -178.4
+        ],
+        [
+          99.9,
+          -171.4
+        ],
+        [
+          99.913,
+          -170.5
+        ],
+        [
+          99.971,
+          -166
+        ],
+        [
+          99.977,
+          -164
+        ],
+        [
+          100,
+          -164
+        ]
+      ],
+      "5m": [
+        [
+          0,
+          -185.4
+        ],
+        [
+          99.8,
+          -185.4
+        ],
+        [
+          99.8,
+          -180
+        ],
+        [
+          99.943,
+          -180
+        ],
+        [
+          99.943,
+          -172
+        ],
+        [
+          99.998,
+          -164
+        ],
+        [
+          100,
+          -164
+        ]
+      ]
+    },
+    "individual_constellation_and_combined_aggregate_epfd": "report both; formal compliance requires applying the relevant single-entry and aggregate limits in the actual regulatory context",
+    "two_hour_window_sufficient_for_legal_epfd_validation": false,
+    "two_hour_stage": "report instantaneous EPFD time series, worst-case and 100% line exceedances, explicitly as screening only",
+    "long_term_stage": "generate representative long-run EPFD distribution and follow ITU-R S.1503 rather than claiming 2h proves formal compliance",
+    "limits_verification_status": "UNVERIFIED_CANDIDATE_VALUES; do not apply as authoritative limits before checking original table/bandwidth/antenna/percentage semantics"
+  },
+  "paper_algorithm_reference": {
+    "paper_graph_colors_equals_num_gateway_antennas": true,
+    "baseline_names": [
+      "Random",
+      "Global",
+      "GG",
+      "CTS",
+      "TCFA-GG",
+      "TCFA-CTS"
+    ],
+    "gg_num_independent_trials": 100,
+    "cts_num_initial_solutions": 2000,
+    "cts_num_best_initial_candidates": 500,
+    "cts_tabu_iterations": 250,
+    "cts_neighbors_per_iteration": 10,
+    "link_continuity_logic": "same satellite+same gateway in neighboring epochs means inherited frequency opportunity",
+    "frequency_switching_rate": "changes on retained satellite-gateway feeder links / retained links over consecutive slots",
+    "tcfa_penalty_tuning": "not fully specified as a scalar default in Table I; select with documented sweep",
+    "execution_time_reporting": "hardware, programming language, parallelism and dataset scale must be disclosed; paper ms results not directly transferable",
+    "global_num_independent_trials": 100,
+    "pending_implementation_parameters": [
+      "GG degree perturbation variance",
+      "CTS tabu length",
+      "tie-break and termination rules",
+      "antenna beamwidth and sidelobe free parameters"
+    ]
+  },
+  "experiment_plan": {
+    "step0_10s_single_snapshot": "verify orbital positions, active assignments, EIRP, FSPL, off-axis angles, desired power, all interference matrices; compare in Watts before dB",
+    "step1_720_slots": "no allocation versus random, Global, GG, CTS; LF rate, conflicts, run time, fairness by operator",
+    "step2_continuity": "TCFA-GG / TCFA-CTS and switching rate",
+    "step3_gso": "EPFD screenings and cost of GSO protection; compliance percentages require multi-day simulation",
+    "step4_scaling": "increase real gateway-count scenario beyond 6+6 using verified or source-qualified real site locations; examine 4/8/16/25 antennas and frequency counts",
+    "step5_ai": "AI inference time plus update time versus classical baseline; do not include preprocessing ambiguously"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2505.12429",
+    "https://www.itu.int/rec/R-REC-S.1528/en",
+    "https://www.itu.int/dms_pubrec/itu-r/rec/s/R-REC-S.1428-1-200102-I!!PDF-E.pdf",
+    "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/1.49.48.en.101.pdf",
+    "https://www.itu.int/epfdsupport/questions/",
+    "https://docs.fcc.gov/public/attachments/DOC-400804A1.pdf",
+    "https://docs.fcc.gov/public/attachments/DA-24-222A1.pdf"
+  ],
+  "document_review_status": {
+    "updated_date": "2026-11-15",
+    "paper_core_and_noise_arithmetic": "checked against paper and independent arithmetic",
+    "gso_epfd_limit_arrays": "pending row-by-row regulatory source verification; not executable compliance limits",
+    "frozen_v1": "preserved; this file is a v1.1 implementation specification",
+    "gso_antenna_change": "1m EPFD reference is a separate pending profile; frozen 3.5m scene receiver metadata remains unchanged"
+  }
+}

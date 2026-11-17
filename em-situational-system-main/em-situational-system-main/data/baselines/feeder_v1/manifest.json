@@ -1,0 +1,40 @@
+{
+  "baseline_id": "feeder_v1",
+  "files": [
+    {
+      "path": "data/baselines/feeder_v1/starlink.tle",
+      "sha256": "e6907118cc6d7d93f05d793fc09e9fbad9e6d5cc46b37296bd50cba15b3e9384",
+      "size_bytes": 1750815
+    },
+    {
+      "path": "data/baselines/feeder_v1/oneweb.json",
+      "sha256": "bf98b7047df798abdb5582e22532fb23be993ce315058e2f666cb996bcc65bd1",
+      "size_bytes": 270241
+    },
+    {
+      "path": "data/baselines/feeder_v1/geo_research_candidates.json",
+      "sha256": "1c852b3ec7f0a3dccaf29a7dae96ac229695ab5572d91b2d7ca241e52e4b12f0",
+      "size_bytes": 6385
+    },
+    {
+      "path": "data/baselines/feeder_v1/GSO_17p8_18p6_screening.json",
+      "sha256": "785c3dcc223ebb943c8290c239c955b7a28b4f587d31bc816b7bab5234870cab",
+      "size_bytes": 103743
+    },
+    {
+      "path": "data/baselines/feeder_v1/GSO_reference_receivers.json",
+      "sha256": "b7d1a7b7a69b3392d4e59ff3861de09a2e8ea24def6734da9d1a1a787af0878c",
+      "size_bytes": 24619
+    },
+    {
+      "path": "data/scenarios/feeder_baseline_v1.json",
+      "sha256": "2525752037bc18f74303fc3a4ad5d7d8193909e49675750f90ee9661cd51131d",
+      "size_bytes": 56794
+    },
+    {
+      "path": "data/baselines/feeder_v1/research_config.json",
+      "sha256": "da85d169722dc0f1b20d5bf9cf43f6fc742aeb45ab6dd3d2676c939e7f11e70a",
+      "size_bytes": 4187
+    }
+  ]
+}

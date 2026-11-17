@@ -1,0 +1,35 @@
+{
+  "version": "first_frame_scan_from_frozen_v1_5",
+  "timestamp": "2026-11-13T12:00:00+00:00",
+  "active_links": 1250,
+  "active_gateways": 230,
+  "occupancy": {
+    "7": 18,
+    "5": 27,
+    "4": 53,
+    "2": 12,
+    "6": 21,
+    "3": 33,
+    "8": 66
+  },
+  "candidate_budget": 201,
+  "stages": "original 1 + independent random assignments 100 + incumbent-based one-gateway local moves 100",
+  "seed": 20261117,
+  "constraints": "fixed satellite association, positions, 12dBW power; <=8 channels per gateway without repetition; same channel may be reused across gateways",
+  "objective": "feasible first: minimize NGSO failures if all GSO reference ceilings satisfied; otherwise reduce worst GSO excess dB, then violating receiver configurations, then NGSO failures; only research instantaneous ceilings",
+  "gso_constraints": "combined contributions at all 12 receivers, 1/2/5m, both 40kHz and1MHz, all30 evaluated windows; ceilings -164/-150dB(W/m2); no full statistical compliance claim",
+  "neighbor_definition": "one pair swap within one gateway OR move one active link to one locally unused channel",
+  "initial_neighborhood_size": 5510,
+  "global_assignment_log10": 855.8858398338549,
+  "timing": "full NGSO N*N geometry/pattern/budget recomputed and GSO all reference windows recomputed for every candidate; no geometry cache or incremental evaluation; perf_counter; validation and I/O separately timed; no warmup",
+  "limitation": "baseline policy, not unavoidable computation cost; budgets and neighborhood are chosen, no global optimality or convergence claim; fixed-geometry exact caching remains a required future comparison",
+  "frozen_manifest_sha256": "7d5350e6cbd017bf7d64a620cac75a7d65977c4c3c209fd5f18688c881180dcd",
+  "input_sha256": "a1ec48d7f02fcb2d5d6d0c8276015d68bf31caab5144ba48d6392e0c5da506e5",
+  "script_sha256": "a3d5b77366c3f381d83e25acd356ec8dba57374ebec10ab0d38050fded69763e",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "dependencies": {
+    "numpy": "1.26.4",
+    "skyfield": "1.55",
+    "sgp4": "2.27"
+  }
+}

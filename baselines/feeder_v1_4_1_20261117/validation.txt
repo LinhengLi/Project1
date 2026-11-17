@@ -1,0 +1,3 @@
+Command: F:\纵向_也许最终版\.venv-ems\Scripts\python.exe -m pytest em-situational-system-main\em-situational-system-main\backend\tests\test_feeder_association.py em-situational-system-main\em-situational-system-main\backend\tests\test_feeder_fast_interference.py em-situational-system-main\em-situational-system-main\backend\tests\test_feeder_gso_epfd.py em-situational-system-main\em-situational-system-main\backend\tests\test_feeder_interference.py -q
+....................                                                     [100%]
+20 passed in 2.29s

@@ -1,0 +1,2973 @@
+{
+  "snapshot_id": "feeder_v1_4_1_20261117",
+  "created_utc": "2026-11-17T05:58:24.998765+00:00",
+  "original_feeder_v1_manifest_sha256": "36aa6cc0106ad08d413b3fad98a7979cd85540a38c0bb53233ca4808eb8ccdd0",
+  "scope": "research snapshot; no expansion experiment executed",
+  "files": [
+    {
+      "path": "environment.json",
+      "size_bytes": 27467,
+      "sha256": "d590b636606e39d4db5a1f1634ed7ae1367cf5df7a1ea2829c6719210a5dfeee"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1815,
+      "sha256": "f3808915a5215db28d780d70f63997a343bf7df40e230f38ea30b301909e98f9"
+    },
+    {
+      "path": "validation.txt",
+      "size_bytes": 563,
+      "sha256": "de271222f938495b4f4008e8f0cecd17697cdf138dda494bfdc71fa6743abe89"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/__init__.py",
+      "size_bytes": 35,
+      "sha256": "6634f972ed3effc966177dc194aff23276dabef56522c00fcd7dc1933250f066"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/api/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/api/routes.py",
+      "size_bytes": 7782,
+      "sha256": "22a9f299c8c6b3c4a06da78518080dfbb469fef09025ae7403aaa1b3141c3e08"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/config.py",
+      "size_bytes": 658,
+      "sha256": "09e87a9f2336d8df87f00607891fe0ba01a5b74f374999eda8e96cf1dc9dd881"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/db.py",
+      "size_bytes": 6951,
+      "sha256": "22dfc306cdc0142893bb14a247d320a68a6bdd5d504f58897fa9b30878946df3"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/main.py",
+      "size_bytes": 1963,
+      "sha256": "c0b0cd3bf3b6c677a157326eee71b62532c56ea0c89a371c3dae33654c61de9c"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/models/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/models/schemas.py",
+      "size_bytes": 8703,
+      "sha256": "ee037a18a461eea88e31a9a519f41aeb5ed318acd801b798014b7d26cb623f41"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/__init__.py",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/completion.py",
+      "size_bytes": 8509,
+      "sha256": "b0653950c74aaa60195fd1bf78dd39dacc91817aebd3b396722221b3277d6d3f"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/data_source.py",
+      "size_bytes": 8473,
+      "sha256": "6392547fe596d9960fb72ba5abe4a0762bb16240dfc8686e1df74ef4dd32aab9"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/experiments.py",
+      "size_bytes": 25277,
+      "sha256": "29a74e9e7120e11c758db450dc41eb1bd8f512637a1562ca9c389e73a24bb470"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/feeder_association.py",
+      "size_bytes": 4462,
+      "sha256": "cb0c1d78bcbeb2961e1610e5a7c17ccb2b19903fcf1d5b8b264b5f1a6a3b562f"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/feeder_fast_interference.py",
+      "size_bytes": 4108,
+      "sha256": "f12e611ef2e1bb5094aa644c01924593f94dee3bb15ccc465c720149df26439d"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/feeder_gso_epfd.py",
+      "size_bytes": 3435,
+      "sha256": "fcef59f3c51a31dc1c15207a8534c12d2e973385bc7c593047790aa324271fa0"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/feeder_interference.py",
+      "size_bytes": 5162,
+      "sha256": "373de54769ebd7f031b4ac8358a76ec1400ca9f0a0dbd8c8bc904ba53ef86088"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/jammer.py",
+      "size_bytes": 4128,
+      "sha256": "b024971944beb4ed4dcb39088f380041802d7529cf2aa58f662f8cd04912b103"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/knowledge.py",
+      "size_bytes": 1058,
+      "sha256": "48d6a63ee5e1166b11b16b163e5daef4093326c51dcb326be828f2fa26b4d995"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/orbit.py",
+      "size_bytes": 11660,
+      "sha256": "c15432f36080f02a2fa42fb38837246f19d73d67dcad446364dc978f4790c6e8"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/physics.py",
+      "size_bytes": 2415,
+      "sha256": "ab2e7a3dc7328e791b3d77465978ba66598266a3ff10fbc329eec2f5de358be9"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/prediction.py",
+      "size_bytes": 4311,
+      "sha256": "c2109db09c9f5dbc61857f3a9a21fde883d7921e8ad06bc960309f3367971a88"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/propagation.py",
+      "size_bytes": 4054,
+      "sha256": "9e4c92b9e3796ae3f74d989d4bbe5bebc33b690f9e980d653ba99e2e1afe3b5b"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/real_data.py",
+      "size_bytes": 5713,
+      "sha256": "6891e9ef20d13bf6fafa94723abfa14dfb83a9300aae25270623af4f41b3ab40"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/risk.py",
+      "size_bytes": 4568,
+      "sha256": "4950c3c72bb15fbea8995dd3bb8d294e0423685acefb8e373dc58fb1df6e1f17"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/scenario_manager.py",
+      "size_bytes": 14212,
+      "sha256": "8bb5ab9d4ada2de48f2467479fa48ee1b7d1bdf9e2c5d32a258ed269e549e696"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/situational.py",
+      "size_bytes": 5120,
+      "sha256": "8bd8adad1d793bff1138602cdf0272e744a92257ab10ad7d9f77ddb5984747cc"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/app/services/spectrum.py",
+      "size_bytes": 2556,
+      "sha256": "6bc00a514665ef4740a31898dbd27b54404e544dc37d17ac5b26a27262ee6d0a"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/requirements-dev.txt",
+      "size_bytes": 14,
+      "sha256": "35da9587ddcdf2f12064f3acbf4ea353246673441e3dc5f4f0af92968ed2248a"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/requirements.txt",
+      "size_bytes": 287,
+      "sha256": "62d706aac8c28635e140d482eb5c1ed64555be6c1c7c949f3b7b7daba9199d1e"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/tests/test_feeder_association.py",
+      "size_bytes": 1039,
+      "sha256": "f5bb80b120096a4bc16686d6430bc7052af976bc5b60f47fe824ae24842ad843"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/tests/test_feeder_fast_interference.py",
+      "size_bytes": 2347,
+      "sha256": "699a3d1f49d67018709e97a63bc12c87f02d2dc84d034112ec36091cb2f3c2f5"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/tests/test_feeder_gso_epfd.py",
+      "size_bytes": 2708,
+      "sha256": "afead67b336e9011a393e7da20ca30c1fcbb6ff8509a772676a75c8435fde5fd"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/backend/tests/test_feeder_interference.py",
+      "size_bytes": 6657,
+      "sha256": "d19d5b2f8172527df463e2fa506a464535d1d723c9a910ee46ee98cb5a89f2d2"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/geo_research_candidates.json",
+      "size_bytes": 6385,
+      "sha256": "1c852b3ec7f0a3dccaf29a7dae96ac229695ab5572d91b2d7ca241e52e4b12f0"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/GSO_17p8_18p6_screening.json",
+      "size_bytes": 103743,
+      "sha256": "785c3dcc223ebb943c8290c239c955b7a28b4f587d31bc816b7bab5234870cab"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/GSO_reference_receivers.json",
+      "size_bytes": 24619,
+      "sha256": "b7d1a7b7a69b3392d4e59ff3861de09a2e8ea24def6734da9d1a1a787af0878c"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/manifest.json",
+      "size_bytes": 1392,
+      "sha256": "36aa6cc0106ad08d413b3fad98a7979cd85540a38c0bb53233ca4808eb8ccdd0"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/oneweb.json",
+      "size_bytes": 270241,
+      "sha256": "bf98b7047df798abdb5582e22532fb23be993ce315058e2f666cb996bcc65bd1"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/research_config.json",
+      "size_bytes": 4187,
+      "sha256": "da85d169722dc0f1b20d5bf9cf43f6fc742aeb45ab6dd3d2676c939e7f11e70a"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/baselines/feeder_v1/starlink.tle",
+      "size_bytes": 1750815,
+      "sha256": "e6907118cc6d7d93f05d793fc09e9fbad9e6d5cc46b37296bd50cba15b3e9384"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/orbits/geo_research_candidates.json",
+      "size_bytes": 6385,
+      "sha256": "1c852b3ec7f0a3dccaf29a7dae96ac229695ab5572d91b2d7ca241e52e4b12f0"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/orbits/oneweb.json",
+      "size_bytes": 270241,
+      "sha256": "bf98b7047df798abdb5582e22532fb23be993ce315058e2f666cb996bcc65bd1"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/orbits/starlink.tle",
+      "size_bytes": 1750815,
+      "sha256": "e6907118cc6d7d93f05d793fc09e9fbad9e6d5cc46b37296bd50cba15b3e9384"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/scenarios/feeder_baseline_v1.json",
+      "size_bytes": 56794,
+      "sha256": "2525752037bc18f74303fc3a4ad5d7d8193909e49675750f90ee9661cd51131d"
+    },
+    {
+      "path": "workspace/em-situational-system-main/em-situational-system-main/data/scenarios/three_constellations.json",
+      "size_bytes": 424132,
+      "sha256": "fb3353af26213674e18d44c74562aa7bb0b18dce626c38759d7cef5cd539b34f"
+    },
+    {
+      "path": "workspace/paper_notes/第一版冻结实验配置_feeder_v1.md",
+      "size_bytes": 4115,
+      "sha256": "bbb02b143485d8cc1fbc03bb91f4c47b3afeced2f067d554ac0cebee9e1106ed"
+    },
+    {
+      "path": "workspace/results/feeder_antenna_sensitivity_v1_2/selected_pattern.csv",
+      "size_bytes": 32746,
+      "sha256": "9ae69292315c2a6ac10d3a5e1d11bfd1e258769c5d8724be0f24a966b2b72871"
+    },
+    {
+      "path": "workspace/results/feeder_antenna_sensitivity_v1_2/selected_profile.json",
+      "size_bytes": 1223,
+      "sha256": "5a5f6c04464b87046c866bf028970b93e33a0bdb541e604d57ac9d8e844c7b96"
+    },
+    {
+      "path": "workspace/results/feeder_antenna_sensitivity_v1_2/sensitivity.csv",
+      "size_bytes": 7387,
+      "sha256": "e78724c446f74c4a47ff0e55a10fca2130e3e7f013b88f1873b0704e2b8cc8bc"
+    },
+    {
+      "path": "workspace/results/feeder_antenna_sensitivity_v1_2/sensitivity_details.json",
+      "size_bytes": 628005,
+      "sha256": "ecfe8cd4b91e1977522c39efeb450b8dbf78c1412c08a3d045a32b03166df566"
+    },
+    {
+      "path": "workspace/results/feeder_association_v1_1/associations.json",
+      "size_bytes": 4531928,
+      "sha256": "05834f1ad3a10bb6078dde0557d906f68e2591068a002d6c7e6ed3e23784e24d"
+    },
+    {
+      "path": "workspace/results/feeder_association_v1_1/parameters_snapshot.json",
+      "size_bytes": 11806,
+      "sha256": "767a499263012b8a411e4e46390c5fb34c1512c6dbe33012939376df8cd1273b"
+    },
+    {
+      "path": "workspace/results/feeder_association_v1_1/summary.json",
+      "size_bytes": 359,
+      "sha256": "4dc96edbceab7e82a13261d3f4ca9dadd18dd925f97d9fb5242ec7dc5793d4a4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/config.json",
+      "size_bytes": 6493,
+      "sha256": "e09260b9f610202919c3fa3dd0e964afb46aa07a924c0575e627a68ea6dd72a8"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_000_all_cochannel.npz",
+      "size_bytes": 48890,
+      "sha256": "765a2cfc3e010be7a45849294a021abe8ea7ab18f811fcdb95fec4ce738e3461"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_000_antenna_index.npz",
+      "size_bytes": 62127,
+      "sha256": "3e62bd389ac89ed91f60b48a24418c64e2f59fd4e6c84e1de63f546e7aef2cd4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_001_all_cochannel.npz",
+      "size_bytes": 49207,
+      "sha256": "b740ffcb1cbfd2385878a75aefae3b31ad964b8d845e66f6402c7da7b5e67465"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_001_antenna_index.npz",
+      "size_bytes": 62509,
+      "sha256": "672512b43d9959c4400e1057cdfe41ababecf19f8f69773e23ff82f634aec3c3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_002_all_cochannel.npz",
+      "size_bytes": 49452,
+      "sha256": "fd1d9bf98b5d2da266c54da138db4fc5cd0450f451ca146219f70cdf8901bacf"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_002_antenna_index.npz",
+      "size_bytes": 63302,
+      "sha256": "6ba513e23bfa047c6bacbda6e93cd0217cea727b6ecc959f55201e11fdb7d33c"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_003_all_cochannel.npz",
+      "size_bytes": 48319,
+      "sha256": "58398bd123c745570e4efadd1f5236441f49318d2160e0c70a74a2e77ec2a584"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_003_antenna_index.npz",
+      "size_bytes": 61690,
+      "sha256": "92450b8a073c3610bca34ae1e83805dc68287755859ccdc9b25e984936990c32"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_004_all_cochannel.npz",
+      "size_bytes": 47052,
+      "sha256": "d30133503cc19fcde1631103a5d03d15a9e1a85cd9d74082afacf41f0b3938ab"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_004_antenna_index.npz",
+      "size_bytes": 59986,
+      "sha256": "45b83d17a4abe54b97648076ab52cc58e6d7d422876bb09ce15933bc38266d31"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_005_all_cochannel.npz",
+      "size_bytes": 46095,
+      "sha256": "35402dc19464d31982ff76f79e3b92f816a88d3dd02173fe2ec31343b32f3a35"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_005_antenna_index.npz",
+      "size_bytes": 58282,
+      "sha256": "36b858e086911022f00250b3a672b161cd260415da58a36f84165e7b795599ce"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_006_all_cochannel.npz",
+      "size_bytes": 46829,
+      "sha256": "1c889ff84ec96f88c23596d8fc5bf3e790c00a605b790a401b7c9fa7183b92d3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_006_antenna_index.npz",
+      "size_bytes": 59195,
+      "sha256": "b3aed5fdb296c3f8cb05318fc7bacb402d084050f62317a8e40cdcb04639b840"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_007_all_cochannel.npz",
+      "size_bytes": 47426,
+      "sha256": "83c79d7a51db91a025bb2429619ffe12d77aab2bb08c878413281e2fb8da3d88"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_007_antenna_index.npz",
+      "size_bytes": 60511,
+      "sha256": "a13617685bdd8b0bf66587a88c3914544489fc88170cbe62a4e6ba0098525fa3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_008_all_cochannel.npz",
+      "size_bytes": 47953,
+      "sha256": "6780bbf515ad2e12e1d4aa5705cfe7d9620c3c32704841365bed80991abbf15b"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_008_antenna_index.npz",
+      "size_bytes": 61708,
+      "sha256": "b5123913571c2172f3abc1c3e7d4e5429349b3bb37c5d2d0e043853ddbbc61bf"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_009_all_cochannel.npz",
+      "size_bytes": 47942,
+      "sha256": "0302ee1063d02b06844297c21531dfc279c88e52a26baf0f79e9e1cc51f3694e"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_009_antenna_index.npz",
+      "size_bytes": 61318,
+      "sha256": "e3024f9cbd1817ef1d33e2303da32dd6207685d41827047403a56f80a442c28e"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_010_all_cochannel.npz",
+      "size_bytes": 46891,
+      "sha256": "ec9b184be488c4bce81352e97b78b7605be2632428286c7b0a0ede2f8ff144af"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_010_antenna_index.npz",
+      "size_bytes": 59775,
+      "sha256": "8bc7f797d76188404f20b3337bd387c0d8736736f845b4ab0f825617d5281fec"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_011_all_cochannel.npz",
+      "size_bytes": 46792,
+      "sha256": "4f04bcbc90035c5445306170e18e64ef5cd443409e666c9b74f54f4a85d3c633"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_011_antenna_index.npz",
+      "size_bytes": 59400,
+      "sha256": "a744e2285e173dd756839dd6bba14a42e9b94b43c6ee0c45963db47f79bba223"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_012_all_cochannel.npz",
+      "size_bytes": 47378,
+      "sha256": "b395862b8114f935074a7f28b8559e21a741268d6f3929eeb84c4e605fce2a15"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_012_antenna_index.npz",
+      "size_bytes": 60205,
+      "sha256": "56a2ec0f2a2897985aa3a9dd8248231f60c8220a52ff4e840a5c9bf01a0fdd6f"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_013_all_cochannel.npz",
+      "size_bytes": 49383,
+      "sha256": "66ee4fdd32a4d55533618b650b8aae89c76402217250711e9d11ccd6b89d4902"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_013_antenna_index.npz",
+      "size_bytes": 63542,
+      "sha256": "53b47839e3f63b1e46aaeefe5f4a800e3887daa6d13f95d4eac95ed09b22ab30"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_014_all_cochannel.npz",
+      "size_bytes": 48515,
+      "sha256": "79bf43961d11f97c07ebb19fe88ce531ec39c71804c20a91c0c9253d537e0a95"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_014_antenna_index.npz",
+      "size_bytes": 61666,
+      "sha256": "c1db0cdfc368d1efe5f684643a73c2347d8ceb62905adcb280338ebd1fec3bb5"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_015_all_cochannel.npz",
+      "size_bytes": 50212,
+      "sha256": "0c554c5996a3e3f53389d64e72fbabca1dfd1b717a27c9f74dd0e57a95eeb115"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_015_antenna_index.npz",
+      "size_bytes": 64265,
+      "sha256": "6f3762a610b0ffd6b67b9293448b85658d81c30841609d04efd17fb26939f7e9"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_016_all_cochannel.npz",
+      "size_bytes": 49974,
+      "sha256": "f8d6c12ed4e30be88d9e33bf4bec9333e73a02afcd62fec7155d836cf3f3e2b1"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_016_antenna_index.npz",
+      "size_bytes": 63966,
+      "sha256": "ddae3cc00c4306e9ec3d4dd29b18787fddd2ba667370ba767ab59534ef194897"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_017_all_cochannel.npz",
+      "size_bytes": 46604,
+      "sha256": "0788d25a01a8ac426ae4b3e1c12a7e1cd2b400aa5bdc9d05e313e585c67621ab"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_017_antenna_index.npz",
+      "size_bytes": 58689,
+      "sha256": "3a09fb6bcd8532d6325f9538c8168a0c5a5d08743304c5ac5ca98731d315d3b3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_018_all_cochannel.npz",
+      "size_bytes": 46620,
+      "sha256": "4be2f5252ee2a36caab230baac017e46ea46ea76fb0eb695f5a53654e9a61c92"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_018_antenna_index.npz",
+      "size_bytes": 58631,
+      "sha256": "beefdd16311eba872abda0ab605f615181bd2669c273f0ec6a9c47682416c540"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_019_all_cochannel.npz",
+      "size_bytes": 44582,
+      "sha256": "9d844188d9dde02d243262198ce001ab4b62493519c1434d826349b230c16596"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_019_antenna_index.npz",
+      "size_bytes": 55834,
+      "sha256": "255cd97295f7fc82af36aadf394e4b771767b5db04e78a98162a38833880c623"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_020_all_cochannel.npz",
+      "size_bytes": 44767,
+      "sha256": "6e3c3bd3b173073bedc371c95f2e061db1d53a8eca7557afa64f184cef1e4bbf"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_020_antenna_index.npz",
+      "size_bytes": 56324,
+      "sha256": "a81dcb983ffcf87394e84a44cde0c00ab7f320fe9f86d9eb0f0e0399349ddae0"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_021_all_cochannel.npz",
+      "size_bytes": 44479,
+      "sha256": "610d199108184e621e6290319e7d1bec7ff50ce0fb8a90e3dd666702c94993ba"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_021_antenna_index.npz",
+      "size_bytes": 56425,
+      "sha256": "64c6cdd28084a503624409a3d8d94d7ff834c6b74b3dd239bf61253cf5298370"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_022_all_cochannel.npz",
+      "size_bytes": 44260,
+      "sha256": "119456349ff28aeead2d3006d278d3d56c7586689bbb5e6a7730e8ad7a4339aa"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_022_antenna_index.npz",
+      "size_bytes": 55920,
+      "sha256": "938b623c54d2cc27775fbf467e09140c56e55a7c15ec2c054e1de6289c65df99"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_023_all_cochannel.npz",
+      "size_bytes": 45648,
+      "sha256": "da0298fae82e041ad65ce21144c7efb92a787aff8302fcca19309c90fe79ecd7"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_023_antenna_index.npz",
+      "size_bytes": 58112,
+      "sha256": "daaa2365fc882ea5954bbb207b62bf4b900ae114fdec7fae75328fb32cb908fe"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_024_all_cochannel.npz",
+      "size_bytes": 46373,
+      "sha256": "d0fa36dae4cef09cba6c970c0425ed2466a02274231e284d395d277d6e345425"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_024_antenna_index.npz",
+      "size_bytes": 59326,
+      "sha256": "6cd87aa4df0ca7d9e8980eeeb0bbff98cd9f2c46babf5adbbd5cbc0d0ee9afda"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_025_all_cochannel.npz",
+      "size_bytes": 47302,
+      "sha256": "9a11c3ba2cfb72b953177947abf38b8d371ec076e76e69d6fe366da84df6c148"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_025_antenna_index.npz",
+      "size_bytes": 60890,
+      "sha256": "3746d80239052d109343178f998955f78e103524b94d6dafa11ae4d9a7fbc209"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_026_all_cochannel.npz",
+      "size_bytes": 47364,
+      "sha256": "0ed4a4abbc17f66f0a7054cff7aa2f5384a68c221edf55016ba191c366617c19"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_026_antenna_index.npz",
+      "size_bytes": 61035,
+      "sha256": "72e33ac03e1c4c41716d1ef1d4ea8a8002b6b98591ffdfd2900d95e044784d67"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_027_all_cochannel.npz",
+      "size_bytes": 48215,
+      "sha256": "8a6333a1a69160db5ccd6316a4b23a9607f70025838ec656c1f125858b617e5b"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_027_antenna_index.npz",
+      "size_bytes": 61876,
+      "sha256": "c14039bb5734d564bab1b25a68143676c726d8a52af36aa3aab6b25894d4ef7f"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_028_all_cochannel.npz",
+      "size_bytes": 49218,
+      "sha256": "0bc0a90c8fd275c413ed231be9ffb3eb2a54758cda7d54dce2315700d5684a45"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_028_antenna_index.npz",
+      "size_bytes": 63488,
+      "sha256": "2b59d663c6fb72ee7f03ce41df4f569b123923508b7e570e990b82dfad46c35c"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_029_all_cochannel.npz",
+      "size_bytes": 49766,
+      "sha256": "5d077d6e9733d2f15ff0b9f78155c62cb0f1c1a9c7ce566a81607a00eb0998a1"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_029_antenna_index.npz",
+      "size_bytes": 64051,
+      "sha256": "f1393a3f0793f4a76a1605bd8f9c4efd99f80f8341d085637e4381b0d9776742"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_030_all_cochannel.npz",
+      "size_bytes": 50657,
+      "sha256": "ac25db7b395727b38c039f2c2350369d669f1a8fd6b6b04e3896b1420e60e4d3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_030_antenna_index.npz",
+      "size_bytes": 65223,
+      "sha256": "ec4803c87d0b215c11171bac82ea18cf572154635ff123b3d158188b850a836d"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_031_all_cochannel.npz",
+      "size_bytes": 52165,
+      "sha256": "bd2751606def7367238af5ec580b4a7764f93319bf8acf655b879308013001d4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_031_antenna_index.npz",
+      "size_bytes": 66955,
+      "sha256": "61ca48448079737bb7d644a88b5e536373928b9493f8c5e165d212e83fd98845"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_032_all_cochannel.npz",
+      "size_bytes": 51519,
+      "sha256": "37a87a7a084761f47e528068de1364747880ce637fd0844c4980969011db73c4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_032_antenna_index.npz",
+      "size_bytes": 66764,
+      "sha256": "2e37f30b1068fb1bd703ec9e60489d7466f02f1326e36360837d06d7076b7af9"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_033_all_cochannel.npz",
+      "size_bytes": 49766,
+      "sha256": "59d379fdef1fab29ede9cae51c5d03aa44a415804138916377db52d74c18b1af"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_033_antenna_index.npz",
+      "size_bytes": 63933,
+      "sha256": "ede353e02bcee5ed4b170f18f02ac2563366c161d9359af644c7cec763aaa2e3"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_034_all_cochannel.npz",
+      "size_bytes": 50339,
+      "sha256": "3f420606d953525188f8257bad8f20f0aba2885c02ef99b19bef7f4692e45579"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_034_antenna_index.npz",
+      "size_bytes": 64791,
+      "sha256": "f10ad9ebe1df4fd596cbddbe3a3b13cf2575a8de4e74ca461892266bf20ca835"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_035_all_cochannel.npz",
+      "size_bytes": 50244,
+      "sha256": "741287a2862d807f12266b7a28afe9ceb1287ceda32525c1ccca98b713d7538d"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_035_antenna_index.npz",
+      "size_bytes": 64351,
+      "sha256": "4b7b14925ca5c89cf9b8ef5467f3f63930c9c8be4d3402b06b43c76695008947"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_036_all_cochannel.npz",
+      "size_bytes": 50112,
+      "sha256": "17d5fb4ce61150299db3d29528bf34806de5ea848c067f5f733837502a65480d"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_036_antenna_index.npz",
+      "size_bytes": 64216,
+      "sha256": "258c290ee71850146908cf9b728a9a5e0d348c88d0cc65bfda8fcd76f16d3fb9"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_037_all_cochannel.npz",
+      "size_bytes": 50710,
+      "sha256": "f2a408a14d550f0aa378f26acc1331968d6bb43e5e4dceb9c36b86716a0e23c1"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_037_antenna_index.npz",
+      "size_bytes": 65108,
+      "sha256": "b071cb2e15b45e25d02bda2345bc93536962f431659425b9e05885c51d83be41"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_038_all_cochannel.npz",
+      "size_bytes": 52045,
+      "sha256": "afbc3b8eb3175ed81e2418d11964ac27e82e61b7f982b786da8209fe2a275110"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_038_antenna_index.npz",
+      "size_bytes": 67485,
+      "sha256": "a8fb105c555501e8be81c32ace47d7abdb30153a87ca334ccbf265d1fb9310e0"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_039_all_cochannel.npz",
+      "size_bytes": 51593,
+      "sha256": "5adb96cdd5918c28d0cc6ac6f653042b1b567dc3c3380c387a22d8ccb86a20bb"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_039_antenna_index.npz",
+      "size_bytes": 67083,
+      "sha256": "571aa17fcca0bf422b3653bfe558c8fd10b4e864d3e031863f47c432fe4fff43"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_040_all_cochannel.npz",
+      "size_bytes": 51890,
+      "sha256": "1177875edb7074658ac43f7e73741d445d0725f0244aa5cf16b69f857e3fdebe"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_040_antenna_index.npz",
+      "size_bytes": 67742,
+      "sha256": "dce8be499211b08370c9ce42a792def3ff982208a7ed1bea205215207997718b"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_041_all_cochannel.npz",
+      "size_bytes": 52977,
+      "sha256": "3b9a9dd36914402fc22b57b3bac3ec72bbf14b5a607353c74b68ca0ba3112773"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_041_antenna_index.npz",
+      "size_bytes": 69284,
+      "sha256": "b93589f507b9a231cc5e22c6a59ca6395ef57a8a65610d20cbcc576d8d94b225"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_042_all_cochannel.npz",
+      "size_bytes": 53658,
+      "sha256": "96adc4615a67f2db7adbc284fd1892e3767c40bd945c6e32b03ca87cfd230fa9"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_042_antenna_index.npz",
+      "size_bytes": 69839,
+      "sha256": "666532136e23040388518889690e884c2add69ca72232218743c2db891fc7746"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_043_all_cochannel.npz",
+      "size_bytes": 53692,
+      "sha256": "691737398ba174f0a10bec5b5b057bbbc73331b99c1f6c2e2ed39bfe6fb9ddb7"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_043_antenna_index.npz",
+      "size_bytes": 69843,
+      "sha256": "f5ec7786dbce9fce1f00c0127cf7c956e989b03721c4f5ccd0a20db8c62392b5"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_044_all_cochannel.npz",
+      "size_bytes": 52649,
+      "sha256": "8c518962db977e3696957e15ef4af26cc0297d84685f11024ad00db5003843e4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_044_antenna_index.npz",
+      "size_bytes": 68456,
+      "sha256": "d061aef1cfadfcd52cfa9c57a4cc30eb94bff498184ddc88604409a068184ffa"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_045_all_cochannel.npz",
+      "size_bytes": 52801,
+      "sha256": "3fa0f98219b1df989ec2a112d91c7bffc77abca67acb417fa700e1cba304ece7"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_045_antenna_index.npz",
+      "size_bytes": 69085,
+      "sha256": "ec3587e96883797978fc5b7e8b0b1eee364852f641349b7ade94ac1122ca73c5"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_046_all_cochannel.npz",
+      "size_bytes": 52285,
+      "sha256": "7ed720634eac2dbf4dce0252816909eedb5083342a9d0204627233747daab909"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_046_antenna_index.npz",
+      "size_bytes": 67825,
+      "sha256": "8563890f5e0fc5696583a3f514322a5b8d11ff07f21e77a27cb005d8913d3277"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_047_all_cochannel.npz",
+      "size_bytes": 51787,
+      "sha256": "6ca46c7d47489e85b77676d68880c789fb069eef9d676599780bd5f95c9fb1bb"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_047_antenna_index.npz",
+      "size_bytes": 67091,
+      "sha256": "16042e92850f58a307f0c5f4be003b6ae5c6ed2dc06c363b4395d77a7666993a"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_048_all_cochannel.npz",
+      "size_bytes": 51418,
+      "sha256": "9bcb61a2b40199b556483e42ee5909f99c914819411a85600be64364e9c44075"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_048_antenna_index.npz",
+      "size_bytes": 66825,
+      "sha256": "6e444647f4606d2645b503d483605e9eb25ba7a555e72123445dd3d0fd0b955f"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_049_all_cochannel.npz",
+      "size_bytes": 49088,
+      "sha256": "6b2ff110713f23a662f85ddc859fabb672966aad14fafe573a31a62e075b4050"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_049_antenna_index.npz",
+      "size_bytes": 63015,
+      "sha256": "64bf22a40afcda230f4c9e564d769decf195f8acebcd44387183fbad5926373c"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_050_all_cochannel.npz",
+      "size_bytes": 48939,
+      "sha256": "5a65c5639083471ce836b7a5346e52cd8e86dff9093baeb2e02077953fde0933"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_050_antenna_index.npz",
+      "size_bytes": 63638,
+      "sha256": "8edfbdbfa634da93d9222b7cbd9f77da3bb1d2e578f9ffab237d721e27db6a22"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_051_all_cochannel.npz",
+      "size_bytes": 49378,
+      "sha256": "ce60b07ab891a912fcbd8bfd9bb0316386b99875df19a7405dd8a983dc6d1230"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_051_antenna_index.npz",
+      "size_bytes": 64179,
+      "sha256": "1a0fdd5b352e683fecdd75b0ebfa610cf9a9c15d9da7f31f4ea1357ee516519f"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_052_all_cochannel.npz",
+      "size_bytes": 50978,
+      "sha256": "26175bd9618366141b40817edd2910e5d1dbf1850edf2c192f6493f64519a82a"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_052_antenna_index.npz",
+      "size_bytes": 66023,
+      "sha256": "b01682127ca12fab55f77b4c87032c59df06f408eef188c7a7be79af00017eb9"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_053_all_cochannel.npz",
+      "size_bytes": 53820,
+      "sha256": "fe36943e5e9a1631bb07998e5f3bfe1cc4f32f9a9306c84de05a1b567344f437"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_053_antenna_index.npz",
+      "size_bytes": 70406,
+      "sha256": "ea3f13f7dd3c421004f6c2fd77c719098b6fd8f4c17e01e369fcae55b160c4d4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_054_all_cochannel.npz",
+      "size_bytes": 53117,
+      "sha256": "fca8c3f4a46c73bbca9511732a7d27f9d427b2bedcea3ecfaa02ec317696a0ed"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_054_antenna_index.npz",
+      "size_bytes": 69458,
+      "sha256": "c3c3cb874b80adb6d60ef70793c22cfdba42f4074eb1a3f07ea1ee98451436a2"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_055_all_cochannel.npz",
+      "size_bytes": 53974,
+      "sha256": "2aaa2d57f143836fb8dfc7a730a045c1c43aded15f9d9f4d88ad98ed98e2d6cf"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_055_antenna_index.npz",
+      "size_bytes": 70111,
+      "sha256": "8bbf106ef5e905d47b79f2689724afb80091723bd1a808a669136d9357675abb"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_056_all_cochannel.npz",
+      "size_bytes": 53608,
+      "sha256": "06718aebedaa0b46ebf573b5c3c6cb57e81f691e58c4bef026e3d32f8a28a9d7"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_056_antenna_index.npz",
+      "size_bytes": 70491,
+      "sha256": "87031cecf19544146094e7528a4c438f8c06087030c07c75f3b6a25dd9ca724b"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_057_all_cochannel.npz",
+      "size_bytes": 54004,
+      "sha256": "06369c9f63c49f76902a4fc4dc95551a1ab339253dbee858f1ee39befee994a1"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_057_antenna_index.npz",
+      "size_bytes": 70999,
+      "sha256": "4714f89132d202b807ec29915475e0e0fd4d397036d63383b5722f5dc2613305"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_058_all_cochannel.npz",
+      "size_bytes": 56963,
+      "sha256": "8042c9263e844aab64805d5dd58b93c95afddecbd3fc3e34cdf8ffee71a13cfd"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_058_antenna_index.npz",
+      "size_bytes": 74668,
+      "sha256": "c978ed22bb0b0da3f34945f4a6301c3ac79b2b0c593c116d73695f826b3d561c"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_059_all_cochannel.npz",
+      "size_bytes": 55603,
+      "sha256": "c71bf52679160676ac819ddcb3bc93c74e4f995e82baaac655f967eaecae59c4"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_059_antenna_index.npz",
+      "size_bytes": 72557,
+      "sha256": "f58af0669ca2f584ba0f44b72c1d85d113f920b18fc85e56e3c8b6d03f596e61"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_060_all_cochannel.npz",
+      "size_bytes": 55311,
+      "sha256": "97cfc1f394ff5c6a7de709250222d213cecec3e4d9005c956f860023d93d1931"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/frame_060_antenna_index.npz",
+      "size_bytes": 72061,
+      "sha256": "ae88429ac5a4b5f6278c3b3e3229b30b6011fc7f8b9d1a427aae9e4ea84f9c2b"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/legacy_bridge_validation.json",
+      "size_bytes": 251,
+      "sha256": "2985078197848c145d95e5313a02f32685eb6df677cbbc96de008de68b9350cd"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/summary.json",
+      "size_bytes": 3607,
+      "sha256": "1b9b8d612443daaadeb2cd972e2ea2806575b3f9fd40639ede4f59e93ec8070d"
+    },
+    {
+      "path": "workspace/results/feeder_gso_epfd_v1_4_1/window_epfd.csv",
+      "size_bytes": 27500313,
+      "sha256": "a40c9f61e2a967669935f10d91c4617360f685de105bebbe7698f73ac26b6b9c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_2/single_slot_matrix.npz",
+      "size_bytes": 49461,
+      "sha256": "02cc174202869a15c8266d2ca1dac825f712bba36c90bc20fd6cdd20ed17fbbe"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_2/single_slot_summary.json",
+      "size_bytes": 20628,
+      "sha256": "b240c716ea105977dc7b903811310e3e9af1f02f464177d1cbc8af57088f67b1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/baseline_per_link.json",
+      "size_bytes": 1853926,
+      "sha256": "f24208ba2b716b0d10687939fa3dce3f4caa92d80cb481b1bc965ac9c1db8065"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_000_all_cochannel.npz",
+      "size_bytes": 49680,
+      "sha256": "b9aacbeec5e473bea8c23ebdb436e8ac07a8d90363b10c17b1a7362ba1feb8b5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_000_antenna_index.npz",
+      "size_bytes": 49732,
+      "sha256": "adaefdf3b1f11b23400011747d25af55b93a70e88d694264b25b05b737f036ea"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_001_all_cochannel.npz",
+      "size_bytes": 49769,
+      "sha256": "7df58587ed3f1c7e7d4aa2fd836acf66e2d9442a9b923620b6ff3db64b5bca07"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_001_antenna_index.npz",
+      "size_bytes": 49818,
+      "sha256": "0bcfcb6bc895fbf14e4d6e3f158af45521094cbf14413bcc931b19b6d5356422"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_002_all_cochannel.npz",
+      "size_bytes": 50785,
+      "sha256": "df8a4f1fe4b62f73fdbfa68a36f648b97a38b1cc18bce154c50cf4bedf4ec490"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_002_antenna_index.npz",
+      "size_bytes": 50833,
+      "sha256": "0d0ebf893101d8d1e3e5718075377296cc554a4e2fa3078853c2339ace44dddb"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_003_all_cochannel.npz",
+      "size_bytes": 48360,
+      "sha256": "5c3ce060c769b6722e303402030ae051afb0f55a6c2c1acc69b39156cd4f98e1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_003_antenna_index.npz",
+      "size_bytes": 48406,
+      "sha256": "a5d62392a9acda558470e58d9c4d5e71faab2a17a51ce7507d2473cd6cd6ded3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_004_all_cochannel.npz",
+      "size_bytes": 47215,
+      "sha256": "87b0a583ccedf4fe69f709ce420258432c4bc72bf1fef5180fb20f9f78c09e29"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_004_antenna_index.npz",
+      "size_bytes": 47254,
+      "sha256": "cfa8b96d0d61d12ba1e34142ac13793c7631a69f09649edd4a45efc94a059fb6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_005_all_cochannel.npz",
+      "size_bytes": 46026,
+      "sha256": "fa5243958a817ab00b5ba12bffab4049bda26b190a9b753a55a6ebc1afad0a5d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_005_antenna_index.npz",
+      "size_bytes": 46056,
+      "sha256": "c6df0454d4ff0ebecf174d762dcdc5117db5b9dc35bc8af0192af0551a0ba5cf"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_006_all_cochannel.npz",
+      "size_bytes": 46982,
+      "sha256": "754fcc82923258984fd90b0e52c0349752cab75acf2511c47600247e907062f4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_006_antenna_index.npz",
+      "size_bytes": 47037,
+      "sha256": "d16aed55beb326e155434063fa710600cbdda2063417ca9e157243052de862e0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_007_all_cochannel.npz",
+      "size_bytes": 48325,
+      "sha256": "721deb132c91f5fbc82a9e8672cd987d52b5c412c55840bda2b386c3fffcfc95"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_007_antenna_index.npz",
+      "size_bytes": 48367,
+      "sha256": "42f6fa198e86d45a4960c48392a13901c0274d6a02534296b7cad989ae62da96"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_008_all_cochannel.npz",
+      "size_bytes": 48257,
+      "sha256": "f12c022edaa4cbe05afa986cbcd65efb20f4bc8c3d2ee7ed5918d0fea5656dfc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_008_antenna_index.npz",
+      "size_bytes": 48302,
+      "sha256": "e4b05b07ea459671712531a22a2351f9ab750fac99d0f4f8351f7a9f6cde8d4b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_009_all_cochannel.npz",
+      "size_bytes": 48334,
+      "sha256": "f92a343677ee4d649c6d71a0c647080e708443d657ed621e2d524fdee6645b8a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_009_antenna_index.npz",
+      "size_bytes": 48380,
+      "sha256": "9a05389e3a1484c7a3dd0faee691f04feec6e718f8c9c5cff46a764fc9036059"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_010_all_cochannel.npz",
+      "size_bytes": 47025,
+      "sha256": "138133d16aac970cd3ea86f5624d7d1ae23fb8df204bb14764ad77691e17acc6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_010_antenna_index.npz",
+      "size_bytes": 47071,
+      "sha256": "f7805096e1ca17975f7286f0330c85e66f1566d334395f080b2d33b8777ab282"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_011_all_cochannel.npz",
+      "size_bytes": 47059,
+      "sha256": "78548d0b60b17fecc746aef1fb1dfe3a0b13d901f7ce8a8636d48233df57ff4a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_011_antenna_index.npz",
+      "size_bytes": 47093,
+      "sha256": "c82ab5347386b3cc46dad9e12460d05d5f8f59ec21704ea0541c03a567a676ed"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_012_all_cochannel.npz",
+      "size_bytes": 48364,
+      "sha256": "a52e58fe00c1b6b27e6530c65f5e652e541133eec11de7160cbea66b889de50a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_012_antenna_index.npz",
+      "size_bytes": 48399,
+      "sha256": "85aec9ac298820c9ca733a30c736783f6d362e9afd951faab6b0a64d6467baad"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_013_all_cochannel.npz",
+      "size_bytes": 51052,
+      "sha256": "367a34811b3e8d1e633580406ad8ca7fdd5f489f45b66b6ff199397357322bc9"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_013_antenna_index.npz",
+      "size_bytes": 51088,
+      "sha256": "93da9482783bede7b1d96f9288adf0adecd8f3f10a609d6a9ae57dc0701016e0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_014_all_cochannel.npz",
+      "size_bytes": 50814,
+      "sha256": "2eebd6b35abc308aea33d553065844d2bef075d1613cd7b6783f28b9071dcdfa"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_014_antenna_index.npz",
+      "size_bytes": 50869,
+      "sha256": "9b6ff447a021dc6695ff3ff02839823c3ae7c24c9cc43e749d31305647f6f327"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_015_all_cochannel.npz",
+      "size_bytes": 52377,
+      "sha256": "40cb38c19a4abe0752334dc6b874538c71e21c8e0335f0ce50f75839a546ec08"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_015_antenna_index.npz",
+      "size_bytes": 52423,
+      "sha256": "e1fbf5a4618eefa9de42fd1830c979e8ed4ff9585814afb6166add4f3c097cbc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_016_all_cochannel.npz",
+      "size_bytes": 51083,
+      "sha256": "01bbbec5f3827cdd8854e37b31bd2295aede594c2b4c19288cdb195b96908b4f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_016_antenna_index.npz",
+      "size_bytes": 51124,
+      "sha256": "64ab86e24db0b8496b11c700bd3577314a991e804b3288c6533fbdd55fa0316a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_017_all_cochannel.npz",
+      "size_bytes": 47027,
+      "sha256": "03ea698e2b15bb7d164d695f2d0413947fec94a280ed76383dc2ab8d30c59ad6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_017_antenna_index.npz",
+      "size_bytes": 47063,
+      "sha256": "86102a91631f00fbb975f912b04cc344263ab495d80af2900fb8df5530bed0c7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_018_all_cochannel.npz",
+      "size_bytes": 46859,
+      "sha256": "cceb0d3ffedf9dddb13f6f8b5ec16f0c93d5a61f44a72aa921363a0355abdb76"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_018_antenna_index.npz",
+      "size_bytes": 46913,
+      "sha256": "9bc99960834ad9ebef7c8adf2258a90ff021d637f00e8832a63cf45e06f8174a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_019_all_cochannel.npz",
+      "size_bytes": 43435,
+      "sha256": "77274700daf664bcbe0d4370a6f181a269e7e803ecd5271ac2e0ef239b9c5cd8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_019_antenna_index.npz",
+      "size_bytes": 43472,
+      "sha256": "fa4a1d3c97d3c2609e78b633b47dd62c925884ce7b5a15717dadc3c2c91b1cd4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_020_all_cochannel.npz",
+      "size_bytes": 43601,
+      "sha256": "9f6de0cc9254c94547811bb61d8322385c14f814a0fc10ce5d599484a29f0f0b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_020_antenna_index.npz",
+      "size_bytes": 43646,
+      "sha256": "7d16826b9bfbc1d2ea105af3c5179ebf0ea057912ee9cb7a695efcbe77c3de54"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_021_all_cochannel.npz",
+      "size_bytes": 42525,
+      "sha256": "1cb36362f3ba8007d0ee0df8bf53ed642acbbc7dc93ac30d1defad379d6e2831"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_021_antenna_index.npz",
+      "size_bytes": 42572,
+      "sha256": "f07713430e93020466eb504e147be4777eabe6a6ffdd7b2a6ca4d91b21801175"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_022_all_cochannel.npz",
+      "size_bytes": 41434,
+      "sha256": "0ceefa84451828a88c3f692edcc00d034e21aac6a0dd14b5706fe751625b8b0b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_022_antenna_index.npz",
+      "size_bytes": 41474,
+      "sha256": "052472597912fc3b8af426b24888002fea65fd518d6972da9daa886cef9f8cab"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_023_all_cochannel.npz",
+      "size_bytes": 42793,
+      "sha256": "a1b64d2638f74f3998edbc9a09afa8b93994f5f1f4044dbdbe77ed0b4d087bf7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_023_antenna_index.npz",
+      "size_bytes": 42828,
+      "sha256": "d1fb9648cc6e17bd592043993f1ae114a8884b9ac7e8457a8dcd165e2795ff50"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_024_all_cochannel.npz",
+      "size_bytes": 42786,
+      "sha256": "a8ef71d6cc84353ff76d298865a54d72ad6aa880c0492609f6e6e01e56ff0124"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_024_antenna_index.npz",
+      "size_bytes": 42836,
+      "sha256": "d6486cb15bbc5e1859af1e209b2b076c3819302fc7089df8f17f4fa7f7464838"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_025_all_cochannel.npz",
+      "size_bytes": 44800,
+      "sha256": "89a708670ec8c88f7ccdfeb6ffcdbcc0bcdc48c6b3d4d89d9f6264667929a473"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_025_antenna_index.npz",
+      "size_bytes": 44858,
+      "sha256": "46f7ce3ed66129da7649a01d6bf7f0a2ab2432b933bf7f887c87f3ce3086c924"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_026_all_cochannel.npz",
+      "size_bytes": 46129,
+      "sha256": "d7705f7ddbe7f682b3e98c4ea162410a91e583c118393520d8dc92d0587d716a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_026_antenna_index.npz",
+      "size_bytes": 46170,
+      "sha256": "2115e744bd3fb3739dc8f4bf8f284f05681c48c7f8aba87c6c17b721c2f0bd76"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_027_all_cochannel.npz",
+      "size_bytes": 48718,
+      "sha256": "0532feb349a78bf465ad7333d4ff6ce576afadbb92e5699ff0086d7b749898d4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_027_antenna_index.npz",
+      "size_bytes": 48762,
+      "sha256": "8477ba94572165f8df65455e3a56b0df41b49dc4dd2986d4651f95f67aacfda2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_028_all_cochannel.npz",
+      "size_bytes": 48746,
+      "sha256": "1ff112fde1e2dd8584e0d4ffcc0bfd7675452f25ddcd4171119e0518cf76ade9"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_028_antenna_index.npz",
+      "size_bytes": 48786,
+      "sha256": "657ddff14d00a080a843dcf465d62d80b795fa52a42c32398498ad7132428227"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_029_all_cochannel.npz",
+      "size_bytes": 52790,
+      "sha256": "374ea5bd35cfbbec282557c71af4d2163e6c6835009ae3bb77269d34d03b657c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_029_antenna_index.npz",
+      "size_bytes": 52837,
+      "sha256": "496b2abc0f0503f8fd4a2a79e2e4ff30e688f91d640ee83cd18b4b6165d2297b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_030_all_cochannel.npz",
+      "size_bytes": 52538,
+      "sha256": "0a32aeaeace1ed8a052b7aabfe285622e0e39df8c9c71121d6384921256472bb"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_030_antenna_index.npz",
+      "size_bytes": 52591,
+      "sha256": "d75043f89c7578f0833a9e53cfca3bce9fae39865aa0aebb3fb8f6497f837791"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_031_all_cochannel.npz",
+      "size_bytes": 53868,
+      "sha256": "8e737e01c401c23d778cd6c63f74e731ee6cdeebe8dfa5a4c584b9d10d3c5ac8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_031_antenna_index.npz",
+      "size_bytes": 53915,
+      "sha256": "2c39d7b7d11cf79efe861979971819389fafe11f5f27366455d8e2a6d6d88232"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_032_all_cochannel.npz",
+      "size_bytes": 52592,
+      "sha256": "8f8e813846024da4eca892f09d3b11d0ddbeedf42f54c3aa6fcd07200f878d2a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_032_antenna_index.npz",
+      "size_bytes": 52645,
+      "sha256": "c4d3f711a80d7b2eff0c7f8384e2d8cc519fe1e1d8cc6bf971461a3635066352"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_033_all_cochannel.npz",
+      "size_bytes": 49936,
+      "sha256": "c111c1a9ada09eec918a27118c6212b4021e713f46c5410c78d76d2fe93133bd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_033_antenna_index.npz",
+      "size_bytes": 49978,
+      "sha256": "35fa5f327e0d5c136f7c7bac21c011641cd32c06abe31f08172fee0b5771852f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_034_all_cochannel.npz",
+      "size_bytes": 52329,
+      "sha256": "847d3895bbdb24bdf849e0367951cab9346acf06920b41df5f388168491e34f4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_034_antenna_index.npz",
+      "size_bytes": 52372,
+      "sha256": "f447e5503cae430361fede7799878dce16a3b55b253a0edd7d1f2564595fdbbc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_035_all_cochannel.npz",
+      "size_bytes": 53753,
+      "sha256": "6710da71248ed05c6b35a175a6fda9f9c8a8a1582625ce84d7176e33f6123861"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_035_antenna_index.npz",
+      "size_bytes": 53785,
+      "sha256": "15d2019c2271b6913a2fb62dc15462eed24775acb6481def0224c30dbf6fda8e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_036_all_cochannel.npz",
+      "size_bytes": 52434,
+      "sha256": "23eeda282b2d15a66e9bf379e0706ba6e19ccc0b9bec8233ec4adff08de77ff2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_036_antenna_index.npz",
+      "size_bytes": 52481,
+      "sha256": "2eb8e34b3be8de297e82552eed00e35fd4bad72303a7977172a11075521cf153"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_037_all_cochannel.npz",
+      "size_bytes": 52457,
+      "sha256": "56dbce2a952c03a3953e5dbcdef2db3f409851cdd4903ad6c4870776fd4d7783"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_037_antenna_index.npz",
+      "size_bytes": 52503,
+      "sha256": "fdb008cfe8c3edb0dba1dc9f6274bdb2698cd6709e83f2779541240e16865de5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_038_all_cochannel.npz",
+      "size_bytes": 53818,
+      "sha256": "c45ad1b537d68c2f61e6070dcb2308db88cf9996999306aa364563c04c618ca8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_038_antenna_index.npz",
+      "size_bytes": 53858,
+      "sha256": "fb080332975b8e70dfc9209465474d02da316285abae7f52bfac321b2815f9c8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_039_all_cochannel.npz",
+      "size_bytes": 52642,
+      "sha256": "a9ae3ebff0c76867e232428607281f22cdf08d4c0ee6e99f98650659e9adf543"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_039_antenna_index.npz",
+      "size_bytes": 52673,
+      "sha256": "dc398139102e8785d3bcebf1c11ccf0a0cbc92955569481384706cf6fd8b37db"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_040_all_cochannel.npz",
+      "size_bytes": 53985,
+      "sha256": "fe69d952c96ad5da4a0a9bfe39cfcb1f07f22c32450fb532bdf7a2d23dd86b8b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_040_antenna_index.npz",
+      "size_bytes": 54033,
+      "sha256": "06d041fc5f8de1c8b895191ba77487aec7212d6b6132819e7f4c833d782a9261"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_041_all_cochannel.npz",
+      "size_bytes": 56722,
+      "sha256": "52a5aaad44bc032fb7b247c24bb1272fcb28c4f2c989e00968eb8d69c7d19263"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_041_antenna_index.npz",
+      "size_bytes": 56770,
+      "sha256": "949fbd44bb368bc59756fbb8b50a047befe2819bb2cafcf4cba251bde2e95a9b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_042_all_cochannel.npz",
+      "size_bytes": 58058,
+      "sha256": "0c7d609375a60bb59ff6ff27ad51c345d3153c2dd796202e6c5ca3dce81fd5f5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_042_antenna_index.npz",
+      "size_bytes": 58098,
+      "sha256": "d404b9b566c29d1b86d5e5db184286cbb863658a78b5a3bad4a7a9c4a9d14086"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_043_all_cochannel.npz",
+      "size_bytes": 58018,
+      "sha256": "59afbe4cd6d0330bc97d6d3acf540b1baef6715ebedf59d12c28eb11d9591455"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_043_antenna_index.npz",
+      "size_bytes": 58065,
+      "sha256": "15ea3898f676d0ce62e9d10246f30f4282c9ed892c9f61dd8aff26908a3b07d7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_044_all_cochannel.npz",
+      "size_bytes": 55262,
+      "sha256": "992559b2b5b5cf248cd7255c7d0ac844bc8da133dc7184b3c51e7db96f410c0c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_044_antenna_index.npz",
+      "size_bytes": 55306,
+      "sha256": "d060631f8abd2468289a0fccf5203213e6645a45e688cbad936076c0abcfa39a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_045_all_cochannel.npz",
+      "size_bytes": 54055,
+      "sha256": "3007874b6a4262d9a63046d5598135930c2c6d3010a957bc1601c43b0116fac0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_045_antenna_index.npz",
+      "size_bytes": 54088,
+      "sha256": "3f588f533c73f8fb213084622aa56f7aa654758df7e0be98811c88e1eff42b2f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_046_all_cochannel.npz",
+      "size_bytes": 51287,
+      "sha256": "6dad6976412f0278d9608996a55a35f2d5bcdfcddb5ab90f8b2a82f1274dcfb8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_046_antenna_index.npz",
+      "size_bytes": 51327,
+      "sha256": "14ad7d2f5a48567e97c2b0be37e1e7650dfb6fcd04b0e847ee65d0fa5e1e5eaf"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_047_all_cochannel.npz",
+      "size_bytes": 51153,
+      "sha256": "06462d25f2491d407ff92dc62b8b65bb24fed079ac68d3dce0a6296a41d0b049"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_047_antenna_index.npz",
+      "size_bytes": 51192,
+      "sha256": "4936bc2ec4ab1e361de3e62f42c5dbd3c682060abd7126eabb637732d018b4c9"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_048_all_cochannel.npz",
+      "size_bytes": 49952,
+      "sha256": "149335cd6489aa5dee0fb8e6323b9575f7639351dcee33af3712e0ed1f7c2365"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_048_antenna_index.npz",
+      "size_bytes": 49999,
+      "sha256": "caee5f0978c029c866b0e80838eb9c9bfc9d387024ab3b1598b3ccd9b744ad69"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_049_all_cochannel.npz",
+      "size_bytes": 48516,
+      "sha256": "4f7d43861739c34c136a73f150e16ee57195d9d10cdfb910dcf43af220ac5648"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_049_antenna_index.npz",
+      "size_bytes": 48570,
+      "sha256": "1e45d367d061fc151eed31a89a72f3a047ac85ac13fdfabd3dad9a9587dbfec8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_050_all_cochannel.npz",
+      "size_bytes": 48540,
+      "sha256": "c1b90464201df76455dcbc1726275643ad8c3973d7dc20c2880cc76690553725"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_050_antenna_index.npz",
+      "size_bytes": 48594,
+      "sha256": "416af468726f733989f21655d11ca303f048244b2c20f06dae87e4c8c0b2248e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_051_all_cochannel.npz",
+      "size_bytes": 48504,
+      "sha256": "19a4fa72a2f4004119d6657da366e0a0fa405e494f040a89e68cc891ab8e2cdd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_051_antenna_index.npz",
+      "size_bytes": 48548,
+      "sha256": "127ea53ce13819697a42a1a359291a5d1241f9cbe4005aa60545763464648126"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_052_all_cochannel.npz",
+      "size_bytes": 49760,
+      "sha256": "eb74d6ddf43e7fb2b9e344eaa68649b98cead90a00df764478ad7c219d0d9b5b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_052_antenna_index.npz",
+      "size_bytes": 49812,
+      "sha256": "d215b69154ca4215cd80d8b872cc3596291d77d86ab2c3378548e125e51b23e6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_053_all_cochannel.npz",
+      "size_bytes": 53863,
+      "sha256": "8a29cc6c6a68149628d72f893bf4bdbf1cd13835e2b79aa7f2d4845e62ce312c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_053_antenna_index.npz",
+      "size_bytes": 53919,
+      "sha256": "7cfd83915375936cdd3f50717178436a8a790e51929a4550f9fe34b451fa5d64"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_054_all_cochannel.npz",
+      "size_bytes": 53833,
+      "sha256": "97824f41b0b810a3642241463efd03f63f4a15eb70652aaa7008abe5054844f8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_054_antenna_index.npz",
+      "size_bytes": 53885,
+      "sha256": "4bdc8f00ed14c6c06320dbae1fd3172f7b385e8a23263d2b64764af7db62777f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_055_all_cochannel.npz",
+      "size_bytes": 56506,
+      "sha256": "eb4345fd949689732610445caca252303bc3f4849fc35a541c4bfc9a1ae8d8d0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_055_antenna_index.npz",
+      "size_bytes": 56557,
+      "sha256": "b7a18f99751c29b8e4d8c8669c3a6d5770402673497b627386e0168da6680557"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_056_all_cochannel.npz",
+      "size_bytes": 55205,
+      "sha256": "423ec5e6a1195e0bf47110a67cb21d721cd20cd0f5a2589edd9cf156a74fad38"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_056_antenna_index.npz",
+      "size_bytes": 55254,
+      "sha256": "c24c91051ed67336960f36cf44cf2a19ab14f5d01195fac7f2b2c8118411f92b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_057_all_cochannel.npz",
+      "size_bytes": 55101,
+      "sha256": "288bc26d5484658fe62200d5a40996527dac1dce29baf97a893411699e9176a7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_057_antenna_index.npz",
+      "size_bytes": 55141,
+      "sha256": "7d6633d8cd2da08201a2dfc03ab5fd527465ca7dd0893f307eb11616dbce9dc3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_058_all_cochannel.npz",
+      "size_bytes": 59374,
+      "sha256": "3a415686d14f7f56c780f1bdbd7320eb3843f1f621def9cbac273c972c7ad9f5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_058_antenna_index.npz",
+      "size_bytes": 59412,
+      "sha256": "ecb36bb9f26f36223301dfa18d25cfe2fc5ec9d56aa13d1449bb08a2dc489840"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_059_all_cochannel.npz",
+      "size_bytes": 59307,
+      "sha256": "b044b0917598b28f3cc04021b9b06e943b812c1735fdde32cd67be7e4eb8a0a5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_059_antenna_index.npz",
+      "size_bytes": 59343,
+      "sha256": "7491a11f67493d94cccf428032302c7a28c95c5cfeb2e5da062a46b4ee7cce3b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_060_all_cochannel.npz",
+      "size_bytes": 59178,
+      "sha256": "b28b383e5458db7df06ac519610e43d3aba66daee7ce1d0e453003f1ec62869b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/frame_060_antenna_index.npz",
+      "size_bytes": 59222,
+      "sha256": "cf8661ecdb79a6c2b361d87b8c09fb24f8112858cdbae5f00073ff7f66f41e36"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/sensitivity_timeseries.csv",
+      "size_bytes": 197301,
+      "sha256": "77d86ba94210dba360476ac0e8156d3f8777b44df1943a228fcfa7a0a9559138"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_10min/summary.json",
+      "size_bytes": 1488,
+      "sha256": "d0a9c47212ca7fa44487b51178303eefff3db0f5cf38c5c8eb5a79ad3bad4a1c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_000_all_cochannel.npz",
+      "size_bytes": 6583,
+      "sha256": "1c4977f950d42fc8afde787064f3b8baa0877702e8473c04c5263254e575e5e8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_000_antenna_index.npz",
+      "size_bytes": 6625,
+      "sha256": "e343978cecb5eb5508a043fc628638757e14ae499a83f02cdcdaa320fcea716f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_001_all_cochannel.npz",
+      "size_bytes": 6703,
+      "sha256": "e4f587f13996eac103b35ffed8d0de2c7777e2307a9e2846848fe1caf5f36d4b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_001_antenna_index.npz",
+      "size_bytes": 6752,
+      "sha256": "22124ce5d05a295fe3e89e1e3d887fa978e92c0ca4a3fb63464fe0f4600c55ab"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_002_all_cochannel.npz",
+      "size_bytes": 6696,
+      "sha256": "b4373d67f09ecf3ae605df3422cfe93285df6373ba677a11fc212f0e44aa334c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_002_antenna_index.npz",
+      "size_bytes": 6732,
+      "sha256": "4c2b6c2206a4cc8c4b78b25761d6608297e2b154db7386f6812ec41c483016e8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_003_all_cochannel.npz",
+      "size_bytes": 6581,
+      "sha256": "0d9129457e5e89a0084dcbbb6408d68722388b1a68e869d7f6b0dc644e791874"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_003_antenna_index.npz",
+      "size_bytes": 6618,
+      "sha256": "f161b8412da280ea6d5fe700adf5ee2a8052485d1c7620057e0370ba715d0713"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_004_all_cochannel.npz",
+      "size_bytes": 6586,
+      "sha256": "80da7c91bb0b96436cf0e62037196e41bbd097ab1329adce4f66d503c0ca07a1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_004_antenna_index.npz",
+      "size_bytes": 6622,
+      "sha256": "ed245e0fa7a30a30943705749aa93396169314f0f879290c62e4f99819017415"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_005_all_cochannel.npz",
+      "size_bytes": 6460,
+      "sha256": "56890130bc99f92c030e1eb25d12119f401916b4846a665e76415b635c7eadd0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_005_antenna_index.npz",
+      "size_bytes": 6497,
+      "sha256": "73fb806c2efe12a243c2c79d9f504a9f5d786b6085102bfd69adc31be13d9a14"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_006_all_cochannel.npz",
+      "size_bytes": 6309,
+      "sha256": "b24cc95475ab4c2fa277896613d97964e50622c4c7d1765b83eff6882608f69b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_006_antenna_index.npz",
+      "size_bytes": 6358,
+      "sha256": "54a6613813123318a88d1039332ec132a4668321bc8a3b6cd46c4541681576f0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_007_all_cochannel.npz",
+      "size_bytes": 6510,
+      "sha256": "b6fa8ab8c9d2849d9d01d1813910d85c31419a95bad0454a8d0996868b8870a8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_007_antenna_index.npz",
+      "size_bytes": 6554,
+      "sha256": "3a1d55d189ae8fe11c1260a4a68306d4703ddcb9846423b002efb5b1f56eb8ed"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_008_all_cochannel.npz",
+      "size_bytes": 6451,
+      "sha256": "6476d073491c7e1f05748d9963b4d639f721ce407edfc01b891383e37876eb8e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_008_antenna_index.npz",
+      "size_bytes": 6499,
+      "sha256": "77da045a150f6d641c1c8c8325a04ebcc8f2f56a9453cda4761f7a1193b6f73a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_009_all_cochannel.npz",
+      "size_bytes": 6533,
+      "sha256": "c4afdbd06146ca50267d81d15c62517b8809221c0c37e4c969fa54fbb3fcbec0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_009_antenna_index.npz",
+      "size_bytes": 6590,
+      "sha256": "a19ebf4d105dd6b5e0d716a35823e7eaa3256fd2c81f537647305fde64d48113"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_010_all_cochannel.npz",
+      "size_bytes": 6361,
+      "sha256": "d609a3a71bc57ecd7d11f70dd10879469ec6dd6e0c1000035746d8cd05d17b75"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_010_antenna_index.npz",
+      "size_bytes": 6410,
+      "sha256": "6ebfcdea700c7fe60ffe07d32e13f9f204d79f582d90a3ca544ef7e881a9a90b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_011_all_cochannel.npz",
+      "size_bytes": 6380,
+      "sha256": "9ef4d9dc175a5a54f4859c0f8455466100aa1ec7e4e3e7f68b3128fcdbc4951a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_011_antenna_index.npz",
+      "size_bytes": 6428,
+      "sha256": "26454199c1e6ea8738f2432534d6a09c6bddc67c749043028cefe69d8da1b99c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_012_all_cochannel.npz",
+      "size_bytes": 6599,
+      "sha256": "8a32f2f3cf55af4d588ce5a97bb4f2cb26cecfb98149d84f0add0be75e68b865"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_012_antenna_index.npz",
+      "size_bytes": 6639,
+      "sha256": "c652b0a97aa9a4acafada0d1060cb04d9906be48e095fe56c64760ade373da68"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_013_all_cochannel.npz",
+      "size_bytes": 6906,
+      "sha256": "39ce03cf42617f9181752a6b5a5d237bd9edcd3cc2c5c2c86a642ffc560cc3bd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_013_antenna_index.npz",
+      "size_bytes": 6956,
+      "sha256": "7b740084b0e699914308bae040c91f350a2c61bfb7a3e30908ea67e23b22a9b3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_014_all_cochannel.npz",
+      "size_bytes": 6715,
+      "sha256": "4ff656ba41b7f0bd747a8b1b8bec3efb5b141209d1bb3ffa67f10e4525a995f7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_014_antenna_index.npz",
+      "size_bytes": 6764,
+      "sha256": "9c55b3fc197ba714f5562db5abd218487d75f1105b0a6ef8f417d035586e98a1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_015_all_cochannel.npz",
+      "size_bytes": 7040,
+      "sha256": "df9f135a1cdb4d179e5e8e20dd534e4b8d2b1b0ed307997ed8d99f638354378a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_015_antenna_index.npz",
+      "size_bytes": 7087,
+      "sha256": "7c758dc75540674a84679cda55b57a31bb84909824789775c260650fcdf9927c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_016_all_cochannel.npz",
+      "size_bytes": 6915,
+      "sha256": "8cac09f43f6c710cec56c94d7d6f4b2642a1088b36fab5f1df1139b9e8f60897"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_016_antenna_index.npz",
+      "size_bytes": 6951,
+      "sha256": "792af64f669ed3783fbda72a4fea52abeb3a752c22c147b192ac46f354f8bffe"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_017_all_cochannel.npz",
+      "size_bytes": 6329,
+      "sha256": "cd97488b10f331e582bc35f4b35f327a4f30b428b2afe18cf36db511ca3388aa"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_017_antenna_index.npz",
+      "size_bytes": 6362,
+      "sha256": "cbec688699ace82884d58609e8a1f58baa99cd7be5942e65a9b938e744b275c1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_018_all_cochannel.npz",
+      "size_bytes": 6185,
+      "sha256": "7c4317deb13d175fa875ce1ce65e072ac31f46c877b418441a976e50681115a0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_018_antenna_index.npz",
+      "size_bytes": 6235,
+      "sha256": "090b646b87554db3d95c0d4b39850a05d90ebbe26ca00432d646fe3a5c22e3c5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_019_all_cochannel.npz",
+      "size_bytes": 5981,
+      "sha256": "40944cbb5ba2c15a103ff9704454de8b8e51dbccf77a6f87577867e683295247"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_019_antenna_index.npz",
+      "size_bytes": 6037,
+      "sha256": "8161e6d19a052843d17b7313b17ca07c703eac11a16979a955e5aea6bda5d016"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_020_all_cochannel.npz",
+      "size_bytes": 6185,
+      "sha256": "82d71ffe7233c7925d6bb32915847c25b729393f60f6dbfa688ad8e97fbdccae"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_020_antenna_index.npz",
+      "size_bytes": 6225,
+      "sha256": "a34d11790bb7ee6ef90a6e0e519e3db2390bc956f8c918062bb9689e10ef58ca"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_021_all_cochannel.npz",
+      "size_bytes": 6023,
+      "sha256": "4fa94d7d68123d8be5e65f26b1c5875baa37c55566a44644b52c7639a2b6894a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_021_antenna_index.npz",
+      "size_bytes": 6074,
+      "sha256": "87afeb0dbcaaa368cd25bc7732ce2aa329f502eea4cce6e818b4d906a4b04f4d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_022_all_cochannel.npz",
+      "size_bytes": 5958,
+      "sha256": "fbb1efd235d1c27dea322702c6b15b4d688eaf3e51d050ecf4e87d5676ad6e03"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_022_antenna_index.npz",
+      "size_bytes": 6014,
+      "sha256": "44c9ff0eda833050c5c8ac6986e2d605d206f67b5dc9dbb489702fd2e4289c78"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_023_all_cochannel.npz",
+      "size_bytes": 6256,
+      "sha256": "81800d3a768454e167c7a72baebea681fd7dffe7903a6007a37c29ea7d2218dd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_023_antenna_index.npz",
+      "size_bytes": 6299,
+      "sha256": "ccbe6e08e7e6c360cf7e4a7c57b4d6c561dc5a7748aee6a7a8fc734eac66aec1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_024_all_cochannel.npz",
+      "size_bytes": 6252,
+      "sha256": "7c785e6ab3e90a403522df62eaf096c74a76ef2a0b97a859fe2175599658291d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_024_antenna_index.npz",
+      "size_bytes": 6299,
+      "sha256": "89efd91e0a8aa894cf42aeeca6d058e4fb6c921c779a386ae11c4da0a9c55926"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_025_all_cochannel.npz",
+      "size_bytes": 6316,
+      "sha256": "6f6482d6b937679607255e1d1067b7ca93759a1f813da8f2c74ef07b1c976dc0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_025_antenna_index.npz",
+      "size_bytes": 6371,
+      "sha256": "f9473bd9846d0c12e5844a6803510490b41257a86749f41397019d4fb903e70a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_026_all_cochannel.npz",
+      "size_bytes": 6525,
+      "sha256": "3884ad08fe611cee1549bb533d5b7de6b0da26413a8d2002d6366a19ab43ee31"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_026_antenna_index.npz",
+      "size_bytes": 6571,
+      "sha256": "174c173c658611335bbc4124633b600205537d03b62d67fab887af6e07552dfc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_027_all_cochannel.npz",
+      "size_bytes": 6917,
+      "sha256": "c80630817e7494202617fb6eb4c28f853080b14b50415b66f73abd5c85273053"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_027_antenna_index.npz",
+      "size_bytes": 6957,
+      "sha256": "75ab5f238829d3cfc90ec88abeefc6396ce6ea35629afc6e90bd4e490760b105"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_028_all_cochannel.npz",
+      "size_bytes": 7010,
+      "sha256": "ee5869c045d3b79a60694b1e8f06a66b840e01ce428dd1946361b8c544e90f79"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_028_antenna_index.npz",
+      "size_bytes": 7042,
+      "sha256": "271c8d2903dcddd89d8d7694ef61172ade8b13769fcfa4fe3d5f8d41eccf9de4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_029_all_cochannel.npz",
+      "size_bytes": 7488,
+      "sha256": "6e0653047b0e57f7ed11f3fb3daf481f355eccee86ed22843648d2ec3b58ea76"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_029_antenna_index.npz",
+      "size_bytes": 7528,
+      "sha256": "4740d6e35b7092f8b829ed4cffb00b7b458dd74b1bf4b1a1d67cc0e0d459ec38"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_030_all_cochannel.npz",
+      "size_bytes": 7248,
+      "sha256": "56fab4436dfb9f360cc8a9dc409f959b43b4c0089eec5d8542069cd530754b59"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_030_antenna_index.npz",
+      "size_bytes": 7297,
+      "sha256": "5870d78f1a08823843bd61e7ea0a371c0120872039d6b7142a2420228e0794ef"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_031_all_cochannel.npz",
+      "size_bytes": 7367,
+      "sha256": "b73b6fbbf858b07c70ec33f4cc2ae10a40d0ee751832ba2062c09e3f424c52b3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_031_antenna_index.npz",
+      "size_bytes": 7409,
+      "sha256": "4ad16d371d17dffa16d4aadc35909f901aefa3cddb69202816946f625a362501"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_032_all_cochannel.npz",
+      "size_bytes": 7254,
+      "sha256": "719b1a8adb06cef0ce0b143a3fb31338ec697f969c84a807bb6279f324e50432"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_032_antenna_index.npz",
+      "size_bytes": 7306,
+      "sha256": "22e728e53bcedf4a7b658a093580255873a5191db86ca6a5a877fba874617589"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_033_all_cochannel.npz",
+      "size_bytes": 6938,
+      "sha256": "1e9e6afce2e865707e1a762609ebc710c7d1da09199f4f501a3e4f775a9ef30c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_033_antenna_index.npz",
+      "size_bytes": 6987,
+      "sha256": "ff8e94b4a5a90c2d5858dbd7a623c57b8b3de427b0ede78263676fa1badf6faa"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_034_all_cochannel.npz",
+      "size_bytes": 7025,
+      "sha256": "1518b36ecb8b88a3206c0b50b79131c551386a5c56685ed692c747e617c6e455"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_034_antenna_index.npz",
+      "size_bytes": 7068,
+      "sha256": "6cdacd2b3d5ca1f3dc05d6c304afb3be98e278aacc4e920b0e9cb02dbfcf175f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_035_all_cochannel.npz",
+      "size_bytes": 7213,
+      "sha256": "0fe446248ee45cafc85ed7344588ce2988c94b3855ea3a360ea1df6ccebb0ac5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_035_antenna_index.npz",
+      "size_bytes": 7249,
+      "sha256": "4afdee402b062b261652fa0e485937feb7606b242b685cdb003582399b803088"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_036_all_cochannel.npz",
+      "size_bytes": 7124,
+      "sha256": "f69f96e00ededb7a6bd278c5bb08556380de32863eafeb9e29cfc4de85d72ba5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_036_antenna_index.npz",
+      "size_bytes": 7166,
+      "sha256": "25b602ee56f3fee284d4f03e28920e1dbeea668319d335fdc28ea3ceff21fcff"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_037_all_cochannel.npz",
+      "size_bytes": 7158,
+      "sha256": "68433bbe69829690e0b0ecac9c3f6d9476aeca0083a2e253dc7c17ed82a6a1f8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_037_antenna_index.npz",
+      "size_bytes": 7202,
+      "sha256": "4b48f92360c8be0ea60837451b877a67010733cfe7813cbc276f1bd37f4a5323"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_038_all_cochannel.npz",
+      "size_bytes": 7266,
+      "sha256": "206eb237e0eb50e12aefe623ce5ee5491637f8f2fae9452a927b6f34f5501d3b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_038_antenna_index.npz",
+      "size_bytes": 7310,
+      "sha256": "48ca6815a9928a05bc9ca005a876d0fbe60b950a9b8d1781d3440330c6fd198c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_039_all_cochannel.npz",
+      "size_bytes": 7310,
+      "sha256": "4daa9b25f9de68021ed3805ab826ff7e555ef6afa395f7055ffce51e1453c439"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_039_antenna_index.npz",
+      "size_bytes": 7350,
+      "sha256": "26cd07066468fe5a674d0f66cecee38e245b6dc72b9b5ff3f236da8829826f5e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_040_all_cochannel.npz",
+      "size_bytes": 7426,
+      "sha256": "c212a98be3ea9e2aa863de099fabfba81da799d4a9f35834e4d32d4e7365dde0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_040_antenna_index.npz",
+      "size_bytes": 7465,
+      "sha256": "6c7e7c341351bf99db32039484cb8916b8a0d364c655436ea8550ac156003a62"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_041_all_cochannel.npz",
+      "size_bytes": 7795,
+      "sha256": "6602869cf5b03929031a57a4ef25b51cbfe1b9628e07803bbb0796fdf3ca1546"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_041_antenna_index.npz",
+      "size_bytes": 7832,
+      "sha256": "0975968fd60a80e7fbefa43cf2ec00f045322fc88a4b473c4034dd4dd8901b9b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_042_all_cochannel.npz",
+      "size_bytes": 7906,
+      "sha256": "c9e597f8b39af3de3fb36c2f423f434a668cc7c2bfc0d4ad6ee93b06fb5fb36d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_042_antenna_index.npz",
+      "size_bytes": 7943,
+      "sha256": "360816997d15d89b6c2beee86e8872b7c5570eb22b77c9a1e4e626ed4f1be736"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_043_all_cochannel.npz",
+      "size_bytes": 7855,
+      "sha256": "78de09839b8e6cd98ca390981017d2b70901e1aa38ea8c23da374d6349444c69"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_043_antenna_index.npz",
+      "size_bytes": 7896,
+      "sha256": "56eba2bcfffc48f0d8f1d588eef74880486f466dcc9767e5f91617ba99584042"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_044_all_cochannel.npz",
+      "size_bytes": 7553,
+      "sha256": "7e99900bca7310a0f09dcb364694620b070bec272baa4456c25847623d40790d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_044_antenna_index.npz",
+      "size_bytes": 7599,
+      "sha256": "6a9be02e0f1f786cb45ccd55729443b0807c1065da0e0d5779d6865e53252b48"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_045_all_cochannel.npz",
+      "size_bytes": 7487,
+      "sha256": "f8a69eefa2aaa0e001879d5b4d0d5c8224b54ad4821b891e324a1c96c695f14c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_045_antenna_index.npz",
+      "size_bytes": 7528,
+      "sha256": "d9f8fc6a421c041c45bb5b2522ccb04721fd4a672bb5612a02bb0c060fd7cc62"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_046_all_cochannel.npz",
+      "size_bytes": 7125,
+      "sha256": "027704476ac1ea3b537af3d85ae6bbf79ffdafc04bc7223d7ae9f6e2d63350bd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_046_antenna_index.npz",
+      "size_bytes": 7161,
+      "sha256": "50a6bf7cc73a3f97a0f4483a122c33522908e5391956de2f6b0254083d9cdfe8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_047_all_cochannel.npz",
+      "size_bytes": 7037,
+      "sha256": "6b09e94f5abb48c32612fa205f665bc66dee7f42e23f1b4aff2562c4deda110a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_047_antenna_index.npz",
+      "size_bytes": 7066,
+      "sha256": "b81acd011a483c1717a1df3ac922f30bee1a221de55ce6b50871a978517e41f7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_048_all_cochannel.npz",
+      "size_bytes": 6958,
+      "sha256": "36f20b0e569f63778a409a6a7939e4f4e603a006a107bdf69bc8eab87b6bb23b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_048_antenna_index.npz",
+      "size_bytes": 6992,
+      "sha256": "c3b89b58af0ece48437c45d7759dc4915f748ab159b6179b1221739ef1613d78"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_049_all_cochannel.npz",
+      "size_bytes": 6682,
+      "sha256": "4d683be412067788ab3e89d71fb9a2bc09e69507501237ba9406de938725a985"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_049_antenna_index.npz",
+      "size_bytes": 6725,
+      "sha256": "8e0baca02037371a727ac85f8449fdf8017159b88575c9cd9e3369509f002235"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_050_all_cochannel.npz",
+      "size_bytes": 6754,
+      "sha256": "e9bc1bc60c12ddbcf2e76a3691cb2a782ef5117b092204a1c30ebdf18da148f5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_050_antenna_index.npz",
+      "size_bytes": 6794,
+      "sha256": "0dbb8ce77e858f51c7a0c85fd33acd26c95232cb7ba2f6302c186e7105eb75d3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_051_all_cochannel.npz",
+      "size_bytes": 6690,
+      "sha256": "8ab257b9d51812cb225cc999710442d7698f6836ce4ddd0a3e6a4f0da1018cc7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_051_antenna_index.npz",
+      "size_bytes": 6735,
+      "sha256": "b8d5ffa09b66e08487b9c157813f631b94fee828102f95daf3a8bfe6081c0087"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_052_all_cochannel.npz",
+      "size_bytes": 6745,
+      "sha256": "00d2f8d3eb95830ed20592347f7757132c1c8624b36a3cd83ee8bdd365d5c778"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_052_antenna_index.npz",
+      "size_bytes": 6790,
+      "sha256": "4d6721c945f5965613412db9d966c18a86d928d287abefc756dd85d20346cfc2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_053_all_cochannel.npz",
+      "size_bytes": 7311,
+      "sha256": "b99cf25a8c688ffc7ba09ecb6b4b6463997adfde2b64d365c68c05dece8c9c75"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_053_antenna_index.npz",
+      "size_bytes": 7359,
+      "sha256": "02a4c7be3c41fe6f47e07c236801739c70988cc7d6021bb8a9a5fd3359f6cfcd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_054_all_cochannel.npz",
+      "size_bytes": 7270,
+      "sha256": "b8b38fb28b4638181c60183cb97a16c3967df70c4cd81400121995b26992f531"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_054_antenna_index.npz",
+      "size_bytes": 7321,
+      "sha256": "3dfbe9ec5b38b3d8ac6bb97d393c0bb20ae03172a15b8088a17222f2c7e08ce9"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_055_all_cochannel.npz",
+      "size_bytes": 7547,
+      "sha256": "ac518124a60b48ff12d58dcfabefa16081612199608bbdb400495c4fd022957d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_055_antenna_index.npz",
+      "size_bytes": 7592,
+      "sha256": "bba33b2954ef09865884a39e04a3fc436cfc19179eb2d7933ee6009782c4e918"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_056_all_cochannel.npz",
+      "size_bytes": 7445,
+      "sha256": "ad9a7aa6601266a81a3e532224cb1b012932924071aa14cc9000dce08c7f93ad"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_056_antenna_index.npz",
+      "size_bytes": 7481,
+      "sha256": "3cc2d14215649a333b0fd92e8fa8d001763577178f3503984935b3207729e90c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_057_all_cochannel.npz",
+      "size_bytes": 7378,
+      "sha256": "181d3e6dd0685e046c1fcdea110758278c83ba57f0081756b14708117d7d7d08"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_057_antenna_index.npz",
+      "size_bytes": 7421,
+      "sha256": "2b997625e3ee93e8005407cd970b9a5690b1214873ef2f78ffec992ef25b051d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_058_all_cochannel.npz",
+      "size_bytes": 7980,
+      "sha256": "886c7bc240183c1a1708bf7ab300c75114d9776a82b7494a608a150fc864ffa5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_058_antenna_index.npz",
+      "size_bytes": 8027,
+      "sha256": "2ec6f088d37610d14993f4fc6caa0305c764ebf9183d4fb17b305f9f59ea1911"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_059_all_cochannel.npz",
+      "size_bytes": 7931,
+      "sha256": "d6afceeef4ae404173f824feaa65b2c9342c7fddf840f1bd74f19ca6606a8541"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_059_antenna_index.npz",
+      "size_bytes": 7970,
+      "sha256": "1b4bfea4e13baa242f61f6af8c656582199f5a90525f9e92a614f3a60513d5ea"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_060_all_cochannel.npz",
+      "size_bytes": 7810,
+      "sha256": "d698130f9a085357a7b8bce211436c01459857f791140cfb83c36d78b56e6f9d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_060_antenna_index.npz",
+      "size_bytes": 7854,
+      "sha256": "43cd3dd07f0e32d63538322e488c360e79fe8fad60b65e3179ed3335e328356b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/frame_comparison.csv",
+      "size_bytes": 12533,
+      "sha256": "204df6e32a33bbbc9b8d0d04b9424e476c615ed76622b7645501eded5544a8e0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/large_pair_changes.json",
+      "size_bytes": 172525,
+      "sha256": "4cd2f265642a7f521f7580fc7ab223bc1be04c591c80e97007bece9deb7b4037"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/per_link_comparison.csv",
+      "size_bytes": 1660071,
+      "sha256": "6d9595234ea7786cc2c10aba22708e32e738d14cddfe5c865d2b0abbeb2dd698"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_3_tx_frequency/summary.json",
+      "size_bytes": 14328,
+      "sha256": "c133aba41a1b84d3cf8ed595173659515a9a9f001ef4802909dbb12508595f06"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/benchmark.csv",
+      "size_bytes": 90953,
+      "sha256": "e4c1add0e58948def23bdb8352c7aa08c42995db5d59e049d84bfb25652644b6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/gso_channel_power.csv",
+      "size_bytes": 1439682,
+      "sha256": "df1aece61eb5d87b4090c097162dd9a38b06d78ee3eb44710f2917d3770ff2a5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/ngso_reference.csv",
+      "size_bytes": 763056,
+      "sha256": "d15fe0af31c23a648656d13193570176da0cb1f66a5c7e2f903d7abd4afb19d7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_000_all_cochannel.npz",
+      "size_bytes": 8419,
+      "sha256": "4f0e5a26e31246d21e60947cc6b33080975a6d68e43a46aca525259072f3862e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_000_antenna_index.npz",
+      "size_bytes": 4683,
+      "sha256": "e4cc2636c8888b397cae862acda8334100ea1b2f55a96ae20758fbdba75d2a6f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_001_all_cochannel.npz",
+      "size_bytes": 8547,
+      "sha256": "2b3363f9fbf02ed6bc6406c7ef650f4fa4e7a41221f88757d493fdf5026a00f3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_001_antenna_index.npz",
+      "size_bytes": 4723,
+      "sha256": "81a4e94f79afc77a0568aebfdde7f323d94e97ca03503b6f6ad084f79187c40f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_002_all_cochannel.npz",
+      "size_bytes": 8535,
+      "sha256": "f76ace96cc0ec6777763d693dcfb50dbeac5649fb1c39201ccb2a8cc5b3de753"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_002_antenna_index.npz",
+      "size_bytes": 4705,
+      "sha256": "e67df06befe89b5adc141bb6803b569784fc0076e2f4d9c613afed798bd973a3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_003_all_cochannel.npz",
+      "size_bytes": 8423,
+      "sha256": "f1b2930afa85bd53835dafb03d8e36d8308fbc4e803e41e467a9d7f44efa8e78"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_003_antenna_index.npz",
+      "size_bytes": 4677,
+      "sha256": "f8a08a6a7f440897a48030241e97d6b02f57796fa8bf5a6b36d6ae6d26e2257d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_004_all_cochannel.npz",
+      "size_bytes": 8385,
+      "sha256": "e24bb448ceac5d2656d0acf0aced0ce5e5bf273a7d0317bbe9ef42ca2caea49b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_004_antenna_index.npz",
+      "size_bytes": 4586,
+      "sha256": "fc74f1aa6cb0445c0d991c92fa54f24cc8e97c6dbb205bae8a27590fcb2c5e0d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_005_all_cochannel.npz",
+      "size_bytes": 8229,
+      "sha256": "f2c972b3c9d14c5e0fae54d3cf51521ec2df65c0097a1ea42e9428923aba1afe"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_005_antenna_index.npz",
+      "size_bytes": 4525,
+      "sha256": "8a975987e2c8f1ea1f0a0413e1a50df159f4b0e68632643b53d76b7474f79133"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_006_all_cochannel.npz",
+      "size_bytes": 8093,
+      "sha256": "872165b1ba895eb39b481c137eca22e1c51c8a9f592cc953c94717857d8293a5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_006_antenna_index.npz",
+      "size_bytes": 4552,
+      "sha256": "876fd7b02abc9bbce727f68ea068893b9898c8c285b4a88d4d16e4dd57945e0f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_007_all_cochannel.npz",
+      "size_bytes": 8319,
+      "sha256": "c95ea9412a5ce6f4fbccc4479c308889b79247f43f638bfd76fada9905e0f0b2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_007_antenna_index.npz",
+      "size_bytes": 4650,
+      "sha256": "ed00eea0dcad90e1eb3c1013ea5616f6fd3c5c347defa61e207a1b881a120d2d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_008_all_cochannel.npz",
+      "size_bytes": 8277,
+      "sha256": "bf334b6a87dbade8f4a03a356cad8618eb7411d535d94911c0557a308cc32dde"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_008_antenna_index.npz",
+      "size_bytes": 4676,
+      "sha256": "cc9b1d2221db71426b6f030e12058fa74213e7cd6f97e186f883bd42bcdd8864"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_009_all_cochannel.npz",
+      "size_bytes": 8309,
+      "sha256": "9c3d3ac9d4eaf39b19e0c1db184ea347935aec0df57014d41525fd0fb61c07ca"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_009_antenna_index.npz",
+      "size_bytes": 4574,
+      "sha256": "b588ea3ea068fc03f013c547b818e0ec23adde7dd81a67040443516b3b462263"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_010_all_cochannel.npz",
+      "size_bytes": 8140,
+      "sha256": "fe62e4bdab45a76a3f8f440ef97257a7bde8400ecf37560e2767f9689a4e7a6b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_010_antenna_index.npz",
+      "size_bytes": 4572,
+      "sha256": "ada08ad7d241a1d4ecddd05b201aa78ab24e08f9bf112135f6e1ccfa1108b1ac"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_011_all_cochannel.npz",
+      "size_bytes": 8158,
+      "sha256": "a11c209852a959d453b6b7e69c88733ab5c911de1104923406522b11924ae576"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_011_antenna_index.npz",
+      "size_bytes": 4571,
+      "sha256": "5f91d979bafb3a32a7a1992425257e7abc3db2aee40204584ca625bc1b96074b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_012_all_cochannel.npz",
+      "size_bytes": 8393,
+      "sha256": "225a6391b0854dc1f14979be6bcfa2ff5a55ec8108bb5933fae133852af2e9b6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_012_antenna_index.npz",
+      "size_bytes": 4653,
+      "sha256": "d1a8303f625a708483dee08f3f598994dcc5f4c4b5dd09425b7f71cd59c735a1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_013_all_cochannel.npz",
+      "size_bytes": 8768,
+      "sha256": "ee4eff085bd22f09bd5479eb3ffb8a86f9544f6ce7b4fc4b9559bc52f6c52889"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_013_antenna_index.npz",
+      "size_bytes": 4847,
+      "sha256": "f35ec10d390a25912cf72812a800a20f81cb367912dc26f6f5d8b8d21dc42770"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_014_all_cochannel.npz",
+      "size_bytes": 8535,
+      "sha256": "79c524f77092786c2bf4ada3876806b646b88ca79c7a9f06790b08bd3789cabb"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_014_antenna_index.npz",
+      "size_bytes": 4699,
+      "sha256": "c7001515e79511a3c8adce5030b84570c768c07d063cf1c549fa699d87d0b638"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_015_all_cochannel.npz",
+      "size_bytes": 8902,
+      "sha256": "c76853837a5b5617390a64d19a9b632e5ec958e8ebd9931093b7ead5e88a0188"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_015_antenna_index.npz",
+      "size_bytes": 4832,
+      "sha256": "7fe86088d1f7a827fd2404f9e7f175baf5af5f6ca88bf6c4114a3679522517f4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_016_all_cochannel.npz",
+      "size_bytes": 8768,
+      "sha256": "739d14576a25af1af437430fb57fa6ac26139a0519b1a6c390b9ffb6595c774f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_016_antenna_index.npz",
+      "size_bytes": 4779,
+      "sha256": "ca1a19f0ddb9c2b4f51f47fe00b8d82bb3f9cacb36e67d1cf0c5881d3d159fbc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_017_all_cochannel.npz",
+      "size_bytes": 8088,
+      "sha256": "90320d625de5d96a59dd1b076b053865dd6ded2e5778239daeae146ee8517784"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_017_antenna_index.npz",
+      "size_bytes": 4553,
+      "sha256": "0182919519fa0c0494f1610536e86e5827c05dc4253b10df26fdec15bee677e2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_018_all_cochannel.npz",
+      "size_bytes": 7967,
+      "sha256": "87775a5345826aff387cc07e1468447d22d77b29f820a759a9f5b3fb1d6a114b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_018_antenna_index.npz",
+      "size_bytes": 4582,
+      "sha256": "1a78b7c87969247cc88d76270cbe8e6791ab67071fd1ce0d37af043a965acaf3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_019_all_cochannel.npz",
+      "size_bytes": 7718,
+      "sha256": "920eb9c13e089df5721f45d85d0afc72909f61f8c41ca504c11d8fb438461a9b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_019_antenna_index.npz",
+      "size_bytes": 4417,
+      "sha256": "0caa325b6426416be06c50352829f257124e189b78bde22b9941f54089e11f19"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_020_all_cochannel.npz",
+      "size_bytes": 7918,
+      "sha256": "8f0bcc15c6ecc0d7332c70b9d299de0ace5d5c8642b043dd9ffe72548ecad5de"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_020_antenna_index.npz",
+      "size_bytes": 4424,
+      "sha256": "c98123b354ab405fd397ae38a53fe8f2df3347b446b8cdd4bc0fb9a0d99f5898"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_021_all_cochannel.npz",
+      "size_bytes": 7731,
+      "sha256": "ec8da2bc944761c043d41e2895e38aa451805576854b390fbefb2ec8e9d03c8e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_021_antenna_index.npz",
+      "size_bytes": 4404,
+      "sha256": "bd61e6970eae5e68058c3672604cd61567267b86795049fc7c8884d85e72f43c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_022_all_cochannel.npz",
+      "size_bytes": 7675,
+      "sha256": "ca3ff87c22cbcfb331cc08efbb92c10468d66d9b2d99c9433f1060d0900a5fef"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_022_antenna_index.npz",
+      "size_bytes": 4399,
+      "sha256": "831d7365cd931c9a27dea913ff796d347dfd0b9245711b961db1307636a91728"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_023_all_cochannel.npz",
+      "size_bytes": 8022,
+      "sha256": "2e2c734db66210cb830dd5362e8d214750494079a2afd89cb8402087ac810189"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_023_antenna_index.npz",
+      "size_bytes": 4504,
+      "sha256": "d3eacac40de3cd2c77193991d7dbf98a170bb769c0d7ec995f62a7318654b476"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_024_all_cochannel.npz",
+      "size_bytes": 8044,
+      "sha256": "7875e5ecbcb38cdcac2dd5e8180b39bc39f003af1395683b617a02f40140296e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_024_antenna_index.npz",
+      "size_bytes": 4494,
+      "sha256": "b67c6b686d3a7a23ef77209152d7d41b3e5cd8636034e80eb4d0abfaa7d3793d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_025_all_cochannel.npz",
+      "size_bytes": 8125,
+      "sha256": "dc12b767b8752fb80c03c3f87540d23824a2720bbd3b6d5b343a070c33feb109"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_025_antenna_index.npz",
+      "size_bytes": 4580,
+      "sha256": "09bea16d42f5255ba3f460914a28f0b9f2f60d6e9a1e561ea79e2b7d1a698e8a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_026_all_cochannel.npz",
+      "size_bytes": 8294,
+      "sha256": "0bab15cbaf94440e19256697ca905edff7766abf1bdfab185eb579f47797704c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_026_antenna_index.npz",
+      "size_bytes": 4597,
+      "sha256": "1093caf38f90db785f6d7a85301610c2c12c8ce64422df203277cbaffb2a0521"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_027_all_cochannel.npz",
+      "size_bytes": 8738,
+      "sha256": "83e647c7f6a819c4df0fc3238df56bd3bd17c87aae2766e9818a5d3c5a55ee5b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_027_antenna_index.npz",
+      "size_bytes": 4707,
+      "sha256": "fca00c38111f63515e2feecdd9f155ac69a6be2d1709efaeec2b9bb010118e8a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_028_all_cochannel.npz",
+      "size_bytes": 8876,
+      "sha256": "7ef1bce8974d9c7084086bb5338783e90f2dcfa4e6d91ae94ffe67a961c9dd6f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_028_antenna_index.npz",
+      "size_bytes": 4750,
+      "sha256": "cb273b386f00d23c10980e366b0e337e1ce34deb80008561f4cd5ec0c1d529cd"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_029_all_cochannel.npz",
+      "size_bytes": 9335,
+      "sha256": "ef1725918adffad295acbc6f02e7a2f5cbca269cb70a6550fede8ebdb2148a40"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_029_antenna_index.npz",
+      "size_bytes": 4839,
+      "sha256": "d8e4c49c4d1d70dbda23dc529a9cf2ba7174822e0f8d90f3b633bdc92a4a1312"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_030_all_cochannel.npz",
+      "size_bytes": 9138,
+      "sha256": "3c0e3f006546fc9f54c985520a01e781d5e98d2e84a22439efa81e644c0d51a2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_030_antenna_index.npz",
+      "size_bytes": 4887,
+      "sha256": "c6ad556cca57c2d672e62c6c5cf5b5b9447267d29f53897ef74a075a0fafe66e"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_031_all_cochannel.npz",
+      "size_bytes": 9310,
+      "sha256": "5855c37434c9b951b9a5ebe556bedbae5b81783f86ac5d048b4268cd7db5ad95"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_031_antenna_index.npz",
+      "size_bytes": 5019,
+      "sha256": "9973ec1ff5fb17cc48ab9449004319eda82c8345a8ce57f84038e035e7a944d2"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_032_all_cochannel.npz",
+      "size_bytes": 9198,
+      "sha256": "89b44406a2aec2dcbcdb202f6c5ac094828d84b4c808fe19f9d2e6ad79efe38f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_032_antenna_index.npz",
+      "size_bytes": 5002,
+      "sha256": "2e24d3b995fc798ba3f4513c2ec5f99d5821325f2e41eebb53326a18a9a9f579"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_033_all_cochannel.npz",
+      "size_bytes": 8815,
+      "sha256": "016f858355930d68d9a2e926f0bd8970f699a114e54a8fd9b68ae65b8fbe9f55"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_033_antenna_index.npz",
+      "size_bytes": 4826,
+      "sha256": "70928b3855c33c3f73810f35496d83d086a69720d0e00c325cf48cb35c332e36"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_034_all_cochannel.npz",
+      "size_bytes": 8913,
+      "sha256": "82249cbcc6cf3ccfd4209e8d5a1c72cf341401b1b9eac4a0c5e0061887ae225b"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_034_antenna_index.npz",
+      "size_bytes": 4861,
+      "sha256": "0177750b7cb0f16bb904170a52044ce2ededbb530572c186fa3b8cd1f4c40171"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_035_all_cochannel.npz",
+      "size_bytes": 9096,
+      "sha256": "39016e70a2525d7e4d03b0f7a1bbb4e29dfcf5d83cc03d2baa892d555110a4ba"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_035_antenna_index.npz",
+      "size_bytes": 4901,
+      "sha256": "4881b5ed6e5c6999c8acaf897e7d896bc9cb21d8e3190dd1fef453932de075a1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_036_all_cochannel.npz",
+      "size_bytes": 9019,
+      "sha256": "f90956371e6d7001ac98ff214b50157a08a28aa28055743add61fdcdf743d17c"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_036_antenna_index.npz",
+      "size_bytes": 4877,
+      "sha256": "eafebb5f71edc09c58f5c071ab10331052bafa132524509eae38fde02d034311"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_037_all_cochannel.npz",
+      "size_bytes": 9063,
+      "sha256": "cebbd1a8da59a39fbcfc505374e18b22f3999df9909c335f721bd4ca4f9701e3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_037_antenna_index.npz",
+      "size_bytes": 4895,
+      "sha256": "a76b1ef814b0618e917d5ec691ba9006c29f70b55e9a8c8f24d172c29322e94a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_038_all_cochannel.npz",
+      "size_bytes": 9216,
+      "sha256": "a330d6ce1592fab782d0b72a6b9c572bf60108194a15999ed327a9c9e5638c8f"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_038_antenna_index.npz",
+      "size_bytes": 5029,
+      "sha256": "a054082305eecbfd3adf292839c81f17a74e25db05404339a4170a181a36d6f1"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_039_all_cochannel.npz",
+      "size_bytes": 9207,
+      "sha256": "e336393665e6bba74ab0359089c662971c314daec355f3d5d4f560ae099f6020"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_039_antenna_index.npz",
+      "size_bytes": 4898,
+      "sha256": "4a885241bc5f614d4c5fd227be70e809dd0de25a40918033d7efe91a2784f2c4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_040_all_cochannel.npz",
+      "size_bytes": 9340,
+      "sha256": "6391c19eba275b1d768202f874765c056403b9c8c0c1e0e9dbdcbe34ecea6592"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_040_antenna_index.npz",
+      "size_bytes": 4992,
+      "sha256": "d325e20e3093a2085ac2f8e3ae46f5dbea4c83bde3b3255d1914f667943508b0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_041_all_cochannel.npz",
+      "size_bytes": 9723,
+      "sha256": "f6e12afdca6eca584ab8c0befb68b5538e3b2313379d5486df8b0b4420242aba"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_041_antenna_index.npz",
+      "size_bytes": 5063,
+      "sha256": "2b515396070df3ae9f3b00d5b84a97f76b48a8aab644751ea10349c272ffb725"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_042_all_cochannel.npz",
+      "size_bytes": 9848,
+      "sha256": "6660b0ad5a71f8719bafef2d6239a7e7fe53456ba0f77c14b6a389c736e41105"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_042_antenna_index.npz",
+      "size_bytes": 5141,
+      "sha256": "d3cc5ee7d0758e0755ac6f5f621a478676d5e9f51915fb18fa14ee8f66d7075d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_043_all_cochannel.npz",
+      "size_bytes": 9800,
+      "sha256": "29ddd984369d47a4240457f6f087169145f6e9ad69fe0398bf066ce299b32781"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_043_antenna_index.npz",
+      "size_bytes": 5120,
+      "sha256": "5f81af7398b7e08f2b75abe72be1476d468a1a1dffa17f592fbce128806fae75"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_044_all_cochannel.npz",
+      "size_bytes": 9481,
+      "sha256": "4039cf429a8231036b479a3c86dc3fdb8d3445edf236d663ab10dd9aec6ec8f6"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_044_antenna_index.npz",
+      "size_bytes": 5007,
+      "sha256": "c58f36fa694ade138839297d441d22d44fa33e46bf2b39e567550fa045dd5c5a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_045_all_cochannel.npz",
+      "size_bytes": 9440,
+      "sha256": "3478f5333b68d5ad8cbe5e7bab08e179286995bbfaa30a53698350002451e2d8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_045_antenna_index.npz",
+      "size_bytes": 5021,
+      "sha256": "1dc5406e6e70aae5525760dc68b62808e169381f914a66267d1e28b903c136d7"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_046_all_cochannel.npz",
+      "size_bytes": 9083,
+      "sha256": "58dbaf6ed424159ee3d8920c7a432b19999a30c74ddec2cc673f273647ae16ef"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_046_antenna_index.npz",
+      "size_bytes": 5017,
+      "sha256": "56e180dc6de86762a6b94f1c20255f4e70b956db22f67a5536ee0b3279d038a0"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_047_all_cochannel.npz",
+      "size_bytes": 8971,
+      "sha256": "28537b7ac18c2b988689cd1df30e071c674784366cf56df5e90aae3f55ca8f54"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_047_antenna_index.npz",
+      "size_bytes": 4967,
+      "sha256": "5129ebc26b9096b429346d9ef2c081ab36680c99f8c0a165e53a1b771f329f6d"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_048_all_cochannel.npz",
+      "size_bytes": 8893,
+      "sha256": "fc61306ec6c39a4c081e9110fd9089ea7f04545b7b7aef8bc66133ee970e1990"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_048_antenna_index.npz",
+      "size_bytes": 4956,
+      "sha256": "0230eaf1f51d93808ff34392976bd474ba14bfc47c46264e0c6970206ba266fc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_049_all_cochannel.npz",
+      "size_bytes": 8533,
+      "sha256": "fccd9093674c351f186228707b44307768e191768d4bf757968b8bbce7b81bf8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_049_antenna_index.npz",
+      "size_bytes": 4764,
+      "sha256": "469ac6e0c3150297950b262f7880e76c8712685e8ce335a013579048419e0444"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_050_all_cochannel.npz",
+      "size_bytes": 8599,
+      "sha256": "c10af456d8d4ac910cf85e77db5de34885b63a66eaa7e7f639ba0c42563e6522"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_050_antenna_index.npz",
+      "size_bytes": 4789,
+      "sha256": "970c194d68655a2e2ec3de91e2e938f279f151a7fe66311b518fafc174327c80"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_051_all_cochannel.npz",
+      "size_bytes": 8557,
+      "sha256": "e37628183ca600c07a6f29456d17324c27aaae7c6740cd0be58369ed14590c72"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_051_antenna_index.npz",
+      "size_bytes": 4808,
+      "sha256": "1f2d3810924911f0f5a4016a33a35f5be875ef734fab3f1480f4719d771de1d3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_052_all_cochannel.npz",
+      "size_bytes": 8659,
+      "sha256": "64f027111030f4a7d319bfd006ac20d905517fec9663574ba9b55471dae9c221"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_052_antenna_index.npz",
+      "size_bytes": 4875,
+      "sha256": "824d5b56a3113063d21f7aa152ab02d3f62079a38a45bd5047d2a34505c02236"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_053_all_cochannel.npz",
+      "size_bytes": 9297,
+      "sha256": "61dc328bede9efa86b9a1a8ece6ff817e4e4fac007bcc8c07e5df93df2cdb632"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_053_antenna_index.npz",
+      "size_bytes": 5097,
+      "sha256": "4f876fcfccb2c94d195d7bd2525fd6b8c38ea0710e553ec001cb3739a91c22f8"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_054_all_cochannel.npz",
+      "size_bytes": 9217,
+      "sha256": "18d1d57ad16cc3a123900e6efdafe63fef2f63d18885849cf3b35fd888209c31"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_054_antenna_index.npz",
+      "size_bytes": 5057,
+      "sha256": "f968500869a64990010258feabb9f33e432ec5a332e674f6c1a2299201afa724"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_055_all_cochannel.npz",
+      "size_bytes": 9561,
+      "sha256": "8ade8cfbf20178dc26d29c12ec3f731340767b37f549131e6c4d465daf4687de"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_055_antenna_index.npz",
+      "size_bytes": 5238,
+      "sha256": "6c1b1f0fe9436bd4369f4b541132bfc0d6b779d2c7f705dcaef35b4294642fce"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_056_all_cochannel.npz",
+      "size_bytes": 9435,
+      "sha256": "5c4081b9bd41adebaeb5b070f602a28ce1308d922a804f468d254d518559b4f5"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_056_antenna_index.npz",
+      "size_bytes": 5188,
+      "sha256": "51ed12d01dc10809d41fb246ec9b12c343e4650a1b01c838380dc8c551d78b60"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_057_all_cochannel.npz",
+      "size_bytes": 9382,
+      "sha256": "cdd0a10a37aa6e1320463b04b09d46fdd69f3e786d12dfc14e522d70253459cc"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_057_antenna_index.npz",
+      "size_bytes": 5179,
+      "sha256": "3ffb955cdc1d1d1c3c4cdb17a3c7f29eb389095273aa2fa938b90d296146c338"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_058_all_cochannel.npz",
+      "size_bytes": 10075,
+      "sha256": "89b6d6df0f2372ff31368585717172473efaf32a18d353a78949cc2a85c5c0f3"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_058_antenna_index.npz",
+      "size_bytes": 5427,
+      "sha256": "2b5ef7a5522914a3e33db8921201c0374269a4cb9a746a7ec4cf23d208df788a"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_059_all_cochannel.npz",
+      "size_bytes": 9971,
+      "sha256": "faf42a6fef2970c8c40efead3fc03c9838d26e26d751807ef6d3b5f2fe8be268"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_059_antenna_index.npz",
+      "size_bytes": 5349,
+      "sha256": "b7f567fed8256e07b3c2b65010bfa7e52ccdfe4243b9ca72f2389468704abd88"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_060_all_cochannel.npz",
+      "size_bytes": 9857,
+      "sha256": "ef6d23f484ef6dc7eec5a1d21ee6ff8be2de563c6b49ed74c951019578b14162"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/reference_060_antenna_index.npz",
+      "size_bytes": 5358,
+      "sha256": "98792b82f3f3594afaa7e681bfe3e919ba2046e5c0fad83c0dc575ed724e7ef4"
+    },
+    {
+      "path": "workspace/results/feeder_physics_v1_4/summary.json",
+      "size_bytes": 3080,
+      "sha256": "3c343cfb8056f45eb4832e0c569f142c373e61affb96f7c4e789dfe6f8d7a2e3"
+    },
+    {
+      "path": "workspace/scripts/freeze_feeder_baseline.py",
+      "size_bytes": 6226,
+      "sha256": "4b0ebf4eb2d5182ae2a9aaabe49eccfadfb175c908b0502c59f1cf11047249d5"
+    },
+    {
+      "path": "workspace/scripts/freeze_feeder_v1_4_1.py",
+      "size_bytes": 7035,
+      "sha256": "94e6ddf933e873798561a6da1b6be7a05729ea33e2dc1c83b28365c1626178af"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_antenna_sensitivity.py",
+      "size_bytes": 3614,
+      "sha256": "20e1c40d315020e28bec3353c26396d551371dc2e71563789ba18ef2e29c7987"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_association.py",
+      "size_bytes": 2903,
+      "sha256": "1f82b11f367dfadc8c97ce90926b57e6e96d8dba2f58b85da40d86ba9fbebdaa"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_gso_epfd.py",
+      "size_bytes": 6637,
+      "sha256": "da54457bfffcfc4b70a500013ef6389a75b9675b207e1850e698c9314006877a"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_interference.py",
+      "size_bytes": 2956,
+      "sha256": "33efaf100aebfec765a915359b1ac3ef4e559efb5900ee0924306f7d029a3470"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_physics_timeseries.py",
+      "size_bytes": 5795,
+      "sha256": "d501cd4eb553a8676f077bef2782005ac032a9df8a5e89d50159c8cfd7ecebfc"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_tx_frequency_comparison.py",
+      "size_bytes": 4841,
+      "sha256": "bc5ba95b64a0b7e7e378ef3f9c1638bcb864cc4d5fc6eedb6069a30697464e46"
+    },
+    {
+      "path": "workspace/scripts/run_feeder_v1_4.py",
+      "size_bytes": 8964,
+      "sha256": "deda6a6c00c7138da3256359ae36ac132d41e154f4830d7f97fd395c57c42da0"
+    },
+    {
+      "path": "workspace/研究进展/feeder_v1_paper_aligned_parameters.json",
+      "size_bytes": 11806,
+      "sha256": "767a499263012b8a411e4e46390c5fb34c1512c6dbe33012939376df8cd1273b"
+    },
+    {
+      "path": "workspace/研究进展/feeder_v1_paper_aligned_review.md",
+      "size_bytes": 4706,
+      "sha256": "de4e52514e979ddb5d340c039e52e2968fcecfd82f28a74502ce963171868297"
+    },
+    {
+      "path": "workspace/研究进展/feeder_v1_paper_aligned_spec.md",
+      "size_bytes": 9903,
+      "sha256": "191c9af1571bb221febf4cab5257f95851ea447c7ef0ce149cc79198e4a413b7"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO下行干扰保护检索与建模建议_20261117.md",
+      "size_bytes": 10814,
+      "sha256": "546c9ad831c38ce7397e7cb96095f4ebf3ca18a6d777da748003f2b9d3c7a0c1"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO保护条款与限值表整理_22_5C_22_5K_20261117.md",
+      "size_bytes": 11551,
+      "sha256": "855fb7b1e5cba45208823cf0fec7b3b30dc26f284a039f0d3e4c3112245aa0f6"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO保护条款截图_20261117/22_5C.png",
+      "size_bytes": 37384,
+      "sha256": "dc65ca18fc8ba8712b6d14a2ee58205c1e7a60cf63f82dfe9d819aed4fc838f7"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO保护条款截图_20261117/22_5K.png",
+      "size_bytes": 57054,
+      "sha256": "365b06d1d635091cb30adb780faa347af22db93d89b15e8fc636602b680955c3"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO保护条款截图_20261117/Resolution76_Table_1B.png",
+      "size_bytes": 67688,
+      "sha256": "2a9952d6a0f045a16209ff8eeb3917a40a3ea7460abf2fcbb05f16d9dafdcaae"
+    },
+    {
+      "path": "workspace/研究进展/ITU_GSO保护条款截图_20261117/Table_22_1B.png",
+      "size_bytes": 48448,
+      "sha256": "5a990a5ab39a4483da74c63bd83e95997038f57d9d851d8deb6930ad77b3fa81"
+    },
+    {
+      "path": "workspace/研究进展/ITU_S1528-0_S1428-1_天线方向图核查报告.md",
+      "size_bytes": 14096,
+      "sha256": "cadc8e21b32a0cca489205b02abb74338b411ce9d3b4610322fbda22201c0eb8"
+    },
+    {
+      "path": "workspace/研究进展/ITU六份参考资料_原文定位与课题建模查阅笔记_20261117.md",
+      "size_bytes": 12492,
+      "sha256": "d4d272a6c693f308d82a2e4d6a274f228a4ce4b3b16fbf56d9591746e8b5bb7c"
+    },
+    {
+      "path": "workspace/研究进展/V1_2圆波束参数选择与敏感性验证.md",
+      "size_bytes": 4997,
+      "sha256": "cda696b91300f58c4bd192d6209abf49c58486f72fb1c0bbd5a1a05c6cc011bd"
+    },
+    {
+      "path": "workspace/研究进展/V1_3十分钟物理计算与频率核验.md",
+      "size_bytes": 4997,
+      "sha256": "3b5be64a715d2390bcc0043c0b7e7d77111ef592459d33fa061ac1b40a86b748"
+    },
+    {
+      "path": "workspace/研究进展/V1_3补充_发射方向图频率对照.md",
+      "size_bytes": 4377,
+      "sha256": "e97a2e003bea5f44db91084a975ca292c15f239bfbd85dc725d370f340964c96"
+    },
+    {
+      "path": "workspace/研究进展/V1_4_1_GSO参考窗口与EPFD建模.md",
+      "size_bytes": 10019,
+      "sha256": "506ee4814bab4c9ffbd81a1aa70efdba498ea3c26bd65eb65b2e577bfaa1471b"
+    },
+    {
+      "path": "workspace/研究进展/V1_4异构参考计算与有界筛选初探.md",
+      "size_bytes": 7674,
+      "sha256": "9c94396d5476acf5706794ca5ffd0c59053eae779b57bd72f650f50375000bad"
+    },
+    {
+      "path": "workspace/研究进展/下一步实验步骤与新对话接续_V1_4_1冻结后_20261117.md",
+      "size_bytes": 8995,
+      "sha256": "575fd9e1120479c88fc4d251d8680279a06fe4e9244acbee8820221c2b2cae25"
+    },
+    {
+      "path": "workspace/研究进展/几何与活动馈电关联_v1_1.md",
+      "size_bytes": 3112,
+      "sha256": "8dae396704caec363967b4390aacb40aa470958785b764f5993d843f53be13f3"
+    },
+    {
+      "path": "workspace/研究进展/单时隙精确干扰计算_v1_2.md",
+      "size_bytes": 8881,
+      "sha256": "02edeeca26e436124b9670594dd04063a5b5df68f6dd62d1cdbb1ba5b5760319"
+    },
+    {
+      "path": "workspace/研究进展/后续实验讨论_逐快照推进与干扰反馈闭环_20261117.md",
+      "size_bytes": 3647,
+      "sha256": "7ce87290c8732703d81d904ae6e42ffbd1a35ebd9c76a8697ddb9be1dd5c8fba"
+    },
+    {
+      "path": "workspace/研究进展/后续研究备忘_异构功率上限与馈电容量优化.md",
+      "size_bytes": 4846,
+      "sha256": "8146401c98ffc4606de8fb7529ee07ed73831b8c34bf040e6c62c0c3615891f4"
+    },
+    {
+      "path": "workspace/研究进展/多星座馈电链路动态干扰管理_研究定位与投稿计划_20261116.md",
+      "size_bytes": 17831,
+      "sha256": "de8c62297024741d0578c440cbc21338dbe01f6044569ad67d0aa1b714d6444e"
+    },
+    {
+      "path": "workspace/研究进展/研究主线调整_异构星座动态干扰快速计算_20261116.md",
+      "size_bytes": 6609,
+      "sha256": "1e571df3d49c896142c61993ed8a801ff08409d0a3ed9d611b3e6d0ea6f57f70"
+    }
+  ]
+}

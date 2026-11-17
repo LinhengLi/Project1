@@ -1,0 +1,467 @@
+{
+  "review_date": "2026-11-15",
+  "system": "OneWeb",
+  "gateway_sites": [
+    {
+      "id": "OW-FCC-001",
+      "name": "Talkeetna Gateway, Alaska",
+      "latitude_deg": 62.333075,
+      "longitude_deg": -150.0312306,
+      "coordinate_reference": "WGS84",
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "position_verified": true,
+      "existence_basis": "FCC licensing filing",
+      "reported_status": "filed_in_2018_later_STA_2023",
+      "active_now_confirmed": false,
+      "antenna_count_documented": 26,
+      "antenna_diameter_m_documented": 3.5,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "research_band_verified": true,
+      "source": {
+        "title": "FCC Satellite Communications Services filing",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-355200A1.pdf",
+        "fcc_filing_number": "SES-LIC-20180604-01082"
+      },
+      "notes": "Proposed 26 x 3.5 m antennas in 2018; later STA granted 2023 in DOC-396871A1.pdf; does not establish current number of live antennas",
+      "site_id": "OW-FCC-001",
+      "altitude_m_assumed": 0.0,
+      "coordinate_origin": "FCC_station_coordinates",
+      "site_status": "filed_in_2018_later_STA_2023",
+      "longitude": -150.0312306,
+      "latitude": 62.333075
+    },
+    {
+      "id": "OW-FCC-002",
+      "name": "Southbury SNP Gateway, Connecticut",
+      "latitude_deg": 41.4517778,
+      "longitude_deg": -73.2893333,
+      "coordinate_reference": "WGS84",
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "position_verified": true,
+      "existence_basis": "FCC licensing filing",
+      "reported_status": "fcc_grant_2020",
+      "active_now_confirmed": false,
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": 3.5,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "research_band_verified": true,
+      "source": {
+        "title": "FCC Satellite Communications Services filing",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-366400A1.pdf",
+        "fcc_filing_number": "SES-LIC-20180727-02076"
+      },
+      "notes": "Facility address 2120 River Road, Southbury CT; OneWeb gateway 17.8–18.6 GHz downlink",
+      "site_id": "OW-FCC-002",
+      "altitude_m_assumed": 0.0,
+      "coordinate_origin": "FCC_station_coordinates",
+      "site_status": "fcc_grant_2020",
+      "longitude": -73.2893333,
+      "latitude": 41.4517778
+    },
+    {
+      "id": "OW-FCC-003",
+      "name": "Yona SNP Gateway, Guam",
+      "latitude_deg": 13.4184444,
+      "longitude_deg": 144.7517222,
+      "coordinate_reference": "WGS84",
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "position_verified": true,
+      "existence_basis": "FCC licensing filing",
+      "reported_status": "fcc_grant_2023",
+      "active_now_confirmed": false,
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": 3.7,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "research_band_verified": true,
+      "source": {
+        "title": "FCC Satellite Communications Services filing",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-391959A1.pdf",
+        "fcc_filing_number": "SES-LIC-20220131-00111"
+      },
+      "notes": "Facility address 570 Chalan Teleforo Road, Pulantat, Yona GU; OneWeb 17.8–18.6 GHz downlink",
+      "site_id": "OW-FCC-003",
+      "altitude_m_assumed": 0.0,
+      "coordinate_origin": "FCC_station_coordinates",
+      "site_status": "fcc_grant_2023",
+      "longitude": 144.7517222,
+      "latitude": 13.4184444
+    },
+    {
+      "id": "OW-FCC-004",
+      "name": "Paumalu SNP Gateway, Hawaii",
+      "latitude_deg": 21.6666639,
+      "longitude_deg": -158.0308333,
+      "coordinate_reference": "WGS84",
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "position_verified": true,
+      "existence_basis": "FCC licensing filing",
+      "reported_status": "licensed_and_temporary_authority_2026",
+      "active_now_confirmed": false,
+      "antenna_count_documented": 25,
+      "antenna_diameter_m_documented": 3.7,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "research_band_verified": true,
+      "source": {
+        "title": "FCC Satellite Communications Services filing",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-388652A1.pdf",
+        "fcc_filing_number": "SES-LIC-20220405-00360"
+      },
+      "notes": "Facility Comsat Road Paumalu, HI. 2026 STA (DOC-420827A1.pdf) was effective 2026-04-10 to 2026-10-06, so latest activity after that date is unverified",
+      "site_id": "OW-FCC-004",
+      "altitude_m_assumed": 0.0,
+      "coordinate_origin": "FCC_station_coordinates",
+      "site_status": "licensed_and_temporary_authority_2026",
+      "longitude": -158.0308333,
+      "latitude": 21.6666639
+    },
+    {
+      "id": "OW-FCC-005",
+      "name": "Clewiston SNP, Florida",
+      "latitude_deg": 26.747722222222222,
+      "longitude_deg": -81.04922222222223,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": true,
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "coordinate_origin": "FCC DMS converted to decimal degrees",
+      "simulation_location": false,
+      "research_band_verified": true,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": false,
+      "active_now_confirmed": false,
+      "reported_status": "FCC application SES-LIC-20180727-02075",
+      "antenna_count_documented": 13,
+      "antenna_diameter_m_documented": 3.5,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-355200A1.pdf"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-FCC-006",
+      "name": "Santa Paula SNP, California",
+      "latitude_deg": 34.402,
+      "longitude_deg": -119.07319444444444,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": true,
+      "position_accuracy": "fcc_filing_site_coordinates",
+      "coordinate_origin": "FCC DMS converted to decimal degrees",
+      "simulation_location": false,
+      "research_band_verified": true,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": false,
+      "active_now_confirmed": false,
+      "reported_status": "FCC application SES-LIC-20190422-00538; grant DOC-376504A1",
+      "antenna_count_documented": 20,
+      "antenna_diameter_m_documented": 3.5,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://docs.fcc.gov/public/attachments/DOC-358650A1.pdf"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-007",
+      "name": "Darwin Tivendale · 仿真位置",
+      "latitude_deg": -12.5,
+      "longitude_deg": 130.95,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2022 project announcement; completion not verified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.telstrainternational.com/en/news-research/articles/telstra-providing-satellite-ground-infrastructure-for-oneweb"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-008",
+      "name": "Charlton Toowoomba · 仿真位置",
+      "latitude_deg": -27.55,
+      "longitude_deg": 151.85,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2022 planned gateway; completion not verified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.telstrainternational.com/en/news-research/articles/telstra-providing-satellite-ground-infrastructure-for-oneweb"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-009",
+      "name": "Wangara Perth · 仿真位置",
+      "latitude_deg": -31.8,
+      "longitude_deg": 115.85,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2022 planned gateway; completion not verified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.telstrainternational.com/en/news-research/articles/telstra-providing-satellite-ground-infrastructure-for-oneweb"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-010",
+      "name": "Scanzano · 仿真位置",
+      "latitude_deg": 37.91,
+      "longitude_deg": 13.36,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2023 operator statement: gateway installed; antenna-count discrepancy across languages",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.telespazio.com/documents/559023/0/PR%2BTelespazio%2BMarica_en.pdf?t=1677688656941"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-011",
+      "name": "Maricá · 仿真位置",
+      "latitude_deg": -22.9,
+      "longitude_deg": -42.8,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2023 inauguration; current operation unverified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.telespazio.com/documents/559023/0/PR%2BTelespazio%2BMarica_en.pdf?t=1677688656941"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-012",
+      "name": "Sirindhorn Ubon Ratchathani · 仿真位置",
+      "latitude_deg": 15.2,
+      "longitude_deg": 104.85,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2024 readiness announcement; exact antenna location unverified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://www.ntsatellite.net/en/news-2/"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    },
+    {
+      "id": "OW-SIM-013",
+      "name": "SvalSat · 仿真位置",
+      "latitude_deg": 78.25,
+      "longitude_deg": 15.5,
+      "altitude_m_assumed": 0,
+      "coordinate_reference": "WGS84",
+      "position_verified": false,
+      "position_accuracy": "manually_selected_regional_simulation_point_not_measured",
+      "coordinate_origin": "Researcher-selected coarse geographic approximation; not extracted from source",
+      "simulation_location": true,
+      "research_band_verified": false,
+      "downlink_research_band_mhz": [
+        17800,
+        18600
+      ],
+      "study_band_assumed": true,
+      "active_now_confirmed": false,
+      "reported_status": "2024 project presentation identifies OneWeb gateway; exact antenna location unverified",
+      "antenna_count_documented": null,
+      "antenna_diameter_m_documented": null,
+      "simulation_antenna_counts": [
+        4,
+        8,
+        16
+      ],
+      "source": {
+        "title": "Gateway project / regulatory evidence; approximate coordinates are not provided by this source",
+        "url": "https://nebula.esa.int/sites/default/files/neb_tec_study/2499/public/FIGSI_Presentation_Project_Overview_at_FP_ESO_Marco%20Lanucara.pdf"
+      },
+      "notes": "For unverified positions, study-band use and 0m altitude are experiment assumptions. Do not treat as operational site or antenna coordinates."
+    }
+  ],
+  "gateway_count": 13,
+  "verified_coordinate_count": 6,
+  "simulation_location_count": 7,
+  "profiles": {
+    "strict_fcc": [
+      "OW-FCC-001",
+      "OW-FCC-002",
+      "OW-FCC-003",
+      "OW-FCC-004",
+      "OW-FCC-005",
+      "OW-FCC-006"
+    ],
+    "expanded_research": [
+      "OW-FCC-001",
+      "OW-FCC-002",
+      "OW-FCC-003",
+      "OW-FCC-004",
+      "OW-FCC-005",
+      "OW-FCC-006",
+      "OW-SIM-007",
+      "OW-SIM-008",
+      "OW-SIM-009",
+      "OW-SIM-010",
+      "OW-SIM-011",
+      "OW-SIM-012",
+      "OW-SIM-013"
+    ]
+  },
+  "notes": "6 FCC-sourced sites plus 7 explicitly synthetic regional positions anchored by gateway project evidence. Neither project announcement nor licensing proves current operation. Original catalogue is preserved."
+}

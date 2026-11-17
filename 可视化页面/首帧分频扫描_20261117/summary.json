@@ -1,0 +1,119 @@
+{
+  "evaluations": 201,
+  "feasible_evaluations": 0,
+  "initial": {
+    "candidate": 0,
+    "stage": "original",
+    "changed_from_incumbent": 0,
+    "assignment_sha256": "cd55e8711e08a77076dcff1a287318bcca2fc5cfce9640c2f55da68b04981e50",
+    "failed": 19,
+    "lf": 0.0152,
+    "failed_starlink": 16,
+    "failed_oneweb": 3,
+    "gso_feasible": false,
+    "gso_exceeding_receiver_configs": 36,
+    "gso_max_margin_db": 18.565645935316752,
+    "ngso_s": 0.780435500000749,
+    "gso_s": 0.11634910000066156,
+    "aggregation_s": 0.012053200000082143,
+    "interference_s": 0.9088413000026776,
+    "cumulative_interference_s": 0.9088413000026776,
+    "proposal_s": 0.0014126999994914513,
+    "accepted_as_incumbent": true,
+    "incumbent_candidate": 0,
+    "incumbent_failed": 19,
+    "incumbent_gso_max_margin_db": 18.565645935316752
+  },
+  "best_by_stated_objective": {
+    "candidate": 189,
+    "stage": "local_search",
+    "changed_from_incumbent": 1,
+    "assignment_sha256": "cb18c37e68c9b9fda6fc4d0d5c4030c990ea8bf5f5a0b20da85efda6b2ae4d36",
+    "failed": 1,
+    "lf": 0.0008,
+    "failed_starlink": 1,
+    "failed_oneweb": 0,
+    "gso_feasible": false,
+    "gso_exceeding_receiver_configs": 36,
+    "gso_max_margin_db": 18.565637601035178,
+    "ngso_s": 0.7700932000007015,
+    "gso_s": 0.11556059999929857,
+    "aggregation_s": 0.01277950000076089,
+    "interference_s": 0.898435300001438,
+    "cumulative_interference_s": 171.30600440001945,
+    "proposal_s": 0.0016197000004467554,
+    "accepted_as_incumbent": true,
+    "incumbent_candidate": 189,
+    "incumbent_failed": 1,
+    "incumbent_gso_max_margin_db": 18.565637601035178
+  },
+  "best_ngso_without_gso_guarantee": {
+    "candidate": 189,
+    "stage": "local_search",
+    "changed_from_incumbent": 1,
+    "assignment_sha256": "cb18c37e68c9b9fda6fc4d0d5c4030c990ea8bf5f5a0b20da85efda6b2ae4d36",
+    "failed": 1,
+    "lf": 0.0008,
+    "failed_starlink": 1,
+    "failed_oneweb": 0,
+    "gso_feasible": false,
+    "gso_exceeding_receiver_configs": 36,
+    "gso_max_margin_db": 18.565637601035178,
+    "ngso_s": 0.7700932000007015,
+    "gso_s": 0.11556059999929857,
+    "aggregation_s": 0.01277950000076089,
+    "interference_s": 0.898435300001438,
+    "cumulative_interference_s": 171.30600440001945,
+    "proposal_s": 0.0016197000004467554,
+    "accepted_as_incumbent": true,
+    "incumbent_candidate": 189,
+    "incumbent_failed": 1,
+    "incumbent_gso_max_margin_db": 18.565637601035178
+  },
+  "full_recompute_seconds": {
+    "total": 181.17462750002596,
+    "mean": 0.9013663059702784,
+    "median": 0.8996429999970132,
+    "p95": 0.9177008000006026,
+    "maximum": 0.9580332000005001
+  },
+  "search_wall_s": 181.79488810000112,
+  "result_io_s": 0.17403489999924204,
+  "initial_neighborhood_size": 5510,
+  "estimated_full_initial_neighborhood_s": 4966.528345896234,
+  "global_assignment_log10": 855.8858398338549,
+  "frequency_only_infeasibility_proved": true,
+  "budgets": [
+    {
+      "evaluations": 1,
+      "measured_interference_s": 0.9088413000026776,
+      "best_failed": 19
+    },
+    {
+      "evaluations": 21,
+      "measured_interference_s": 18.82235839999339,
+      "best_failed": 12
+    },
+    {
+      "evaluations": 51,
+      "measured_interference_s": 45.92857209999056,
+      "best_failed": 12
+    },
+    {
+      "evaluations": 101,
+      "measured_interference_s": 91.33564780000233,
+      "best_failed": 11
+    },
+    {
+      "evaluations": 151,
+      "measured_interference_s": 136.2636035000105,
+      "best_failed": 8
+    },
+    {
+      "evaluations": 201,
+      "measured_interference_s": 181.17462750002596,
+      "best_failed": 1
+    }
+  ],
+  "limitations": "baseline policy, not unavoidable computation cost; budgets and neighborhood are chosen, no global optimality or convergence claim; fixed-geometry exact caching remains a required future comparison"
+}

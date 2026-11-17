@@ -1,0 +1,209 @@
+{
+  "version": "v1.4.1_gso_window_epfd",
+  "frames": 61,
+  "reference_diameters_m": [
+    1.0,
+    2.0,
+    5.0
+  ],
+  "windows": [
+    {
+      "id": "carrier_center_0_40000",
+      "kind": "carrier_center",
+      "center_hz": 17850000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_0_1000000",
+      "kind": "carrier_center",
+      "center_hz": 17850000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_1_40000",
+      "kind": "carrier_center",
+      "center_hz": 17950000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_1_1000000",
+      "kind": "carrier_center",
+      "center_hz": 17950000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_2_40000",
+      "kind": "carrier_center",
+      "center_hz": 18050000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_2_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18050000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_3_40000",
+      "kind": "carrier_center",
+      "center_hz": 18150000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_3_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18150000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_4_40000",
+      "kind": "carrier_center",
+      "center_hz": 18250000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_4_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18250000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_5_40000",
+      "kind": "carrier_center",
+      "center_hz": 18350000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_5_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18350000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_6_40000",
+      "kind": "carrier_center",
+      "center_hz": 18450000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_6_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18450000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "carrier_center_7_40000",
+      "kind": "carrier_center",
+      "center_hz": 18550000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "carrier_center_7_1000000",
+      "kind": "carrier_center",
+      "center_hz": 18550000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_0_40000",
+      "kind": "channel_boundary",
+      "center_hz": 17900000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_0_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 17900000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_1_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18000000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_1_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18000000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_2_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18100000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_2_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18100000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_3_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18200000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_3_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18200000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_4_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18300000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_4_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18300000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_5_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18400000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_5_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18400000000.0,
+      "bandwidth_hz": 1000000.0
+    },
+    {
+      "id": "channel_boundary_6_40000",
+      "kind": "channel_boundary",
+      "center_hz": 18500000000.0,
+      "bandwidth_hz": 40000.0
+    },
+    {
+      "id": "channel_boundary_6_1000000",
+      "kind": "channel_boundary",
+      "center_hz": 18500000000.0,
+      "bandwidth_hz": 1000000.0
+    }
+  ],
+  "tx_power_dbw": 12,
+  "carrier_bandwidth_hz": 100000000.0,
+  "tx_pattern": "S1528-0 1.2 z=1, peak 35dBi at18.2GHz; fixed effective aperture frequency scaling; LN -20",
+  "tx_half_width_ref_deg": 1.4990500074657407,
+  "rx_pattern": "S1428-1 at spectral intersection midpoint",
+  "spectrum": "flat rectangular PSD; ideal rectangular reference windows; gain/propagation narrow-window midpoint approximation; incoherent linear power sum",
+  "source_scope": "only selected active feeder beams, not entire operational constellations",
+  "gso_association": "12 fixed pairings; positions/coverage/band operation not fully verified",
+  "time_scope": "600seconds inclusive 61 snapshots at10s; not converged long-term statistics",
+  "regulatory_status": "RESEARCH_EPFD_ONLY; no compliance verdict or limit curves executed; center and boundary windows are samples, not full worst-frequency scan",
+  "zero_power": "linear zero; CSV dB empty; no arbitrary finite floor",
+  "association_sha256": "05834f1ad3a10bb6078dde0557d906f68e2591068a002d6c7e6ed3e23784e24d",
+  "profile_sha256": "5a5f6c04464b87046c866bf028970b93e33a0bdb541e604d57ac9d8e844c7b96",
+  "source_hashes": {
+    "scripts\\run_feeder_gso_epfd.py": "da54457bfffcfc4b70a500013ef6389a75b9675b207e1850e698c9314006877a",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_gso_epfd.py": "fcef59f3c51a31dc1c15207a8534c12d2e973385bc7c593047790aa324271fa0",
+    "em-situational-system-main\\em-situational-system-main\\backend\\app\\services\\feeder_interference.py": "373de54769ebd7f031b4ac8358a76ec1400ca9f0a0dbd8c8bc904ba53ef86088"
+  }
+}

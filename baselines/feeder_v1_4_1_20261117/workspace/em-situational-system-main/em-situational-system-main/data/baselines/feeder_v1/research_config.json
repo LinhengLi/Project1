@@ -1,0 +1,111 @@
+{
+  "version": "feeder_v1",
+  "frozen_date": "2026-11-15",
+  "purpose": "Heterogeneous downlink feeder interference management and AI dynamic-computation acceleration",
+  "stage": "configuration_only",
+  "seed": 20261115,
+  "epoch_utc": "2026-11-13T12:00:00Z",
+  "time_step_sec": 10,
+  "duration_sec": 7200,
+  "study_band_ghz": [
+    17.8,
+    18.6
+  ],
+  "channel_count": 8,
+  "channel_bandwidth_mhz": 100,
+  "channel_centers_ghz": [
+    17.85,
+    17.950000000000003,
+    18.05,
+    18.150000000000002,
+    18.25,
+    18.35,
+    18.450000000000003,
+    18.55
+  ],
+  "frequency_overlap_policy": "interval_intersection; per-GSO frequency masks from screening snapshot",
+  "ngso_working_antennas_per_gateway": 8,
+  "ngso_tx_power_dbw": 12,
+  "ngso_tx_power_convention": "fixed total power per active 100MHz carrier; no power scaling for subsequent bandwidth variants without an explicit policy",
+  "ngso_satellite_peak_gain_dbi": 35,
+  "ngso_gateway_peak_gain_dbi": 45.76,
+  "ngso_noise_temperature_k": 398,
+  "ngso_min_elevation_deg": 40,
+  "ngso_reference_lf_threshold_db": -12.2,
+  "lf_threshold_status": "paper-derived experimental criterion; not a universal regulatory threshold",
+  "association_policy": "same_operator; highest_elevation_then_satellite_id; at_most_one_gateway_per_satellite; up_to_8_links_per_gateway; allow_idle_antennas",
+  "gso_association_policy": "12 fixed one-to-one reference associations; no handover",
+  "coordination_assumption": "ideal centralized cross-operator frequency coordination; not evidence of real operator coordination",
+  "antenna_patterns": {
+    "ngso_tx": "ITU-R S.1528 reference family; exact revision/formula must be pinned before RF execution",
+    "ngso_rx": "ITU-R S.1428-1 reference; formula pending",
+    "gso_rx": "reference pattern and applicable regulatory antenna class pending"
+  },
+  "parameter_provenance": "12dBW/35dBi/45.76dBi/398K/40deg/-12.2dB are controlled paper-reference assumptions, not operator measurements",
+  "gso_parameters": "per-station assumptions in frozen metadata; 3.5m/0.65 efficiency/398K/10deg",
+  "orbit_policy": "frozen raw catalogue candidates; operational/altitude filtering is deferred and must create a derived version with a selection manifest",
+  "station_pairs": [
+    {
+      "oneweb_id": "OW-FCC-001",
+      "starlink_id": "SL-C-004",
+      "distance_km": 124.171,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    },
+    {
+      "oneweb_id": "OW-FCC-002",
+      "starlink_id": "SL-C-160",
+      "distance_km": 33.913,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    },
+    {
+      "oneweb_id": "OW-FCC-003",
+      "starlink_id": "SL-C-100",
+      "distance_km": 11.02,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    },
+    {
+      "oneweb_id": "OW-FCC-004",
+      "starlink_id": "SL-C-062",
+      "distance_km": 120.584,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    },
+    {
+      "oneweb_id": "OW-FCC-005",
+      "starlink_id": "SL-C-189",
+      "distance_km": 100.89,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    },
+    {
+      "oneweb_id": "OW-FCC-006",
+      "starlink_id": "SL-C-038",
+      "distance_km": 86.978,
+      "selection": "nearest_unique_catalogue_site; source confidence retained"
+    }
+  ],
+  "counts": {
+    "starlink_gateways": 6,
+    "oneweb_gateways": 6,
+    "gso_receivers": 12
+  },
+  "readiness": {
+    "active_feeder_links": false,
+    "antenna_patterns": false,
+    "aggregate_interference": false,
+    "graph_coloring": false,
+    "lf_fsr": false,
+    "gso_epfd_compliance": false,
+    "ai_acceleration": false
+  },
+  "metrics": [
+    "NGSO LF overall and by constellation",
+    "FSR on continuing associations",
+    "end-to-end and stage runtime",
+    "GSO protection metric after definition"
+  ],
+  "excluded_scope": [
+    "user traffic",
+    "QoS scheduling",
+    "routing"
+  ],
+  "change_policy": "No overwrite of v1; changes require v2 or a named derived experiment"
+}

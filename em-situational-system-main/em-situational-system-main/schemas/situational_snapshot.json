@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SituationalSnapshot",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "link_id": { "type": "string" },
+          "sinr_db": { "type": "number" },
+          "risk_level": { "enum": ["normal", "mild", "moderate", "severe", "unavailable"] },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "spectrum_grid": {
+      "type": "object",
+      "properties": {
+        "freq_bins_hz": { "type": "array", "items": { "type": "number" } },
+        "power_dbm": { "type": "array", "items": { "type": "number" } },
+        "observed_mask": { "type": "array", "items": { "type": "boolean" } }
+      }
+    }
+  }
+}

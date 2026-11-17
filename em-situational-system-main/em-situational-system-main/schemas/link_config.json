@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LinkConfig",
+  "type": "object",
+  "required": ["id", "link_type", "source_id", "target_id"],
+  "properties": {
+    "id": { "type": "string" },
+    "link_type": { "enum": ["isl", "sgl"] },
+    "source_id": { "type": "string" },
+    "target_id": { "type": "string" },
+    "center_freq_hz": { "type": "number" },
+    "bandwidth_hz": { "type": "number" },
+    "tx_power_dbm": { "type": "number" },
+    "modulation": { "type": "string" },
+    "data_rate_bps": { "type": "number" }
+  }
+}

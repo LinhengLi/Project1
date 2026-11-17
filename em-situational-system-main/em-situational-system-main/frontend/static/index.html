@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>电磁态势科研验证平台</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.115/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.115/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1220;--panel:#121a2b;--line:rgba(148,163,184,.18);--muted:#94a3b8;--text:#e2e8f0;--accent:#38bdf8;--ok:#34d399;--warn:#fbbf24;--danger:#f87171}
+    *{box-sizing:border-box}body{margin:0;font-family:"Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 18px;border-bottom:1px solid var(--line);background:#0d1524}h1{margin:0;font-size:18px}.subtle{color:var(--muted);font-size:12px}
+    button{border:1px solid var(--line);background:#162033;color:var(--text);padding:7px 12px;font-size:12px;border-radius:6px;cursor:pointer}button:hover{background:#1a2740}button.primary{background:#0f3b5f}
+    main{display:grid;grid-template-columns:350px minmax(0,1fr);min-height:calc(100vh - 61px)}aside{padding:14px;border-right:1px solid var(--line);background:#0f1727;overflow:auto}.workspace{padding:14px;display:grid;gap:14px;overflow:auto}
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}.panel-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}.panel-title h2{margin:0;font-size:14px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}input,textarea{width:100%;border:1px solid var(--line);background:#0d1524;color:var(--text);border-radius:6px;padding:8px 10px;font-size:12px;font-family:inherit}textarea{min-height:64px;resize:vertical}
+    .checkbox-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.checkbox-item{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:#101829;color:var(--text);font-size:12px}.checkbox-item input{width:auto;margin:0}
+    .button-row,.pill-row,.list{display:flex;flex-wrap:wrap;gap:8px}.list{display:grid}.list-item{border:1px solid var(--line);border-radius:6px;padding:10px;background:#101829;cursor:pointer}.list-item.active{border-color:rgba(56,189,248,.55);background:#132038}.list-meta{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.stat{border:1px solid var(--line);border-radius:6px;padding:10px;background:#0f1727}.stat-label{color:var(--muted);font-size:12px}.stat-value{margin-top:8px;font-size:20px;font-weight:600}
+    .hero-grid,.grid-2,.grid-3,.live-grid{display:grid;gap:14px}.hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(320px,.75fr)}.grid-2{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.live-grid{grid-template-columns:minmax(0,1fr) minmax(300px,420px)}
+    .chart{height:250px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:6px;background:#0f1727}table{width:100%;border-collapse:collapse;font-size:12px}th,td{padding:8px 10px;border-bottom:1px solid rgba(148,163,184,.1);text-align:left;white-space:nowrap}th{position:sticky;top:0;background:#101a2b;color:var(--muted)}
+    .badge{display:inline-block;min-width:68px;padding:3px 8px;border-radius:999px;font-size:11px;text-align:center;border:1px solid var(--line)}.status-created{color:var(--muted)}.status-running{color:var(--warn)}.status-completed{color:var(--ok)}.status-failed{color:var(--danger)}
+    .replay-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin-bottom:10px}.note-list{display:grid;gap:8px;font-size:12px;color:var(--muted)}.pill{border:1px solid var(--line);border-radius:6px;padding:6px 8px;background:#0f1727;font-size:12px}.empty{color:var(--muted);font-size:12px;padding:10px 0}
+    .globe-wrap{position:relative;min-height:520px;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#050b15}#cesiumContainer{position:absolute;inset:0}.globe-overlay{position:absolute;left:12px;top:12px;width:360px;max-width:calc(100% - 24px);max-height:calc(100% - 24px);overflow:auto;background:rgba(8,16,32,.84);border:1px solid var(--line);border-radius:8px;padding:12px;backdrop-filter:blur(10px);font-size:12px}.globe-overlay h3{margin:0 0 8px;font-size:13px}.info-row{display:flex;justify-content:space-between;gap:10px;padding:4px 0}.mini-title{margin:10px 0 6px;color:var(--muted);font-size:12px}.link-row{border:1px solid var(--line);border-radius:6px;padding:7px 8px;margin-top:6px;background:rgba(15,23,39,.9);cursor:pointer}.link-row:hover{border-color:rgba(56,189,248,.55)}.link-row.active{border-color:rgba(251,191,36,.8);background:rgba(113,63,18,.22)}.risk-normal{color:var(--ok)}.risk-moderate{color:var(--warn)}.risk-severe,.risk-unavailable{color:var(--danger)}.alert-item{border-left:3px solid var(--danger);padding:8px 10px;background:rgba(127,29,29,.14);font-size:12px}
+    @media (max-width:1200px){main,.form-grid,.stats,.hero-grid,.grid-2,.grid-3,.live-grid{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid var(--line)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>电磁态势科研验证平台 · <a href="/static/constellations.html" style="color:#44d7e8">异构星座轨道总览 ↗</a></h1>
+      <div class="subtle">实验编排、批量评测、结果回放与三维解释</div>
+    </div>
+    <div>
+      <div class="button-row" style="justify-content:flex-end;">
+        <button onclick="setScenarioMode('simulation')">仿真数据</button>
+        <button onclick="setScenarioMode('online')">在线真实数据</button>
+        <button onclick="refreshLiveView({realtime:true,refreshSources:true})">刷新态势</button>
+        <button onclick="stepLive()">仿真步进</button>
+        <button onclick="runLivePrediction()">即时预测</button>
+        <button onclick="runLiveCompletion()">即时补全</button>
+      </div>
+      <div id="modeStatus" class="subtle" style="margin-top:6px;text-align:right;">数据模式: 加载中</div>
+    </div>
+  </header>
+  <main>
+    <aside>
+      <div class="panel">
+        <div class="panel-title"><h2>实验配置</h2></div>
+        <div class="form-grid">
+          <label>场景文件<input id="scenarioPaths" value="tle_online_v0.json,real_data_demo_v0.json" /></label>
+          <label>观测率<input id="observationRates" value="0.25,0.4" /></label>
+          <label>预测时域(秒)<input id="predictionHorizons" value="60,300" /></label>
+          <label>仿真步数<input id="simulationSteps" type="number" min="1" max="240" value="12" /></label>
+          <label>步进间隔(秒)<input id="stepDeltaSec" type="number" min="1" max="600" value="5" /></label>
+          <label>导出格式<input id="exportFormats" value="json,csv" /></label>
+        </div>
+        <div style="margin:10px 0 8px;font-size:12px;color:var(--muted)">补全方法</div>
+        <div class="checkbox-grid">
+          <label class="checkbox-item"><input type="checkbox" value="kriging" checked />kriging</label>
+          <label class="checkbox-item"><input type="checkbox" value="idw" checked />idw</label>
+          <label class="checkbox-item"><input type="checkbox" value="knn" checked />knn</label>
+          <label class="checkbox-item"><input type="checkbox" value="mae" checked />mae</label>
+        </div>
+        <label style="margin-top:10px;">备注<textarea id="experimentNotes">科研验证基线批量实验</textarea></label>
+        <div class="button-row" style="margin-top:10px;">
+          <button class="primary" onclick="createAndRunExperiment()">创建并运行</button>
+          <button onclick="loadExperiments()">刷新列表</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>实验列表</h2>
+          <div class="button-row">
+            <button onclick="deleteCurrentExperiment()">删除当前</button>
+            <button onclick="clearAllExperiments()">清空全部</button>
+          </div>
+        </div>
+        <div id="experimentList" class="list"></div>
+      </div>
+    </aside>
+    <section class="workspace">
+      <div class="hero-grid">
+        <div class="globe-wrap"><div id="cesiumContainer"></div><div class="globe-overlay"><h3>三维态势视图</h3><div id="selectedInfo" class="empty">点击卫星节点查看位置与速度。</div><div id="liveExplanation" class="subtle" style="margin-top:10px;line-height:1.6;">等待态势数据。</div></div></div>
+        <div class="panel"><div class="panel-title"><h2>当前链路与告警</h2></div><div class="note-list"><div><span>场景</span> <span id="liveScenarioName">-</span></div><div><span>时刻</span> <span id="liveTimestamp">-</span></div><div><span>可见链路</span> <span id="liveVisibleLinks">-</span></div><div><span>高风险链路</span> <span id="liveHighRisk">-</span></div></div><div style="margin:12px 0 8px;font-size:12px;color:var(--muted)">当前数据源</div><div id="liveDataSources" class="pill-row"></div><div style="margin:12px 0 8px;font-size:12px;color:var(--muted)">实时告警</div><div id="alertsList" class="list"></div></div>
+      </div><div class="panel">
+        <div class="panel-title"><h2>实验摘要</h2><div class="button-row"><button onclick="exportCurrentExperiment('json')">导出 JSON</button><button onclick="exportCurrentExperiment('csv')">导出 CSV</button></div></div>
+        <div id="summaryStats" class="stats"></div>
+        <div id="summaryText" class="empty">请选择实验。</div>
+        <div id="dataSources" class="pill-row" style="margin-top:10px;"></div>
+      </div>
+      <div class="grid-2">
+        <div class="panel"><div class="panel-title"><h2>算法对比</h2></div><div id="comparisonChart" class="chart"></div><div id="comparisonTable" class="table-wrap" style="margin-top:10px;"></div></div>
+        <div class="panel"><div class="panel-title"><h2>实验回放</h2></div><div class="replay-row"><input id="replaySlider" type="range" min="0" max="0" value="0" oninput="renderReplayPoint()" /><div id="replayIndex" class="subtle">0 / 0</div></div><div id="replayStats" class="note-list"></div><div id="caseList" class="list" style="margin-top:10px;"></div></div>
+      </div>
+      <div class="grid-3">
+        <div class="panel"><div class="panel-title"><h2>趋势曲线</h2></div><div id="trendChart" class="chart"></div></div>
+        <div class="panel"><div class="panel-title"><h2>实时频谱</h2></div><div id="spectrumChart" class="chart"></div></div>
+        <div class="panel"><div class="panel-title"><h2>实时 SINR</h2></div><div id="sinrChart" class="chart"></div></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const API = window.location.origin;
+    const state = {experiments:[],currentExperiment:null,currentCase:null,currentReplay:null,viewer:null,satellitePositions:new Map(),currentSnapshot:null,selectedSatelliteId:null,selectedLinkId:null,scenarioMode:null,globalExplanation:'等待态势数据。'};
+    const trendChart = echarts.init(document.getElementById('trendChart'));
+    const spectrumChart = echarts.init(document.getElementById('spectrumChart'));
+    const sinrChart = echarts.init(document.getElementById('sinrChart'));
+    const comparisonChart = echarts.init(document.getElementById('comparisonChart'));
+    const HIGH_RISK = ['moderate','severe','unavailable'];
+    function formatNumber(v,d=2){return Number.isFinite(Number(v))?Number(v).toFixed(d):'-'}
+    function formatPercent(v){return `${formatNumber((Number(v)||0)*100,1)}%`}
+    function parseCsvStrings(v){return v.split(',').map(s=>s.trim()).filter(Boolean)}
+    function parseCsvNumbers(v){return parseCsvStrings(v).map(Number).filter(v=>!Number.isNaN(v))}
+    async function api(path,opts={}){const r=await fetch(API+path,opts);if(!r.ok)throw new Error(await r.text());return r.json()}
+    function riskWeight(level){return {normal:0,low:1,moderate:2,severe:3,unavailable:4}[level]??0}
+    function riskClass(level){return `risk-${level||'normal'}`}
+    function riskColor(level,alpha=.82){const colors={normal:`rgba(52,211,153,${alpha})`,low:`rgba(96,165,250,${alpha})`,moderate:`rgba(251,191,36,${alpha})`,severe:`rgba(248,113,113,${alpha})`,unavailable:`rgba(239,68,68,${alpha})`};return colors[level]||colors.normal}
+    function displayLinkId(id){return (id||'').replace(/^isl_/,'')}
+    function visibleIslLinks(){return (state.currentSnapshot?.links||[]).filter(i=>i.visible&&i.link_type==='isl')}
+    function linkEndpointsSelected(link){return link&&(link.source_id===state.selectedSatelliteId||link.target_id===state.selectedSatelliteId)}
+    function linkAnalysis(link){
+      if(!link)return state.globalExplanation||'-';
+      const level=link.risk_level||'normal';
+      const quality=HIGH_RISK.includes(level)?'链路质量偏低，需要重点关注。':'链路质量相对可用。';
+      return `已选星间链路 ${displayLinkId(link.link_id)}：SINR=${formatNumber(link.sinr_db,1)}dB，距离=${formatNumber(link.range_km,1)}km，传播时延=${formatNumber(link.propagation_delay_ms,2)}ms，风险等级 ${level}。${quality}`
+    }
+    function renderLinkRows(links){
+      if(!links.length)return '<div class="empty">该节点当前没有可见星间链路。</div>';
+      return links.slice(0,8).map(link=>`<div class="link-row ${state.selectedLinkId===link.link_id?'active':''}" data-link-id="${link.link_id}"><div>${displayLinkId(link.link_id)}</div><div class="list-meta" style="margin-top:4px;"><span>SINR ${formatNumber(link.sinr_db,1)} dB</span><span class="${riskClass(link.risk_level)}">${link.risk_level}</span></div><div class="list-meta" style="margin-top:4px;"><span>${formatNumber(link.range_km,1)} km</span><span>${formatNumber(link.propagation_delay_ms,2)} ms</span></div></div>`).join('')
+    }
+    function renderSelectedInfo(){
+      const target=document.getElementById('selectedInfo');
+      const explanation=document.getElementById('liveExplanation');
+      const selectedLink=(state.currentSnapshot?.links||[]).find(i=>i.link_id===state.selectedLinkId);
+      if(selectedLink){
+        target.innerHTML=[['链路',displayLinkId(selectedLink.link_id)],['端点',`${selectedLink.source_id} ⇄ ${selectedLink.target_id}`],['SINR',`${formatNumber(selectedLink.sinr_db,1)} dB`],['距离',`${formatNumber(selectedLink.range_km,1)} km`],['时延',`${formatNumber(selectedLink.propagation_delay_ms,2)} ms`],['频率',`${formatNumber((selectedLink.center_freq_hz||0)/1e9,2)} GHz`],['风险',`<span class="${riskClass(selectedLink.risk_level)}">${selectedLink.risk_level}</span>`]].map(([a,b])=>`<div class="info-row"><span>${a}</span><span>${b}</span></div>`).join('');
+        explanation.textContent=linkAnalysis(selectedLink);
+        return
+      }
+      if(!state.selectedSatelliteId||!state.satellitePositions.has(state.selectedSatelliteId)){target.innerHTML='<div class="empty">点击卫星节点查看位置、相关星间链路与风险。</div>';explanation.textContent=state.globalExplanation||'-';return}
+      const p=state.satellitePositions.get(state.selectedSatelliteId);
+      const related=visibleIslLinks().filter(link=>link.source_id===p.entity_id||link.target_id===p.entity_id).sort((a,b)=>riskWeight(b.risk_level)-riskWeight(a.risk_level)||a.sinr_db-b.sinr_db);
+      const worst=related[0];
+      target.innerHTML=[['节点',p.entity_id],['纬度',`${formatNumber(p.latitude,3)}°`],['经度',`${formatNumber(p.longitude,3)}°`],['高度',`${formatNumber((p.altitude_m||0)/1000,1)} km`],['速度',`${formatNumber(p.velocity_m_s,1)} m/s`],['可见星间链路',related.length]].map(([a,b])=>`<div class="info-row"><span>${a}</span><span>${b}</span></div>`).join('')+`<div class="mini-title">相关链路（点击可分析）</div>${renderLinkRows(related)}`;
+      explanation.textContent=worst?`已选卫星 ${p.entity_id}，当前关联 ${related.length} 条可见星间链路；最需关注 ${displayLinkId(worst.link_id)}，SINR=${formatNumber(worst.sinr_db,1)}dB，风险 ${worst.risk_level}。`:`已选卫星 ${p.entity_id}，当前没有可见星间链路。`;
+    }
+    function selectLink(linkId){state.selectedLinkId=linkId;const link=(state.currentSnapshot?.links||[]).find(i=>i.link_id===linkId);state.selectedSatelliteId=link?.source_id||null;renderSelectedInfo();applySelectionStyle()}
+    function applySelectionStyle(){
+      if(!state.viewer)return;
+      const selectedLink=(state.currentSnapshot?.links||[]).find(i=>i.link_id===state.selectedLinkId);
+      state.viewer.entities.values.forEach(entity=>{
+        if(entity.point){
+          const selectedEndpoint=selectedLink&&(entity.satelliteId===selectedLink.source_id||entity.satelliteId===selectedLink.target_id);
+          const s=(entity.satelliteId&&entity.satelliteId===state.selectedSatelliteId)||selectedEndpoint;
+          entity.point.pixelSize=s?14:(entity.surfacePoint?6:9);
+          entity.point.color=s?Cesium.Color.YELLOW:(entity.surfacePoint?Cesium.Color.fromCssColorString('#22c55e'):Cesium.Color.fromCssColorString('#f87171'));
+        }
+        if(entity.polyline&&entity.linkId){
+          const link=(state.currentSnapshot?.links||[]).find(i=>i.link_id===entity.linkId);
+          const selected=entity.linkId===state.selectedLinkId;
+          const related=linkEndpointsSelected(link);
+          entity.polyline.width=selected?5:(related?3:(entity.defaultWidth||1.5));
+          entity.polyline.material=Cesium.Color.fromCssColorString(selected?'rgba(250,204,21,.98)':(related?'rgba(56,189,248,.92)':riskColor(link?.risk_level,.58)));
+        }
+      })
+    }
+    function initViewer(){
+      if(!window.Cesium){document.getElementById('selectedInfo').textContent='Cesium 未加载，三维视图不可用。';return}
+      state.viewer=new Cesium.Viewer('cesiumContainer',{animation:false,timeline:false,baseLayerPicker:false,geocoder:false,homeButton:false,sceneModePicker:false,navigationHelpButton:false,infoBox:false,selectionIndicator:false,scene3DOnly:true});
+      state.viewer.scene.globe.enableLighting=true;state.viewer.scene.fog.enabled=false;state.viewer.scene.backgroundColor=Cesium.Color.fromCssColorString('#050b15'); try{state.viewer.imageryLayers.removeAll();state.viewer.imageryLayers.addImageryProvider(new Cesium.UrlTemplateImageryProvider({url:'https://tile.openstreetmap.org/{z}/{x}/{y}.png',credit:'OpenStreetMap contributors',maximumLevel:19}))}catch(error){console.warn('Imagery provider unavailable, falling back to default globe.',error)}
+      state.viewer.camera.setView({destination:Cesium.Cartesian3.fromDegrees(110,20,32000000),orientation:{heading:0,pitch:Cesium.Math.toRadians(-90),roll:0}});
+      const handler=new Cesium.ScreenSpaceEventHandler(state.viewer.scene.canvas);
+      handler.setInputAction((click)=>{const picked=state.viewer.scene.pick(click.position);if(!Cesium.defined(picked)||!picked.id){state.selectedSatelliteId=null;state.selectedLinkId=null;renderSelectedInfo();applySelectionStyle();return}if(picked.id.linkId){state.selectedLinkId=picked.id.linkId;const link=(state.currentSnapshot?.links||[]).find(i=>i.link_id===state.selectedLinkId);state.selectedSatelliteId=link?.source_id||null;renderSelectedInfo();applySelectionStyle();return}if(picked.id.satelliteId){state.selectedSatelliteId=picked.id.satelliteId;state.selectedLinkId=null;renderSelectedInfo();applySelectionStyle();return}state.selectedSatelliteId=null;state.selectedLinkId=null;renderSelectedInfo();applySelectionStyle()},Cesium.ScreenSpaceEventType.LEFT_CLICK)
+    }
+    function satCartesian(pos){return Cesium.Cartesian3.fromDegrees(pos.longitude,pos.latitude,Math.max(pos.altitude_m||0,350000))}
+    function updateGlobe(positions){
+      if(!state.viewer)return;state.viewer.entities.removeAll();state.satellitePositions.clear();
+      positions.slice(0,160).forEach(pos=>{if(pos.latitude==null||pos.longitude==null)return;state.satellitePositions.set(pos.entity_id,pos)});
+      visibleIslLinks().slice(0,140).forEach(link=>{const a=state.satellitePositions.get(link.source_id);const b=state.satellitePositions.get(link.target_id);if(!a||!b)return;const width=HIGH_RISK.includes(link.risk_level)?2.6:1.4;state.viewer.entities.add({linkId:link.link_id,sourceId:link.source_id,targetId:link.target_id,defaultWidth:width,polyline:{positions:[satCartesian(a),satCartesian(b)],width,material:Cesium.Color.fromCssColorString(riskColor(link.risk_level,.58)),clampToGround:false}})});
+      state.satellitePositions.forEach(pos=>{const sat=satCartesian(pos);const surface=Cesium.Cartesian3.fromDegrees(pos.longitude,pos.latitude,0);state.viewer.entities.add({position:sat,satelliteId:pos.entity_id,point:{pixelSize:9,color:Cesium.Color.fromCssColorString('#f87171'),outlineColor:Cesium.Color.WHITE,outlineWidth:1.5,disableDepthTestDistance:Number.POSITIVE_INFINITY}});state.viewer.entities.add({position:surface,satelliteId:pos.entity_id,surfacePoint:true,point:{pixelSize:6,color:Cesium.Color.fromCssColorString('#22c55e'),outlineColor:Cesium.Color.WHITE,outlineWidth:1}});state.viewer.entities.add({polyline:{positions:[surface,sat],width:1,material:Cesium.Color.fromCssColorString('rgba(96,165,250,0.22)')}})});
+      applySelectionStyle();renderSelectedInfo()
+    }
+    function renderExperimentList(){
+      const c=document.getElementById('experimentList');
+      if(!state.experiments.length){c.innerHTML='<div class="empty">暂无实验记录。</div>';return}
+      c.innerHTML=state.experiments.map(run=>{const active=state.currentExperiment&&state.currentExperiment.experiment_id===run.experiment_id;return `<div class="list-item ${active?'active':''}" onclick="selectExperiment('${run.experiment_id}')"><div style="font-size:13px;font-weight:600;margin-bottom:6px;">${run.config.name}</div><div class="list-meta"><span>${run.experiment_id}</span><span class="badge status-${run.status}">${run.status}</span></div><div class="list-meta" style="margin-top:6px;"><span>${run.completed_cases}/${run.total_cases||0} cases</span><span>${(run.created_at||'').slice(0,19).replace('T',' ')}</span></div></div>`}).join('')
+    }
+    async function loadExperiments(selectId=null){state.experiments=await api('/api/v1/experiments');renderExperimentList();if(selectId)await selectExperiment(selectId);else if(state.currentExperiment)await selectExperiment(state.currentExperiment.experiment_id)}
+    function renderExperimentSummary(){
+      const stats=document.getElementById('summaryStats');const text=document.getElementById('summaryText');const sources=document.getElementById('dataSources');const run=state.currentExperiment;
+      if(!run){stats.innerHTML='';text.textContent='请选择实验。';sources.innerHTML='';return}
+      const avg=run.summary?.average_metrics||{};
+      stats.innerHTML=[['实验状态',run.status],['批量组合',run.summary?.total_cases||0],['最佳补全',run.summary?.best_completion_method||'-'],['平均 SINR',`${formatNumber(avg.average_sinr_db)} dB`],['高风险识别',formatPercent(avg.future_high_risk_identification_accuracy)]].map(([a,b])=>`<div class="stat"><div class="stat-label">${a}</div><div class="stat-value">${b}</div></div>`).join('');
+      text.textContent=run.summary?.generated_summary||'暂无摘要。';
+      const map=new Map();(run.cases||[]).forEach(item=>(item.data_sources||[]).forEach(src=>map.set(`${src.source}|${src.data_version}`,src)));
+      sources.innerHTML=Array.from(map.values()).map(src=>`<div class="pill">${src.source_type} | ${src.cache_status} | ${src.data_version||'-'}</div>`).join('')
+    }
+    function renderCaseList(){
+      const c=document.getElementById('caseList');const run=state.currentExperiment;
+      if(!run||!(run.cases||[]).length){c.innerHTML='<div class="empty">暂无 case。</div>';return}
+      c.innerHTML=run.cases.map(item=>{const active=state.currentCase&&state.currentCase.case_id===item.case_id;return `<div class="list-item ${active?'active':''}" onclick="selectCase('${item.case_id}')"><div style="font-size:13px;font-weight:600;margin-bottom:6px;">${item.case_id}</div><div class="list-meta"><span>${item.scenario_id}</span><span>obs ${item.observation_rate}</span></div><div class="list-meta" style="margin-top:6px;"><span>pred ${item.prediction_horizon_sec}s</span><span>steps ${item.simulation_steps}</span></div></div>`}).join('')
+    }
+    async function selectExperiment(experimentId){state.currentExperiment=await api(`/api/v1/experiments/${experimentId}`);renderExperimentList();renderExperimentSummary();renderCaseList();if(state.currentExperiment.cases&&state.currentExperiment.cases.length)await selectCase(state.currentExperiment.cases[0].case_id);else{state.currentCase=null;state.currentReplay=null;renderReplayPoint();renderComparison();renderTrendChart()}}
+    async function selectCase(caseId){if(!state.currentExperiment)return;state.currentCase=state.currentExperiment.cases.find(item=>item.case_id===caseId)||null;state.currentReplay=await api(`/api/v1/experiments/${state.currentExperiment.experiment_id}/cases/${caseId}/replay`);renderCaseList();renderComparison();renderTrendChart();setupReplay()}
+    function renderComparison(){
+      const box=document.getElementById('comparisonTable');const comparison=state.currentCase?.comparison||[];
+      if(!comparison.length){box.innerHTML='<div class="empty">暂无算法对比。</div>';comparisonChart.clear();return}
+      comparisonChart.setOption({backgroundColor:'transparent',tooltip:{trigger:'axis'},legend:{textStyle:{color:'#94a3b8'}},xAxis:{type:'category',data:comparison.map(i=>i.completion_method),axisLabel:{color:'#94a3b8'}},yAxis:[{type:'value',name:'RMSE',axisLabel:{color:'#94a3b8'}},{type:'value',name:'Accuracy',axisLabel:{color:'#94a3b8'},min:0,max:1}],series:[{name:'Completion RMSE',type:'bar',data:comparison.map(i=>i.metrics.completion_error_rmse),itemStyle:{color:'#60a5fa'}},{name:'High-risk Accuracy',type:'line',yAxisIndex:1,data:comparison.map(i=>i.metrics.future_high_risk_identification_accuracy),lineStyle:{color:'#34d399'},symbolSize:8}]});
+      box.innerHTML=`<table><thead><tr><th>Method</th><th>RMSE</th><th>Coverage</th><th>Low SINR</th><th>Accuracy</th><th>Alerts</th></tr></thead><tbody>${comparison.map(i=>`<tr><td>${i.completion_method}</td><td>${formatNumber(i.metrics.completion_error_rmse,3)}</td><td>${formatPercent(i.metrics.coverage_rate)}</td><td>${formatPercent(i.metrics.low_sinr_link_ratio)}</td><td>${formatPercent(i.metrics.future_high_risk_identification_accuracy)}</td><td>${i.metrics.alert_count}</td></tr>`).join('')}</tbody></table>`
+    }
+    function renderTrendChart(){
+      const points=state.currentReplay?.time_series||[];if(!points.length){trendChart.clear();return}
+      trendChart.setOption({backgroundColor:'transparent',tooltip:{trigger:'axis'},legend:{textStyle:{color:'#94a3b8'}},xAxis:{type:'category',data:points.map(i=>i.timestamp.slice(11,19)),axisLabel:{color:'#94a3b8'}},yAxis:[{type:'value',name:'SINR/Links',axisLabel:{color:'#94a3b8'}},{type:'value',name:'Alerts',axisLabel:{color:'#94a3b8'}}],series:[{name:'Avg SINR',type:'line',data:points.map(i=>i.average_sinr_db),lineStyle:{color:'#38bdf8'},symbol:'none'},{name:'High-risk Links',type:'line',data:points.map(i=>i.high_risk_link_count),lineStyle:{color:'#f87171'},symbol:'none'},{name:'Alerts',type:'bar',yAxisIndex:1,data:points.map(i=>i.alert_count),itemStyle:{color:'rgba(251,191,36,0.7)'}}]})
+    }
+    function setupReplay(){const slider=document.getElementById('replaySlider');const points=state.currentReplay?.time_series||[];slider.max=Math.max(points.length-1,0);slider.value=points.length?points.length-1:0;renderReplayPoint()}
+    function renderReplayPoint(){const slider=document.getElementById('replaySlider');const points=state.currentReplay?.time_series||[];const index=Number(slider.value||0);document.getElementById('replayIndex').textContent=`${points.length?index+1:0} / ${points.length}`;const point=points[index];const stats=document.getElementById('replayStats');if(!point){stats.innerHTML='<div class="empty">暂无回放数据。</div>';return}stats.innerHTML=[`时间: ${point.timestamp.replace('T',' ').slice(0,19)}`,`可见链路: ${point.visible_link_count}`,`平均 SINR: ${formatNumber(point.average_sinr_db)} dB`,`高风险链路: ${point.high_risk_link_count}`,`累计告警: ${point.alert_count}`,`严重告警: ${point.severe_alert_count}`,state.currentReplay?.conclusion||''].map(i=>`<div>${i}</div>`).join('')}
+    function renderLiveCharts(snapshot){
+      if(!snapshot)return;const grid=snapshot.spectrum_grid;
+      spectrumChart.setOption({backgroundColor:'transparent',tooltip:{trigger:'axis'},xAxis:{type:'category',data:(grid?.freq_bins_hz||[]).map(f=>(f/1e9).toFixed(2)),axisLabel:{color:'#94a3b8',fontSize:10}},yAxis:{type:'value',axisLabel:{color:'#94a3b8'}},series:[{type:'line',data:grid?.power_dbm||[],symbol:'none',lineStyle:{color:'#60a5fa'},areaStyle:{color:'rgba(96,165,250,0.15)'}}]});
+      const links=(snapshot.links||[]).filter(i=>i.visible).slice(0,30);
+      sinrChart.setOption({backgroundColor:'transparent',tooltip:{trigger:'axis'},xAxis:{type:'category',data:links.map(i=>i.link_id.slice(0,12)),axisLabel:{color:'#94a3b8',rotate:45,fontSize:9}},yAxis:{type:'value',axisLabel:{color:'#94a3b8'}},series:[{type:'bar',data:links.map(i=>({value:i.sinr_db,itemStyle:{color:i.sinr_db<10?'#f87171':'#34d399'}}))}]})
+    }
+    function renderModeStatus(){
+      const target=document.getElementById('modeStatus');
+      const mode=state.scenarioMode;
+      if(!mode){target.textContent='数据模式: 未知';return}
+      const label=mode.mode==='online'?'在线真实数据':'仿真数据';
+      const scenario=mode.scenario_name||mode.scenario_id||mode.scenario_path||'-';
+      target.textContent=`数据模式: ${label} | 场景: ${scenario}`
+    }
+    async function loadScenarioMode(){
+      try{state.scenarioMode=await api('/api/v1/scenario/mode');renderModeStatus()}catch(error){document.getElementById('modeStatus').textContent='数据模式: 获取失败'}
+    }
+    async function setScenarioMode(mode){
+      const labels={simulation:'仿真数据',online:'在线真实数据'};
+      document.getElementById('liveExplanation').textContent=`正在切换到${labels[mode]||mode}...`;
+      state.scenarioMode=await api('/api/v1/scenario/mode',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mode})});
+      renderModeStatus();
+      await refreshLiveView({realtime:true})
+    }
+    async function refreshLiveView(options={}){
+      try{
+        const realtime=options.realtime!==false;
+        const refreshSources=options.refreshSources===true;
+        const currentQuery=`realtime=${realtime}&refresh_sources=${refreshSources}`;
+        const positionsQuery=`realtime=${realtime}`;
+        const snapshot=await api(`/api/v1/situational/current?${currentQuery}`);
+        const [positions,alerts,scenario,dataSources,modeInfo]=await Promise.all([api(`/api/v1/constellation/positions?${positionsQuery}`),api('/api/v1/alerts?limit=12'),api('/api/v1/scenario/current').catch(()=>({})),api('/api/v1/scenario/data-sources').catch(()=>([])),api('/api/v1/scenario/mode').catch(()=>(null))]);
+        if(modeInfo){state.scenarioMode=modeInfo;renderModeStatus()}
+        state.currentSnapshot=snapshot;state.globalExplanation=snapshot.explanation||'-';renderLiveCharts(snapshot);updateGlobe(positions);
+        const visible=(snapshot.links||[]).filter(i=>i.visible);const highRisk=visible.filter(i=>HIGH_RISK.includes(i.risk_level));
+        document.getElementById('liveScenarioName').textContent=scenario.name||snapshot.scenario_id||'-';
+        document.getElementById('liveTimestamp').textContent=(snapshot.timestamp||'-').slice(0,19).replace('T',' ');
+        document.getElementById('liveVisibleLinks').textContent=visible.length;
+        document.getElementById('liveHighRisk').textContent=highRisk.length;
+        document.getElementById('liveDataSources').innerHTML=(dataSources||[]).map(i=>`<div class="pill">${i.source_type} | ${i.cache_status} | ${i.data_version||'-'}</div>`).join('')||'<div class="empty">无外部数据源。</div>';
+        document.getElementById('alertsList').innerHTML=alerts.length?alerts.map(a=>`<div class="alert-item">${a.alert_type} | ${a.risk_level} | ${(a.trace?.reason||'').slice(0,88)}</div>`).join(''):'<div class="empty">暂无告警。</div>'
+      }catch(error){document.getElementById('liveExplanation').textContent='后端未启动或场景未加载。'}
+    }
+    async function stepLive(){await api('/api/v1/simulation/step',{method:'POST'});await refreshLiveView({realtime:false})}
+    async function runLivePrediction(){const r=await api('/api/v1/situational/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({horizon_sec:300})});const top=(r.high_risk_links||[]).slice(0,3).map(i=>i.link_id).join(', ');document.getElementById('liveExplanation').textContent=`预测完成，置信度 ${r.overall_confidence}，高风险链路 ${top||'无'}`}
+    async function runLiveCompletion(){const r=await api('/api/v1/situational/complete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({observation_rate:0.25,method:'auto'})});renderLiveCharts(r);document.getElementById('liveExplanation').textContent=`补全完成，方法 ${r.spectrum_grid?.completion_method||'-'}`}
+    async function createAndRunExperiment(){
+      const methods=Array.from(document.querySelectorAll('.checkbox-item input:checked')).map(i=>i.value);
+      const payload={name:`validation_${new Date().toISOString().slice(0,19)}`,scenario_paths:parseCsvStrings(document.getElementById('scenarioPaths').value),observation_rates:parseCsvNumbers(document.getElementById('observationRates').value),prediction_horizons_sec:parseCsvNumbers(document.getElementById('predictionHorizons').value),completion_methods:methods,prediction_method:'orbit_extrapolation+lstm_trend',simulation_steps:Number(document.getElementById('simulationSteps').value||12),step_delta_sec:Number(document.getElementById('stepDeltaSec').value||5),export_formats:parseCsvStrings(document.getElementById('exportFormats').value),notes:document.getElementById('experimentNotes').value};
+      const created=await api('/api/v1/experiments',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      state.currentExperiment=created;renderExperimentSummary();document.getElementById('summaryText').textContent='实验已创建，正在运行。';
+      const finished=await api(`/api/v1/experiments/${created.experiment_id}/run`,{method:'POST'});state.currentExperiment=finished;await loadExperiments(finished.experiment_id)
+    }
+    async function exportCurrentExperiment(format){if(!state.currentExperiment)return;const p=await api(`/api/v1/experiments/${state.currentExperiment.experiment_id}/export?format=${format}`,{method:'POST'});window.open(API+p.download_path,'_blank');await loadExperiments(state.currentExperiment.experiment_id)}
+    function resetExperimentView(summaryText){
+      state.currentExperiment=null;state.currentCase=null;state.currentReplay=null;
+      document.getElementById('summaryText').textContent=summaryText;
+      document.getElementById('summaryStats').innerHTML='';
+      document.getElementById('dataSources').innerHTML='';
+      document.getElementById('caseList').innerHTML='';
+      document.getElementById('comparisonTable').innerHTML='<div class="empty">暂无对比结果</div>';
+      comparisonChart.clear();trendChart.clear()
+    }
+    async function deleteCurrentExperiment(){
+      if(!state.currentExperiment){window.alert('请先选择要删除的实验记录。');return}
+      const ok=window.confirm(`确认删除实验 ${state.currentExperiment.experiment_id} 吗？相关结果文件也会一并删除。`);
+      if(!ok)return;
+      await api(`/api/v1/experiments/${state.currentExperiment.experiment_id}`,{method:'DELETE'});
+      resetExperimentView('当前实验已删除。');
+      await loadExperiments()
+    }
+    async function clearAllExperiments(){
+      const ok=window.confirm('确认清空全部实验记录吗？该操作会删除所有已保存的实验结果。');
+      if(!ok)return;
+      await api('/api/v1/experiments',{method:'DELETE'});
+      resetExperimentView('实验记录已全部清空。');
+      await loadExperiments()
+    }
+    document.addEventListener('click',event=>{const row=event.target.closest?.('.link-row[data-link-id]');if(!row)return;selectLink(row.dataset.linkId)});
+    window.addEventListener('resize',()=>{trendChart.resize();spectrumChart.resize();sinrChart.resize();comparisonChart.resize()});
+    initViewer();loadExperiments();loadScenarioMode();refreshLiveView({realtime:true});setInterval(()=>refreshLiveView({realtime:true}),12000)
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="739.8pt" height="724.477964pt" viewBox="0 0 739.8 724.477964" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-17T21:18:17.340414</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 724.477964 
+L 739.8 724.477964 
+L 739.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 7.2 32.483084 
+L 728.973 32.483084 
+" clip-path="url(#pd1eb7e1a68)" style="fill: none; stroke: #000000; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 7.2 46.675724 
+L 728.973 46.675724 
+" clip-path="url(#pd1eb7e1a68)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 7.2 532.064012 
+L 728.973 532.064012 
+" clip-path="url(#pd1eb7e1a68)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 7.2 669.73262 
+L 728.973 669.73262 
+" clip-path="url(#pd1eb7e1a68)" style="fill: none; stroke: #000000; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font: 700 16px 'Microsoft YaHei'; text-anchor: start" x="14.454" y="19.99" transform="rotate(-0 14.454 19.99)">算法 1  随机探索与局部改良的子信道分配启发式基线</text>
+   </g>
+   <g id="text_2">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="69.741426" transform="rotate(-0 50.724 69.741426)">输入：固定首帧几何、关联、功率，原始分配 C0；随机预算 M=100，局部预算 L=100。</text>
+   </g>
+   <g id="text_3">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="91.385202" transform="rotate(-0 50.724 91.385202)">输出：按GSO可行优先规则保留的方案 C*；全部201次候选评价记录。</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="112.149666" transform="rotate(-0 20.2572 112.149666)">01</text>
+   </g>
+   <g id="text_5">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="113.028978" transform="rotate(-0 50.724 113.028978)">r* ← Evaluate(C0)；C* ← C0；Visited ← {C0}；记录原始方案。</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="133.793442" transform="rotate(-0 20.2572 133.793442)">02</text>
+   </g>
+   <g id="text_7">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="134.672754" transform="rotate(-0 50.724 134.672754)">for i = 1,…,M do                         // 全局随机探索</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="155.437218" transform="rotate(-0 20.2572 155.437218)">03</text>
+   </g>
+   <g id="text_9">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="156.770937" transform="rotate(-0 76.113 156.770937)">对每个网关，将8个频道随机排列，取前 k_g 个分配给该站活动链路，得到 C′。</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="177.080994" transform="rotate(-0 20.2572 177.080994)">04</text>
+   </g>
+   <g id="text_11">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="177.960306" transform="rotate(-0 76.113 177.960306)">要求 C′ 尚未出现，且各网关内无重复频道。</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="198.72477" transform="rotate(-0 20.2572 198.72477)">05</text>
+   </g>
+   <g id="text_13">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="199.604082" transform="rotate(-0 76.113 199.604082)">r′ ← Evaluate(C′)；Visited ← Visited ∪ {C′}；记录分配、指标和耗时。</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="220.368546" transform="rotate(-0 20.2572 220.368546)">06</text>
+   </g>
+   <g id="text_15">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="221.247858" transform="rotate(-0 76.113 221.247858)">if Score(r′) &lt;lex Score(r*) then  (C*, r*) ← (C′, r′)。</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="242.012322" transform="rotate(-0 20.2572 242.012322)">07</text>
+   </g>
+   <g id="text_17">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="242.891634" transform="rotate(-0 50.724 242.891634)">end for</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="263.656098" transform="rotate(-0 20.2572 263.656098)">08</text>
+   </g>
+   <g id="text_19">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="264.989817" transform="rotate(-0 50.724 264.989817)">for j = 1,…,L do                         // 从当前保留方案产生局部候选</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="285.299874" transform="rotate(-0 20.2572 285.299874)">09</text>
+   </g>
+   <g id="text_21">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="286.179186" transform="rotate(-0 76.113 286.179186)">repeat</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="306.94365" transform="rotate(-0 20.2572 306.94365)">10</text>
+   </g>
+   <g id="text_23">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="101.502" y="307.822962" transform="rotate(-0 101.502 307.822962)">C′ ← C*。</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="328.587426" transform="rotate(-0 20.2572 328.587426)">11</text>
+   </g>
+   <g id="text_25">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="101.502" y="329.888192" transform="rotate(-0 101.502 329.888192)">if j 为奇数且 C* 存在失效链路 then</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="350.231202" transform="rotate(-0 20.2572 350.231202)">12</text>
+   </g>
+   <g id="text_27">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="126.891" y="351.587468" transform="rotate(-0 126.891 351.587468)">随机选取一条失效链路，令 g 为其服务网关。</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="371.874978" transform="rotate(-0 20.2572 371.874978)">13</text>
+   </g>
+   <g id="text_29">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="101.502" y="373.175744" transform="rotate(-0 101.502 373.175744)">else  从全部活动网关中随机选取 g。</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="393.518754" transform="rotate(-0 20.2572 393.518754)">14</text>
+   </g>
+   <g id="text_31">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="101.502" y="394.83166" transform="rotate(-0 101.502 394.83166)">if g 有空闲频道且 U(0,1)&lt;0.35 then</text>
+   </g>
+   <g id="text_32">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="415.16253" transform="rotate(-0 20.2572 415.16253)">15</text>
+   </g>
+   <g id="text_33">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="126.891" y="416.041842" transform="rotate(-0 126.891 416.041842)">随机选一条站内链路，改用一个随机空闲频道。</text>
+   </g>
+   <g id="text_34">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="436.806306" transform="rotate(-0 20.2572 436.806306)">16</text>
+   </g>
+   <g id="text_35">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="101.502" y="437.685618" transform="rotate(-0 101.502 437.685618)">else  随机选两条站内链路，交换其频道。</text>
+   </g>
+   <g id="text_36">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="458.450082" transform="rotate(-0 20.2572 458.450082)">17</text>
+   </g>
+   <g id="text_37">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="459.329394" transform="rotate(-0 76.113 459.329394)">until C′ 未出现于 Visited                 // 重复方案重新生成，不占评价次数</text>
+   </g>
+   <g id="text_38">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="480.093858" transform="rotate(-0 20.2572 480.093858)">18</text>
+   </g>
+   <g id="text_39">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="480.97317" transform="rotate(-0 76.113 480.97317)">r′ ← Evaluate(C′)；Visited ← Visited ∪ {C′}；记录分配、指标和耗时。</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="501.737634" transform="rotate(-0 20.2572 501.737634)">19</text>
+   </g>
+   <g id="text_41">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="76.113" y="502.616946" transform="rotate(-0 76.113 502.616946)">if Score(r′) &lt;lex Score(r*) then  (C*, r*) ← (C′, r′)。</text>
+   </g>
+   <g id="text_42">
+    <text style="fill: #555555; font: 10px 'Microsoft YaHei'; text-anchor: start" x="20.2572" y="523.38141" transform="rotate(-0 20.2572 523.38141)">20</text>
+   </g>
+   <g id="text_43">
+    <text style="font: 11.1px 'Microsoft YaHei'; text-anchor: start" x="50.724" y="524.260722" transform="rotate(-0 50.724 524.260722)">end for；返回 C*、r* 与完整评价记录。</text>
+   </g>
+   <g id="text_44">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="548.88329" transform="rotate(-0 18.081 548.88329)">Evaluate(C)：完整NGSO逐对预算 + GSO参考窗口EPFD + 聚合指标；每个候选重新计算。</text>
+   </g>
+   <g id="text_45">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="568.043354" transform="rotate(-0 18.081 568.043354)">Score(r)：若GSO可行，取 (0, F, Δ)；否则取 (1, Δ, V, F)；按词典序由小到大择优。</text>
+   </g>
+   <g id="text_46">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="587.203418" transform="rotate(-0 18.081 587.203418)">F：NGSO失败链路数；Δ：GSO最坏超限裕量（dB）；V：超限接收配置数。</text>
+   </g>
+   <g id="text_47">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="606.363482" transform="rotate(-0 18.081 606.363482)">GSO可行：12站×1/2/5m×40kHz/1MHz的全部已评价窗口合计EPFD不超过匹配参考上限。</text>
+   </g>
+   <g id="text_48">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="625.523546" transform="rotate(-0 18.081 625.523546)">C*是按上述规则保留的最好已评价方案，不表示已求得全局最优或满足GSO保护。</text>
+   </g>
+   <g id="text_49">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="644.68361" transform="rotate(-0 18.081 644.68361)">随机种子20261117；局部生成最多尝试10000次，无法找到新候选时报错。</text>
+   </g>
+   <g id="text_50">
+    <text style="fill: #303b47; font: 9.5px 'Microsoft YaHei'; text-anchor: start" x="18.081" y="663.843674" transform="rotate(-0 18.081 663.843674)">201次=原始1次+随机100次+局部100次；不代表接受201次更新，也不代表必要计算次数。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd1eb7e1a68">
+   <rect x="7.2" y="7.645964" width="725.4" height="709.632"/>
+  </clipPath>
+ </defs>
+</svg>

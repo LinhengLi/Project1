@@ -1,0 +1,78 @@
+{
+  "version": "v1.4_reference_and_bounded_screening",
+  "frames": 61,
+  "gso_receivers": 12,
+  "repeats": 3,
+  "elapsed_s": 17.471187299997837,
+  "python": "3.11.7",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "numpy": "1.26.4",
+  "association_sha256": "05834f1ad3a10bb6078dde0557d906f68e2591068a002d6c7e6ed3e23784e24d",
+  "profile_sha256": "5a5f6c04464b87046c866bf028970b93e33a0bdb541e604d57ac9d8e844c7b96",
+  "gso_policy": "3.5m preserved per metadata; S1428 gain overrides inconsistent metadata fixed gain/efficiency; 398K and 100MHz diagnostic noise; per-channel I/N has no regulatory threshold; no EPFD/compliance implemented",
+  "algorithm": "RX/FSPL * TX peak upper bound; sort and omit cumulative upper<=epsilon*kTB per receiver/channel; exact TX for kept pairs; NGSO ambiguous threshold rows fallback exact",
+  "results": [
+    {
+      "mode": "antenna_index",
+      "epsilon_noise": 0.0001,
+      "omitted_fraction": 0.0,
+      "max_error_over_noise": 0.0,
+      "raw_false_negative_ngso": 0,
+      "uncertain_ngso": 0,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.16061991329085396
+    },
+    {
+      "mode": "antenna_index",
+      "epsilon_noise": 0.001,
+      "omitted_fraction": 0.030596045605426468,
+      "max_error_over_noise": 7.586388223356119e-07,
+      "raw_false_negative_ngso": 0,
+      "uncertain_ngso": 0,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.15912442938259364
+    },
+    {
+      "mode": "antenna_index",
+      "epsilon_noise": 0.01,
+      "omitted_fraction": 0.5286477125126281,
+      "max_error_over_noise": 0.009086661540999413,
+      "raw_false_negative_ngso": 0,
+      "uncertain_ngso": 0,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.16270389635281052
+    },
+    {
+      "mode": "all_cochannel",
+      "epsilon_noise": 0.0001,
+      "omitted_fraction": 0.0,
+      "max_error_over_noise": 0.0,
+      "raw_false_negative_ngso": 0,
+      "uncertain_ngso": 0,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.7385173245732968
+    },
+    {
+      "mode": "all_cochannel",
+      "epsilon_noise": 0.001,
+      "omitted_fraction": 0.0024566376459472226,
+      "max_error_over_noise": 7.027388207910868e-07,
+      "raw_false_negative_ngso": 0,
+      "uncertain_ngso": 0,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.7377021455236432
+    },
+    {
+      "mode": "all_cochannel",
+      "epsilon_noise": 0.01,
+      "omitted_fraction": 0.155294594047378,
+      "max_error_over_noise": 0.009961857736925688,
+      "raw_false_negative_ngso": 6,
+      "uncertain_ngso": 71,
+      "post_fallback_mismatches": 0,
+      "measured_kernel_speedup": 0.7214546109698762
+    }
+  ],
+  "gso_spectral_status": "UNVERIFIED_DIAGNOSTIC_BINNING_ONLY; GSO receiver bandwidth, spectral overlap and protection metric pending; per-bin sums and 100MHz I/N are not validated protection calculations"
+}

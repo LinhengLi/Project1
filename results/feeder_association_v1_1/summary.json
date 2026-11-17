@@ -1,0 +1,16 @@
+{
+  "frames": 61,
+  "ngso_active_min": 59,
+  "ngso_active_max": 72,
+  "initial_by_operator": {
+    "starlink": 40,
+    "oneweb": 26
+  },
+  "initial_exclusions": {
+    "outside_study_altitude_300_650km": 49,
+    "outside_study_altitude_1100_1300km": 3
+  },
+  "gso_links": 12,
+  "all_sampled_gso_visible": true,
+  "interference_computed": false
+}

@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "path": "candidate_results.npz",
+      "bytes": 3279976,
+      "sha256": "affd0cc481fe3b121d0053cc94f590fc2390415c26768da0edac003f59c2990f"
+    },
+    {
+      "path": "candidates.csv",
+      "bytes": 56604,
+      "sha256": "c8b8ead3c0a815c634aa1d9bf25bbee0bd1e90d7646ffab75385cebb2bc544ed"
+    },
+    {
+      "path": "completed_validation.json",
+      "bytes": 520,
+      "sha256": "782c25141c1e9a2847272720588d7f30f5cd12024b938a47a73bdb1e4b272673"
+    },
+    {
+      "path": "config.json",
+      "bytes": 2079,
+      "sha256": "a7d4e76313bb7c2ed3564f7e419f74b69d21d7d7be30d7e04296eecfd24ef643"
+    },
+    {
+      "path": "frequency_only_feasibility.json",
+      "bytes": 3524,
+      "sha256": "58a86df7d61827478619b810279b5d80ee841492cc334962e0ba91c1d42cac05"
+    },
+    {
+      "path": "frequency_only_infeasibility.png",
+      "bytes": 53539,
+      "sha256": "3dd91df62327c78ff25921d609fe71dc7949643bae654326f14953e7ea349269"
+    },
+    {
+      "path": "frequency_only_infeasibility.svg",
+      "bytes": 46074,
+      "sha256": "2eb311d204af53b12c9c75f49455200c1a8cbb0df3f8dec8a6f46835bcd55472"
+    },
+    {
+      "path": "input_000.json.gz",
+      "bytes": 88332,
+      "sha256": "a1ec48d7f02fcb2d5d6d0c8276015d68bf31caab5144ba48d6392e0c5da506e5"
+    },
+    {
+      "path": "scan_evidence.png",
+      "bytes": 329758,
+      "sha256": "b48529fc36a7e22df28a878394ece2999c0e2818005bfc17265cb3e7f98628e3"
+    },
+    {
+      "path": "scan_evidence.svg",
+      "bytes": 168899,
+      "sha256": "11f1e91dd410d606679cfecb302f442c196b8587b18fb17e4a8d1128fb7c5ce1"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 3967,
+      "sha256": "6ed03b14e92060b320563d0d6d03b1203f02d4fa921c20403fc0698ae69ba383"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 251,
+      "sha256": "eca9588042971392c886e6c06c5ed71c9928b5aee109757ad551ebc646577195"
+    },
+    {
+      "path": "分频启发式_算法流程图.png",
+      "bytes": 555660,
+      "sha256": "1df546cba98b35e5342a2959115db4955ccfab76ed37ebcf0b7425f5a7537e45"
+    },
+    {
+      "path": "分频启发式_算法流程图.svg",
+      "bytes": 21433,
+      "sha256": "c9e00c0ce1e6285ebf0816b690c5c1829044d773906ac1b5590a19884c84e586"
+    },
+    {
+      "path": "周报说明.md",
+      "bytes": 5293,
+      "sha256": "8044f5939393da44484ba6173869dcc3b4bd7e83f6da67563da38e79261234a5"
+    },
+    {
+      "path": "算法1_分频启发式伪代码.png",
+      "bytes": 630449,
+      "sha256": "414638f51622feca4c48955e20957d69a610094ae9b54965201742abe48f6cd8"
+    },
+    {
+      "path": "算法1_分频启发式伪代码.svg",
+      "bytes": 13391,
+      "sha256": "51725f7c668676ad350ccaafa3e4c4cb97abe867e24c1b49d9d70bd475d61151"
+    },
+    {
+      "path": "算法图说明.md",
+      "bytes": 2038,
+      "sha256": "76144f0adfe828c53a00337489c54ce9664d7f4e9c9a202c43ba2e5e422913cb"
+    }
+  ],
+  "source_hashes": {
+    "scan_feeder_first_frame_v1_5.py": "a3d5b77366c3f381d83e25acd356ec8dba57374ebec10ab0d38050fded69763e",
+    "report_feeder_first_frame_scan.py": "aa1c111ffef256724ef336bfdd185c9b9fb02a04c924ce800bc5c4b7f68257b6",
+    "draw_feeder_scan_algorithm.py": "ac205e689f10d9f382bc961187d83539dd47001a9d2a595e4c0d8881dbf18fef"
+  }
+}
