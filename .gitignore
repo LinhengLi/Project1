@@ -1,4 +1,16 @@
 .venv/
+.venv-ems/
 __pycache__/
 *.egg-info/
 .pytest_cache/
+
+# Machine-local environment, credentials, and runtime logs
+.env
+.env.*
+!.env.example
+!.env.*.example
+node_modules/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
