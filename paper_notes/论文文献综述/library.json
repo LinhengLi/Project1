@@ -1,0 +1,17 @@
+[
+  {
+    "id": "2505.12429v1",
+    "title": "Time-Continuous Frequency Allocation for Feeder Links of Mega Constellations with Multi-Antenna Gateway Stations",
+    "authors": "Zijun Liu, Yafei Wang, Tianhao Fang, Wenjin Wang, Zhili Sun",
+    "year": 2025,
+    "status": "已读",
+    "tags": [
+      "下行馈电",
+      "巨型星座",
+      "GG / CTS",
+      "连续时间分频"
+    ],
+    "pdf": "paper_notes/阅读论文原文/2505.12429v1.pdf",
+    "review": "paper_notes/论文精读_下行馈电干扰建模_GG_CTS及科研切入点.md"
+  }
+]
